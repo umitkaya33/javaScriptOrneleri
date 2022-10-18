@@ -1,8 +1,16 @@
-For In 
-<script>
+**For In
+
 var araba = {marka:"Volkswagen" , model: "Golf" , Yil:2005, Renk:"Gumus Gri", Fiyat:"235000" , Konum: "Mersin"};
 var goruntule = " ";
 var x;
 for (x in araba){goruntule += araba[x] + " ";}
 document.write( goruntule);
-</script>
+
+For Of Döngüsü
+
+**For Of
+
+var araba = ["Volkswagen","Golf",2005,"Gumus Gri",235000,"Mersin"];
+var w;
+for (w of araba) {
+document.write( w + "<br>");}
