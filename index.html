@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<p>
 <body>
 <script>
-for (var sayi=1; sayi <= 25; sayi++ ) {
-document.write(sayi +". for dongusu <br>");
-}
-      </script>
-
+var araba = {marka:"Volkswagen" , model: "Golf" , Yil:2005, Renk:"Gumus Gri", Fiyat:"235000" , Konum: "Mersin"};
+var goruntule = " ";
+var x;
+for (x in araba){goruntule += araba[x] + " ";}
+document.write( goruntule);
+</script>
+</p>
   </body>
 </html>
