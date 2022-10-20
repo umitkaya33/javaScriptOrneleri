@@ -4,6 +4,7 @@ var space="<br/>"
 // Document Write Kullanımı
 document.write('Hello World');
 document.write(space);
+
 // Alert Kullanımı
 alert('Hello Alert');
 
@@ -46,9 +47,16 @@ if ( name == "Orkun" )
 { document.write("Kullanıcı Adı Dogru" + name); }
 else { document.write("Kullanıcı Adı Yanlış"); }
 document.write(space);
+
 // Switch Case Kullanımı
 var car="x";
 switch (car) {
 case "BMW":document.write("Secilen Araba:"+car);
   break;
 default:document.write("Yanlış Seçim:"+car);}
+document.write(space);
+
+// While Dongusu Kullanımı
+var x ="While Dongusu";
+var count=1;
+while(count<=5){document.write(count+"."+x+"<br>");count++;}
