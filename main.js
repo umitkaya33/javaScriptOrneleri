@@ -60,3 +60,21 @@ document.write(space);
 var x ="While Dongusu";
 var count=1;
 while(count<=5){document.write(count+"."+x+"<br>");count++;}
+document.write(space);
+
+// İç İçe While Döngüsü Kullanımı
+document.write("İç İçe while");
+document.write(space);
+var count1  = 1;
+var count2  = 1;
+while(count1  <=  5)
+{
+  while(count2  <= 5)
+                        {
+    document.write("*");
+    count2++;
+                        }
+  document.write("<br>");
+  count1++;
+  count2  = 1;
+  }
