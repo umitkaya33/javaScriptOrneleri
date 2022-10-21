@@ -97,3 +97,14 @@ for(  var x=1;  x<=5; x++ ){
   document.write("<br>");
 }
 document.write(space);
+
+// For in_Döngüsü
+document.write("For In Döngüsü <br>");
+var car   = { brand:  "Volkwagen",  model:  "Golf" , old:15, price:235000, city:"Mersin"};
+var view  = " ";
+var x;
+for (x in car){
+  view += car[x] +  " ";
+}
+document.write(view);
+document.write(space);
