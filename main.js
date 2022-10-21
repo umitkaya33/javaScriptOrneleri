@@ -1,4 +1,3 @@
-
 var space="<br/>"
 
 // Document Write Kullanımı
@@ -77,4 +76,11 @@ while(count1  <=  5)
   document.write("<br>");
   count1++;
   count2  = 1;
+  }
+  document.write(space);
+
+  // For Döngüsü
+  document.write("For_Döngüsü <br>");
+  for ( var count=1; count <= 5; count++){
+    document.write(count+".For_Döngüsü <br>");
   }
