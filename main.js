@@ -108,3 +108,13 @@ for (x in car){
 }
 document.write(view);
 document.write(space);
+document.write(space);
+
+// For Of Döngüsü
+document.write("For Of Döngüsü <br>");
+var person  = [ "Ümit","Kaya",30,"Mersin","Siyah"];
+var z;
+for (z of person)
+{
+  document.write(z+"<br>");
+}
