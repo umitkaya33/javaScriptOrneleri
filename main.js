@@ -54,8 +54,10 @@ case "BMW":document.write("Secilen Araba:"+car);
   break;
 default:document.write("Yanlış Seçim:"+car);}
 document.write(space);
+document.write(space);
 
 // While Dongusu Kullanımı
+document.write("While Döngüsü <br>");
 var x ="While Dongusu";
 var count=1;
 while(count<=5){document.write(count+"."+x+"<br>");count++;}
@@ -84,3 +86,14 @@ while(count1  <=  5)
   for ( var count=1; count <= 5; count++){
     document.write(count+".For_Döngüsü <br>");
   }
+  document.write(space);
+
+  // iç içe For For_Döngüsü
+document.write("İç İçe For_Döngüsü <br>");
+for(  var x=1;  x<=5; x++ ){
+  for(  var y=1; y<=5;  y++){
+    document.write("*");
+  }
+  document.write("<br>");
+}
+document.write(space);
