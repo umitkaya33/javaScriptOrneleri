@@ -1,4 +1,4 @@
-
+//  Modül yapısı
 var MyModule = (function(){
 
 var MesajGoster = function(mesaj){
@@ -42,7 +42,7 @@ var IfElseOrnegi = function(){
   }
   };
 
-  var SwitchCaseOrnegi = function(){
+var SwitchCaseOrnegi = function(){
     var car="x";
   switch (car)
   {
