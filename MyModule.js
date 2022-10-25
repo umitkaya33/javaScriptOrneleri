@@ -113,6 +113,18 @@ var ForInDongusuOrnegi = function(){
   document.write(view + "<br>");
 };
 
+var ForOfDongusuOrnegi = function(){
+
+  document.write("For Of Döngüsü <br>");
+  var person  = [ "Ümit","Kaya",30,"Mersin","Siyah"];
+  var z;
+  for (z of person)
+  {
+    document.write(z+"<br>");
+  }
+
+};
+
 
 return{
   MGoster:MesajGoster,
@@ -128,6 +140,7 @@ return{
   IcIceWhileDongusuOrnegi:IcIceWhileDongusuOrnegi,
   IcIceForDongusuOrnegi:IcIceForDongusuOrnegi,
   ForInDongusuOrnegi:ForInDongusuOrnegi,
+  ForOfDongusuOrnegi:ForOfDongusuOrnegi,
 
 }
 })();
