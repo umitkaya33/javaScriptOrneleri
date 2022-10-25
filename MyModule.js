@@ -131,6 +131,11 @@ var process = text.lenght;
 document.write("Karakter Sayısı: " + process);
 };
 
+var EvalMetoduOrnegi = function(){
+var process = eval("40 * 50");
+document.write(process);
+};
+
 return{
   MGoster:MesajGoster,
   HGoster:HataGoster,
@@ -147,6 +152,7 @@ return{
   ForInDongusuOrnegi:ForInDongusuOrnegi,
   ForOfDongusuOrnegi:ForOfDongusuOrnegi,
   LenghtMetoduOrnegi:LenghtMetoduOrnegi,
+  EvalMetoduOrnegi:EvalMetoduOrnegi,
 
 }
 })();
