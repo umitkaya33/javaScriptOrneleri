@@ -101,6 +101,18 @@ var IcIceForDongusuOrnegi = function(){
   }
 };
 
+var ForInDongusuOrnegi = function(){
+
+  document.write("For In Döngüsü <br>");
+  var car   = { brand:  "Volkwagen",  model:  "Golf" , old:15, price:235000, city:"Mersin"};
+  var view  = " ";
+  var x;
+  for (x in car){
+    view += car[x] +  " ";
+  }
+  document.write(view + "<br>");
+};
+
 
 return{
   MGoster:MesajGoster,
@@ -115,6 +127,7 @@ return{
   WhileDongusuOrnegi:WhileDongusuOrnegi,
   IcIceWhileDongusuOrnegi:IcIceWhileDongusuOrnegi,
   IcIceForDongusuOrnegi:IcIceForDongusuOrnegi,
+  ForInDongusuOrnegi:ForInDongusuOrnegi,
 
 }
 })();
