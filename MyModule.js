@@ -124,7 +124,12 @@ var ForOfDongusuOrnegi = function(){
   }
 
 };
-
+var LenghtMetoduOrnegi = function(){
+var text = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili JavaScript'tir.";
+document.write(text + "<br />");
+var process = text.lenght;
+document.write("Karakter Sayısı: " + process);
+};
 
 return{
   MGoster:MesajGoster,
@@ -141,6 +146,7 @@ return{
   IcIceForDongusuOrnegi:IcIceForDongusuOrnegi,
   ForInDongusuOrnegi:ForInDongusuOrnegi,
   ForOfDongusuOrnegi:ForOfDongusuOrnegi,
+  LenghtMetoduOrnegi:LenghtMetoduOrnegi,
 
 }
 })();
