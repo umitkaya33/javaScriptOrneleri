@@ -106,8 +106,7 @@ var x;
 for (x in car){
   view += car[x] +  " ";
 }
-document.write(view);
-document.write(space);
+document.write(view + "<br>");
 document.write(space);
 
 // For Of Döngüsü
