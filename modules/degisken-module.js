@@ -47,3 +47,13 @@ document.write("Kendisine verilecek olan parametreler ile tanımlanmış değiş
         var process =  text.substr(-25,25);
         document.write(process);
 document.write(space);
+
+document.write("<b>Concat Metodu: </b>");
+document.write("Üzerinde çalışılan değişkene parametrik olarak verilen değişken veya değişkenlere dahil ederek yeni bir içerik oluşturur. <br />");
+        var username    = "Ümit ";
+        var surname     = "Kaya ";
+        var city        = "Mersin "
+        var country     = "Turkey"
+        var write       = username.concat(surname,city,country);
+        document.write(write+"<br/>");
+document.write(space);
