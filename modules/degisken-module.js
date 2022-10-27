@@ -57,3 +57,10 @@ document.write("Üzerinde çalışılan değişkene parametrik olarak verilen de
         var write       = username.concat(surname,city,country);
         document.write(write+"<br/>");
 document.write(space);
+
+document.write("<b>Repeat Metodu: </b>");
+document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini tekrar edip kopyalayarak yeni bir içerik oluşturur. <br />");
+        var text ="JavaScript ";
+        var process =text.repeat(25);
+        document.write(process);
+document.write(space);
