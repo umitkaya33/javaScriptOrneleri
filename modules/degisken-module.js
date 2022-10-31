@@ -72,6 +72,34 @@ var toStringFunctionSimple = function() {
   document.write(" Veri Türü:"+typeof(value)+"<br>");
   document.write(typeof(result)+" (düz metin) olarak değiştirildi.");
 };
+var stringFunctionSimple = function() {
+  document.write("<b>String Metodu: </b>");
+  document.write("Değişken içeriğini mutlak olarak string veri türünde düz bir metne dönüştürür. <br />");
+  var one   = Boolean(0);
+  var two   = Boolean(1);
+  var three =74;
+  var four  =3.14;
+  var five;
+  var six   =new Date();
+  document.write(typeof one + ":" + one   +"<br>");
+  document.write(typeof two + ":" + two   +"<br>");
+  document.write(typeof three + ":" + three +"<br>");
+  document.write(typeof four + ":" + four  +"<br>");
+  document.write(typeof five + ":" + five  +"<br>");
+  document.write(typeof six  + ":" + six   +"<br><br>");
+  var newone   =String(one);
+  var newtwo   =String(two);
+  var newthree =String(three);
+  var newfour  =String(four);
+  var newfive  =String(five);
+  var newsix   =String(six);
+  document.write(typeof newone + ":" + newone   +"<br>");
+  document.write(typeof newtwo + ":" + newtwo   +"<br>");
+  document.write(typeof newthree + ":" + newthree +"<br>");
+  document.write(typeof newfour + ":" + newfour  +"<br>");
+  document.write(typeof newfive + ":" + newfive  +"<br>");
+  document.write(typeof newsix  + ":" + newsix );
+};
 
 export{
   lenghtFunctionSimple,
@@ -82,5 +110,6 @@ export{
   subStrFunctionSimple,
   concatFunctionSimple,
   repeatFunctionSimple,
-  toStringFunctionSimple,  
+  toStringFunctionSimple,
+  stringFunctionSimple,    
   };
