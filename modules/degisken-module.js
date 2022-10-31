@@ -100,7 +100,30 @@ var stringFunctionSimple = function() {
   document.write(typeof newfive + ":" + newfive  +"<br>");
   document.write(typeof newsix  + ":" + newsix );
 };
-
+var numberFunctionSimple = function() {
+document.write("<b>Number Metodu: </b>");
+document.write("Değişken içeriğini mutlak olarak number veri türüne dönüştürür.<br />");
+var one1   = true;
+var two2   = false;
+var three3 ="7";
+var four4  ="3.14";
+var five5  =new Date();
+document.write(typeof (one1) + ":" + one   +"<br>");
+document.write(typeof (two2) + ":" + two   +"<br>");
+document.write(typeof (three3) + ":" + three +"<br>");
+document.write(typeof (four4) + ":" + four  +"<br>");
+document.write(typeof (five5) + ":" + five  +"<br><br>");
+var valueone   =  Number(one1);
+var valuetwo   =  Number(two2);
+var valuethree =  Number(three3);
+var valuefour  =  Number(four4);
+var valuefive  =  Number(five5);
+document.write(typeof valueone + ":" + valueone   +"<br>");
+document.write(typeof valuetwo + ":" + valuetwo   +"<br>");
+document.write(typeof valuethree + ":" + valuethree +"<br>");
+document.write(typeof valuefour + ":" + valuefour  +"<br>");
+document.write(typeof valuefive + ":" + valuefive);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -111,5 +134,6 @@ export{
   concatFunctionSimple,
   repeatFunctionSimple,
   toStringFunctionSimple,
-  stringFunctionSimple,    
+  stringFunctionSimple,
+  numberFunctionSimple,
   };
