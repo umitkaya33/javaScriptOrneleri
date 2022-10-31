@@ -63,6 +63,16 @@ var repeatFunctionSimple = function() {
   var process =text.repeat(25);
   document.write(process);
 };
+var toStringFunctionSimple = function() {
+  document.write("<b>toString Metodu: </b>");
+  document.write("Değişken içeriğini string veri türünde düz bir metne dönüştürür. <br />");
+  var value =2332;
+  var result=value.toString();
+  document.write(value);
+  document.write(" Veri Türü:"+typeof(value)+"<br>");
+  document.write(typeof(result)+" (düz metin) olarak değiştirildi.");
+};
+
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -72,4 +82,5 @@ export{
   subStrFunctionSimple,
   concatFunctionSimple,
   repeatFunctionSimple,
+  toStringFunctionSimple,  
   };
