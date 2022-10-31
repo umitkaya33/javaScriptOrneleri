@@ -15,6 +15,7 @@ var whileDongusuOrnegi = function(){
 
 var icIceWhileDongusuOrnegi = function(){
 
+  let space = "<br></br>";
   document.write("İç İçe while");
   document.write(space);
   var count1  = 1;

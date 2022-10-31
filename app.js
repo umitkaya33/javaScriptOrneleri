@@ -1,29 +1,17 @@
+import  * as  degiskenModule from "./modules/degisken-module.js";
 import  * as  dongulerModule from "./modules/donguler-module.js";
 
-const btnGoogle = document.getElementById('btnGoogle');
-const btnShowMessaj = document.getElementById('btnShowMessaj');
+const btnDongulerWhile = document.getElementById('btnDongulerWhile');
+const btnDegiskenLenght = document.getElementById('btnDegiskenLenght');
 
-let butonStatus= 0;
+ btnDongulerWhile.addEventListener('click',()=>{
+ dongulerModule.icIceWhileDongusuOrnegi();
+ });
 
-btnGoogle.addEventListener('click',()=>{
-  if ( butonStatus==0) {
-      btnGoogle.innerText='Yahoo';
-      butonStatus=1;
-  }else {
-      btnGoogle.innerText='Google';
-      butonStatus=0;
-  }
-})
+btnDegiskenLenght.addEventListener('click',()=>{
+degiskenModule.lenghtFunctionSimple();
+ });
 
-
-btnShowMessaj.addEventListener('click',()=>{
-  import("./modules/mesaj-module.js").then(module=>{
-    module.mesajGoster('Ümit Kaya');
-  })
-})
-
-console.log('sddsfsd');
-
-window.onload = function(){
-  alert('Ben Yüklendim');
-}
+//  window.onload = function(){
+//     dongulerModule.icIceWhileDongusuOrnegi();
+//  }
