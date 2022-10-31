@@ -124,6 +124,18 @@ document.write(typeof valuethree + ":" + valuethree +"<br>");
 document.write(typeof valuefour + ":" + valuefour  +"<br>");
 document.write(typeof valuefive + ":" + valuefive);
 };
+var valueOfFunctionSimple = function() {
+document.write("<b>ValueOf Metodu: </b>");
+document.write("Üzerinde çalışılan değişken değerinin tam anlamıyla aktarımını sağlar. <br />");
+var price1=5;
+var price2="5";
+document.write(typeof price1  + ":" +  price1  + "<br>");
+document.write(typeof price2  + ":" + price2 + "<br>" );
+var showresult1 = price1.valueOf();
+var showresult2 = price2.valueOf();
+document.write(typeof showresult1 + ":" +showresult1+ "<br>");
+document.write(typeof showresult2 + ":" +showresult2+ "<br>");
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -136,4 +148,5 @@ export{
   toStringFunctionSimple,
   stringFunctionSimple,
   numberFunctionSimple,
+  valueOfFunctionSimple,
   };
