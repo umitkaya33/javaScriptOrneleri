@@ -152,6 +152,14 @@ var lastIndexOfFunctionSimple = function() {
   var showtext =text.lastIndexOf("script");
   document.write(showtext);
 };
+var searchFunctionSimple = function() {
+  document.write("<b>search Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini arayarak ilk eşleşmeyi sağlayan değişken içeriğinin karakter sırasını ekrana yazdırır. <br />");
+  var text = "Javascript dünya üzerinde kullanılan en yaygın script dilidir."
+  document.write(text+"<br>");
+  var showtext =text.search("script");
+  document.write(showtext);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -166,5 +174,6 @@ export{
   numberFunctionSimple,
   valueOfFunctionSimple,
   indexOfFunctionSimple,
-  lastIndexOfFunctionSimple
+  lastIndexOfFunctionSimple,
+  searchFunctionSimple
   };
