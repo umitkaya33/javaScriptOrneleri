@@ -200,6 +200,14 @@ var replaceFunctionSimple = function() {
   var process=text.replace(/javAsCripT/gi,"PHP"); // "/gi hatalı yazımı (tüm içerik) (büyük küçük harf) düzenli ifade haline getirir..
   document.write(process);
 };
+var splitFunctionSimple = function() {
+  document.write("<b>split Metodu: </b>");
+  document.write("Kendisine parametre olarak tanımlanmış değer doğrultusunda değişken içeriğini bölümleyerek yeni bir dizi oluşturur . <br />");
+  var text ="Ümit Kaya Javascript Eğitim Seti";
+  document.write("<b>"+typeof text+"</b>"+":"+text+"<br>")
+  var process=text.split(" ");
+  document.write("<b>"+typeof process+"</b>"+":"+process);
+};
 
 
 export{
@@ -222,5 +230,6 @@ export{
   startsWithFunctionSimple,
   endsWithFunctionSimple,
   matchFunctionSimple,
-  replaceFunctionSimple
+  replaceFunctionSimple,
+  splitFunctionSimple
   };
