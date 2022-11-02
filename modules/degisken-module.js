@@ -168,6 +168,15 @@ var includesFunctionSimple = function() {
   var process=text.includes("php");
   document.write(process);
 };
+var startsWithFunctionSimple = function() {
+  document.write("<b>startsWith Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değerler doğrultusunda değişken içeriğini kontrol ederek Boolean veri türünde sonucu ekrana yazdırır. <br />");
+  var text ="Javascript Eğitim Seti";
+  document.write(text+"<br>")
+  var process=text.startsWith("Javasc");
+  document.write(process);
+};
+
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -184,5 +193,6 @@ export{
   indexOfFunctionSimple,
   lastIndexOfFunctionSimple,
   searchFunctionSimple,
-  includesFunctionSimple
+  includesFunctionSimple,
+  startsWithFunctionSimple
   };
