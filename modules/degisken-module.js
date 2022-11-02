@@ -192,6 +192,14 @@ var matchFunctionSimple = function() {
   var process=text.match(/üMiT kaYA/i); // "/i hatalı yazımı (büyük küçük harf) düzenli ifade haline getirir..
   document.write(process);
 };
+var replaceFunctionSimple = function() {
+  document.write("<b>replace Metodu: </b>");
+  document.write("Kendisine verilecek olan parametreler doğrultusunda değişken içeriğini kontrol eder ve eşleşen değerlerin değişimini sağlayarak yeni bir içerik oluşuturur ve ekrana yazdırır. <br /><br />");
+  var text ="JavaScript (genellikle JS olarak kısaltılır), HTML ve CSS ile birlikte World Wide Web'in temel teknolojilerinden biri olan programlama dilidir . Web sitelerinin %97'sinden fazlası, web sayfası hareketleri için istemci tarafında JavaScript kullanırlar ve kullanılan kodlar genellikle üçüncü taraf kitaplıkları içerir. Tüm büyük web tarayıcılarında, kaynak kodunu kullanıcıların cihazlarında yürütebilmek için özel bir JavaScript motoru bulunur.";
+  document.write(text+"<br><br>")
+  var process=text.replace(/javAsCripT/gi,"PHP"); // "/gi hatalı yazımı (tüm içerik) (büyük küçük harf) düzenli ifade haline getirir..
+  document.write(process);
+};
 
 
 export{
@@ -213,5 +221,6 @@ export{
   includesFunctionSimple,
   startsWithFunctionSimple,
   endsWithFunctionSimple,
-  matchFunctionSimple
+  matchFunctionSimple,
+  replaceFunctionSimple
   };
