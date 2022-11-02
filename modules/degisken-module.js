@@ -176,6 +176,15 @@ var startsWithFunctionSimple = function() {
   var process=text.startsWith("Javasc");
   document.write(process);
 };
+var endsWithFunctionSimple = function() {
+  document.write("<b>endsWith Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değerler doğrultusunda değişken içeriğini bitiş değerini kontrol ederek Boolean veri türünde sonucu ekrana yazdırır.. <br />");
+  var text ="Javascript Eğitim Seti";
+  document.write(text+"<br>")
+  var process=text.endsWith("Seti");
+  document.write(process);
+};
+
 
 export{
   lenghtFunctionSimple,
@@ -194,5 +203,6 @@ export{
   lastIndexOfFunctionSimple,
   searchFunctionSimple,
   includesFunctionSimple,
-  startsWithFunctionSimple
+  startsWithFunctionSimple,
+  endsWithFunctionSimple
   };
