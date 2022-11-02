@@ -184,6 +184,14 @@ var endsWithFunctionSimple = function() {
   var process=text.endsWith("Seti");
   document.write(process);
 };
+var matchFunctionSimple = function() {
+  document.write("<b>match Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini kontrol eder ve eşleşen değer varsa içeriğin eşleşen kısmından yeni bir içerik oluşturur ve ekrana yazdırır. <br />");
+  var text =" Ümit Kaya Javascript Eğitim Seti";
+  document.write(text+"<br>")
+  var process=text.match(/üMiT kaYA/i); // "/i hatalı yazımı (büyük küçük harf) düzenli ifade haline getirir..
+  document.write(process);
+};
 
 
 export{
@@ -204,5 +212,6 @@ export{
   searchFunctionSimple,
   includesFunctionSimple,
   startsWithFunctionSimple,
-  endsWithFunctionSimple
+  endsWithFunctionSimple,
+  matchFunctionSimple
   };
