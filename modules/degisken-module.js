@@ -160,6 +160,14 @@ var searchFunctionSimple = function() {
   var showtext =text.search("script");
   document.write(showtext);
 };
+var includesFunctionSimple = function() {
+  document.write("<b>includes Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini kontrol ederek Boolean veri türünde sonucu ekrana yazdırır. <br />");
+  var text ="Javascript Eğitim Seti";
+  document.write(text+"<br>")
+  var process=text.includes("php");
+  document.write(process);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -175,5 +183,6 @@ export{
   valueOfFunctionSimple,
   indexOfFunctionSimple,
   lastIndexOfFunctionSimple,
-  searchFunctionSimple
+  searchFunctionSimple,
+  includesFunctionSimple
   };
