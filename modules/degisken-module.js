@@ -208,6 +208,20 @@ var splitFunctionSimple = function() {
   var process=text.split(" ");
   document.write("<b>"+typeof process+"</b>"+":"+process);
 };
+var localeCompareFunctionSimple = function() {
+  document.write("<b>localeCompare Metodu: </b>");
+  document.write("Üzerinde çalışılan değişkene parametrik olarak verilen diğer bir değişken içeriğinin diline göre karşılaştırarak ekrana yazdırır.(Unicode(evrensel kod)) <br />");
+  // -1: Birinci değişken içeriği, ikinci değişken içeriğinden önce geliyorsa
+  // 0: Birinci değişken içeriği, ikinci değişken içeriğine eşitse
+  // 1: Birinci değişken içeriği, ikinci değişken içeriğinden sonra geliyorsa
+  var contents1="Ümit Kaya JavaScript Eğitim Seti";
+  var contents2="Ümit Kaya Php Eğitim Seti";
+  document.write(contents1+"<br>");
+  document.write(contents2+"<br>");
+  var process=contents1.localeCompare(contents2);
+  document.write(process);
+};
+
 
 
 export{
@@ -231,5 +245,6 @@ export{
   endsWithFunctionSimple,
   matchFunctionSimple,
   replaceFunctionSimple,
-  splitFunctionSimple
+  splitFunctionSimple,
+  localeCompareFunctionSimple
   };
