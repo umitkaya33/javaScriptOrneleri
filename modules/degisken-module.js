@@ -263,6 +263,13 @@ var decodeURIFunctionSimple = function() {
   var result  = decodeURI(name);
   document.write(name+": "+result);
 };
+var encodeURIComponentFunctionSimple = function() {
+  document.write("<b>encodeURIComponent() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin özel karakterlerinin UTF-8 kodlamasına dönüştürerek oluşturduğu değeri ekrana yazdırır. <br />");
+  var name  ="ÜMİT";
+  var result  =encodeURIComponent(name);
+  document.write(name+": "+result);
+};
 
 
 export{
@@ -292,5 +299,6 @@ export{
   charCodeAtFunctionSimple,
   fromCharCodeFunctionSimple,
   encodeURIFunctionSimple,
-  decodeURIFunctionSimple
+  decodeURIFunctionSimple,
+  encodeURIComponentFunctionSimple
   };
