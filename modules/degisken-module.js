@@ -243,6 +243,12 @@ var charCodeAtFunctionSimple = function() {
   document.write(text+":"+process1+" "+process2+" "+process3+" "+process4+" ");
   document.write(space);
 };
+var fromCharCodeFunctionSimple = function() {
+  document.write("<b>fromCharCode Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen UniCode değerini karakter olarak ekrana yazdırır. <br />");
+  var contents  = String.fromCharCode(220, 109, 105, 116);
+  document.write(contents);
+};
 
 
 export{
@@ -269,5 +275,6 @@ export{
   splitFunctionSimple,
   localeCompareFunctionSimple,
   charAtFunctionSimple,
-  charCodeAtFunctionSimple
+  charCodeAtFunctionSimple,
+  fromCharCodeFunctionSimple
   };
