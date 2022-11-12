@@ -249,6 +249,13 @@ var fromCharCodeFunctionSimple = function() {
   var contents  = String.fromCharCode(220, 109, 105, 116);
   document.write(contents);
 };
+var encodeURIFunctionSimple = function() {
+  document.write("<b>encodeURI() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin özel karakterlerini UTF-8 kodlamasına dönüştürerek ekrana yazdırır. <br />");
+  var name = "ÜMİT KAYA";
+  var result =encodeURI(name)
+  document.write(name+": "+result);
+};
 
 
 export{
@@ -276,5 +283,6 @@ export{
   localeCompareFunctionSimple,
   charAtFunctionSimple,
   charCodeAtFunctionSimple,
-  fromCharCodeFunctionSimple
+  fromCharCodeFunctionSimple,
+  encodeURIFunctionSimple
   };
