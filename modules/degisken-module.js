@@ -222,16 +222,28 @@ var localeCompareFunctionSimple = function() {
   document.write(process);
 };
 var charAtFunctionSimple = function() {
-document.write("<b>charAt Metodu: </b>");
-document.write("Kendisine parametre olarak  verilen değer doğrultusunda değişken içeriğindeki karşılığı olan karakteri bularak ekrana yazdırır. <br />");
-var contents="Ümit Kaya";
-document.write(contents+"<br>");
-var c1=contents.charAt(5);
-var c2=contents.charAt(6);
-var c3=contents.charAt(7);
-var c4=contents.charAt(8);
-document.write(c1+c2+c3+c4);
+  document.write("<b>charCodeAt Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğindeki karşılığı olan karakteri bularak karakterin UniCode değerini ekrana yazdırır. <br />");
+  var text  ="Ümit";
+  var process1=text.charCodeAt(0);
+  var process2=text.charCodeAt(1);
+  var process3=text.charCodeAt(2);
+  var process4=text.charCodeAt(3);
+  document.write(text+":"+process1+" "+process2+" "+process3+" "+process4+" ");
+  document.write(space);
 };
+var charCodeAtFunctionSimple = function() {
+  document.write("<b>charCodeAt Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğindeki karşılığı olan karakteri bularak karakterin UniCode değerini ekrana yazdırır. <br />");
+  var text  ="Ümit";
+  var process1=text.charCodeAt(0);
+  var process2=text.charCodeAt(1);
+  var process3=text.charCodeAt(2);
+  var process4=text.charCodeAt(3);
+  document.write(text+":"+process1+" "+process2+" "+process3+" "+process4+" ");
+  document.write(space);
+};
+
 
 export{
   lenghtFunctionSimple,
@@ -256,5 +268,6 @@ export{
   replaceFunctionSimple,
   splitFunctionSimple,
   localeCompareFunctionSimple,
-  charAtFunctionSimple
+  charAtFunctionSimple,
+  charCodeAtFunctionSimple
   };
