@@ -256,6 +256,13 @@ var encodeURIFunctionSimple = function() {
   var result =encodeURI(name)
   document.write(name+": "+result);
 };
+var decodeURIFunctionSimple = function() {
+  document.write("<b>decodeURI() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin özel karakterlerinin UTF-8 kodlamasına dönüştürülmüş karakterlerini çözümleyerek ekrana yazdırır. <br />");
+  var name ="%C3%9CM%C4%B0T%20KAYA"
+  var result  = decodeURI(name);
+  document.write(name+": "+result);
+};
 
 
 export{
@@ -284,5 +291,6 @@ export{
   charAtFunctionSimple,
   charCodeAtFunctionSimple,
   fromCharCodeFunctionSimple,
-  encodeURIFunctionSimple
+  encodeURIFunctionSimple,
+  decodeURIFunctionSimple
   };
