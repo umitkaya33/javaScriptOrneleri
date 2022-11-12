@@ -221,8 +221,17 @@ var localeCompareFunctionSimple = function() {
   var process=contents1.localeCompare(contents2);
   document.write(process);
 };
-
-
+var charAtFunctionSimple = function() {
+document.write("<b>charAt Metodu: </b>");
+document.write("Kendisine parametre olarak  verilen değer doğrultusunda değişken içeriğindeki karşılığı olan karakteri bularak ekrana yazdırır. <br />");
+var contents="Ümit Kaya";
+document.write(contents+"<br>");
+var c1=contents.charAt(5);
+var c2=contents.charAt(6);
+var c3=contents.charAt(7);
+var c4=contents.charAt(8);
+document.write(c1+c2+c3+c4);
+};
 
 export{
   lenghtFunctionSimple,
@@ -246,5 +255,6 @@ export{
   matchFunctionSimple,
   replaceFunctionSimple,
   splitFunctionSimple,
-  localeCompareFunctionSimple
+  localeCompareFunctionSimple,
+  charAtFunctionSimple
   };
