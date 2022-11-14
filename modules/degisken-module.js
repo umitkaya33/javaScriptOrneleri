@@ -378,6 +378,13 @@ var fixedFunctionSimple = function() {
   var fixedtextvalue  =fixedtext.fixed();
   document.write(fixedtext+" "+fixedtextvalue);
 };
+var fontcolorFunctionSimple = function() {
+  document.write("<b>fontcolor() Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini renklendirerek ekrana yazdırır. <br />");
+  var colortext   ="Javascript Eğitim Seti";
+  var colortextvalue  =colortext.fontcolor("red");
+  document.write(colortext+""+colortextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -421,5 +428,6 @@ export{
   boldFunctionSimple,
   italicsFunctionSimple,
   strikeFunctionSimple,
-  fixedFunctionSimple
+  fixedFunctionSimple,
+  fontcolorFunctionSimple
   };
