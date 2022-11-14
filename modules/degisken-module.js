@@ -312,6 +312,13 @@ var toLocaleUpperCaseFunctionSimple = function() {
   var result=name.toLocaleUpperCase();
   document.write(name+": "+result);
   };
+  var toLocaleLowerCaseFunctionSimple = function() {
+    document.write("<b>toLocaleLowerCase() Metodu: </b>");
+    document.write("Değişken içerisindeki metnin tamamını tarayıcı lokasyonuna göre küçük harfe dönüştürerek ekrana yazdırır. <br />");
+    var name="ÜMIT KAYA";
+    var result=name.toLocaleLowerCase();
+    document.write(name+": "+result);
+    };
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -346,5 +353,6 @@ export{
   unescapeFunctionSimple,
   toUpperCaseFunctionSimple,
   toLowerCaseFunctionSimple,
-  toLocaleUpperCaseFunctionSimple
+  toLocaleUpperCaseFunctionSimple,
+  toLocaleLowerCaseFunctionSimple
   };
