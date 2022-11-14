@@ -343,6 +343,13 @@ var bigFunctionSimple = function() {
   var bigtextvalue    =   bigtext.big();
   document.write(bigtext+" "+bigtextvalue);
 };
+var smallFunctionSimple = function() {
+  document.write("<b>small() Metodu: </b>");
+  document.write("Değişken içerisindeki metni küçük fontlu olarak ekrana yazdırır. <br />");
+  var smalltext       ="Javascript";
+  var smalltextvalue  =smalltext.small();
+  document.write(smalltext+" "+smalltextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -381,5 +388,6 @@ export{
   toLocaleLowerCaseFunctionSimple,
   subFunctionSimple,
   supFunctionSimple,
-  bigFunctionSimple
+  bigFunctionSimple,
+  smallFunctionSimple
   };
