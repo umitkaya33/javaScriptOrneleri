@@ -328,6 +328,14 @@ var toLocaleUpperCaseFunctionSimple = function() {
       var value3 ="O";
       document.write(value1+result+value3);
     };
+    var supFunctionSimple = function() {
+      document.write("<b>sup() Metodu: </b>");
+      document.write("Değişken içerisindeki metni üst simge yaparak ekrana yazdırır. <br />");
+      var text1   =   "cm";
+      var text2   =   "2";
+      var textsup =   text2.sup();
+      document.write(text1+textsup);
+    };
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -364,5 +372,6 @@ export{
   toLowerCaseFunctionSimple,
   toLocaleUpperCaseFunctionSimple,
   toLocaleLowerCaseFunctionSimple,
-  subFunctionSimple
+  subFunctionSimple,
+  supFunctionSimple
   };
