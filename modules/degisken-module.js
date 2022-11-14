@@ -319,6 +319,15 @@ var toLocaleUpperCaseFunctionSimple = function() {
     var result=name.toLocaleLowerCase();
     document.write(name+": "+result);
     };
+    var subFunctionSimple = function() {
+      document.write("<b>sub() Metodu: </b>");
+      document.write("Değişken içerisindeki metni alt simge yaparak ekrana yazdırır. <br />");
+      var value1 ="H";
+      var value2 ="2";
+      var result =value2.sub();
+      var value3 ="O";
+      document.write(value1+result+value3);
+    };
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -354,5 +363,6 @@ export{
   toUpperCaseFunctionSimple,
   toLowerCaseFunctionSimple,
   toLocaleUpperCaseFunctionSimple,
-  toLocaleLowerCaseFunctionSimple
+  toLocaleLowerCaseFunctionSimple,
+  subFunctionSimple
   };
