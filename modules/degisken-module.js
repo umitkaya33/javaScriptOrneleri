@@ -364,6 +364,13 @@ var italicsFunctionSimple = function() {
   var italicstextvalue    =italicstext.italics();
   document.write(italicstext+" "+italicstextvalue);
 };
+var strikeFunctionSimple = function() {
+  document.write("<b>strike() Metodu: </b>");
+  document.write("Değişken içerisindeki metni üzeri çizgili olarak ekrana yazdırır. <br />");
+  var striketext  ="Javascript Eğitim Seti";
+  var striketextvalue =striketext.strike();
+  document.write(striketext+" "+striketextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -405,5 +412,6 @@ export{
   bigFunctionSimple,
   smallFunctionSimple,
   boldFunctionSimple,
-  italicsFunctionSimple
+  italicsFunctionSimple,
+  strikeFunctionSimple
   };
