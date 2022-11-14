@@ -385,6 +385,13 @@ var fontcolorFunctionSimple = function() {
   var colortextvalue  =colortext.fontcolor("red");
   document.write(colortext+""+colortextvalue);
 };
+var fontsizeFunctionSimple = function() {
+  document.write("<b>fontsize() Metodu: </b>");
+  document.write("Kendisine parametre olarak verilen değer doğrultusunda değşken içerisindeki metni font boyutunu değiştirerek ekrana yazdırır. <br />");
+  var fontsizetext        =  "Javascript";
+  var fontsizetextvalue   =   fontsizetext.fontsize(7);
+  document.write(fontsizetext+" "+fontsizetextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -429,5 +436,6 @@ export{
   italicsFunctionSimple,
   strikeFunctionSimple,
   fixedFunctionSimple,
-  fontcolorFunctionSimple
+  fontcolorFunctionSimple,
+  fontsizeFunctionSimple
   };
