@@ -357,6 +357,13 @@ var boldFunctionSimple = function() {
   var boldtextvalue   =boldtext.bold();
   document.write(boldtext+" "+boldtextvalue);
 };
+var italicsFunctionSimple = function() {
+  document.write("<b>italics() Metodu: </b>");
+  document.write("Değişken içersindeki metni eğik font olarak ekrana yazdırır. <br />");
+  var italicstext  ="Javascript";
+  var italicstextvalue    =italicstext.italics();
+  document.write(italicstext+" "+italicstextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -397,5 +404,6 @@ export{
   supFunctionSimple,
   bigFunctionSimple,
   smallFunctionSimple,
-  boldFunctionSimple
+  boldFunctionSimple,
+  italicsFunctionSimple
   };
