@@ -350,6 +350,13 @@ var smallFunctionSimple = function() {
   var smalltextvalue  =smalltext.small();
   document.write(smalltext+" "+smalltextvalue);
 };
+var boldFunctionSimple = function() {
+  document.write("<b>bold() Metodu: </b>");
+  document.write("Değişken içerisindeki metni kalın font olarak ekrana yazdırır. <br />");
+  var boldtext        ="JavaScript Eğitim Seti";
+  var boldtextvalue   =boldtext.bold();
+  document.write(boldtext+" "+boldtextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -389,5 +396,6 @@ export{
   subFunctionSimple,
   supFunctionSimple,
   bigFunctionSimple,
-  smallFunctionSimple
+  smallFunctionSimple,
+  boldFunctionSimple
   };
