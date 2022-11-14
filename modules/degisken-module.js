@@ -392,6 +392,13 @@ var fontsizeFunctionSimple = function() {
   var fontsizetextvalue   =   fontsizetext.fontsize(7);
   document.write(fontsizetext+" "+fontsizetextvalue);
 };
+var anchorFunctionSimple = function() {
+  document.write("<b>anchor() Metodu: </b>");
+  document.write("Değişkene çapa tanımlaması yapar. Aynı zamanda çapaya name değeri atar. <br />");
+  var anchortext      =   "JavaScript";
+  var anchortextvalue =   anchortext.anchor("Eğitim Seti");
+  alert(anchortextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -437,5 +444,6 @@ export{
   strikeFunctionSimple,
   fixedFunctionSimple,
   fontcolorFunctionSimple,
-  fontsizeFunctionSimple
+  fontsizeFunctionSimple,
+  anchorFunctionSimple
   };
