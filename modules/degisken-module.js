@@ -291,6 +291,13 @@ var unescapeFunctionSimple = function() {
   var result=unescape(name);
   document.write(name+": "+result);
 };
+var toUpperCaseFunctionSimple = function() {
+  document.write("<b>toUpperCase() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin tamamını büyük harfe dönüştürerek ekrana yazdırır. <br />");
+  var name="ümit kaya javascript eğitim seti";
+  var result=name.toUpperCase();
+  document.write(name+": "+result);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -322,5 +329,6 @@ export{
   encodeURIComponentFunctionSimple,
   decodeURIComponentFunctionSimple,
   escapeFunctionSimple,
-  unescapeFunctionSimple
+  unescapeFunctionSimple,
+  toUpperCaseFunctionSimple
   };
