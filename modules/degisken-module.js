@@ -399,6 +399,13 @@ var anchorFunctionSimple = function() {
   var anchortextvalue =   anchortext.anchor("Eğitim Seti");
   alert(anchortextvalue);
 };
+var linkFunctionSimple = function() {
+  document.write("<b>link() Metodu: </b>");
+  document.write("Değişkene çapa tanımlaması yapar aynı zamanda çapaya köprü değeri ataması yapar. <br />");
+  var linktext        =   "Google";
+  var linktextvalue   =   linktext.link("http://google.com");
+  document.write(linktextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -445,5 +452,6 @@ export{
   fixedFunctionSimple,
   fontcolorFunctionSimple,
   fontsizeFunctionSimple,
-  anchorFunctionSimple
+  anchorFunctionSimple,
+  linkFunctionSimple
   };
