@@ -371,6 +371,13 @@ var strikeFunctionSimple = function() {
   var striketextvalue =striketext.strike();
   document.write(striketext+" "+striketextvalue);
 };
+var fixedFunctionSimple = function() {
+  document.write("<b>fixed() Metodu: </b>");
+  document.write("Değişken içerisindeki metni teletype font yaparak ekrana yazdırır. <br />");
+  var fixedtext       ="Javascript Eğitim Seti";
+  var fixedtextvalue  =fixedtext.fixed();
+  document.write(fixedtext+" "+fixedtextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -413,5 +420,6 @@ export{
   smallFunctionSimple,
   boldFunctionSimple,
   italicsFunctionSimple,
-  strikeFunctionSimple
+  strikeFunctionSimple,
+  fixedFunctionSimple
   };
