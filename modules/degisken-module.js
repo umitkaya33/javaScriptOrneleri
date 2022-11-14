@@ -277,9 +277,13 @@ var decodeURIComponentFunctionSimple = function() {
   var result  =decodeURIComponent(name);
   document.write(name+": "+result);
 };
-
-
-
+var escapeFunctionSimple = function() {
+  document.write("<b>escape() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin  özel karakterlerini UNICODE kodlamasına dönüştürerek oluşturduğu değeri ekrana yazdırır. <br />");
+  var name="ÜMİT";
+  var result=escape(name);
+  document.write(name+": "+result);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -309,5 +313,6 @@ export{
   encodeURIFunctionSimple,
   decodeURIFunctionSimple,
   encodeURIComponentFunctionSimple,
-  decodeURIComponentFunctionSimple
+  decodeURIComponentFunctionSimple,
+  escapeFunctionSimple
   };
