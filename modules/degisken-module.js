@@ -284,6 +284,13 @@ var escapeFunctionSimple = function() {
   var result=escape(name);
   document.write(name+": "+result);
 };
+var unescapeFunctionSimple = function() {
+  document.write("<b>unescape() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin özel karakterlerinin UNICODE kodlamasına dönüştürülmüş karakterlerini çözümleyerek ekrana yazdırır. <br />");
+  var name="%DCM%u0130T";
+  var result=unescape(name);
+  document.write(name+": "+result);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -314,5 +321,6 @@ export{
   decodeURIFunctionSimple,
   encodeURIComponentFunctionSimple,
   decodeURIComponentFunctionSimple,
-  escapeFunctionSimple
+  escapeFunctionSimple,
+  unescapeFunctionSimple
   };
