@@ -1,10 +1,10 @@
 var lenghtFunctionSimple = function() {
-document.write("<b>Lengt Modulü: </b>");
-document.write("Degisken içeriğinin karakter sayısını gösterir. <br />");
-var text = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili JavaScript'tir.";
-document.write(text + "<br />");
-var process = text.lenght;
-document.write("Karakter Sayısı: " + process);
+  document.write("<b>Length Modulü: </b>");
+  document.write("Degisken içeriğinin karakter sayısını gösterir. <br />");
+  var text = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili JavaScript'tir.";
+  document.write(text + "<br />");
+  var process = text.length;
+  document.write("Karakter Sayısı: " + process);
 };
 var evalFunctionSimple = function() {
   document.write("<b>Eval Modulü: </b>");
@@ -299,11 +299,11 @@ var toUpperCaseFunctionSimple = function() {
   document.write(name+": "+result);
 };
 var toLowerCaseFunctionSimple = function() {
-document.write("<b>toLowerCase() Metodu: </b>");
-document.write("Değişken içerisindeki metnin tamamını küçük harfe dönüştürerek ekrana yazdırır. <br />");
-var name="ÜMIT KAYA";
-var result=name.toLowerCase();
-document.write(name+": "+result);
+  document.write("<b>toLowerCase() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin tamamını küçük harfe dönüştürerek ekrana yazdırır. <br />");
+  var name="ÜMIT KAYA";
+  var result=name.toLowerCase();
+  document.write(name+": "+result);
 };
 var toLocaleUpperCaseFunctionSimple = function() {
   document.write("<b>toLocaleUpperCase() Metodu: </b>");
@@ -311,31 +311,38 @@ var toLocaleUpperCaseFunctionSimple = function() {
   var name="ümit kaya javascript eğitim seti";
   var result=name.toLocaleUpperCase();
   document.write(name+": "+result);
-  };
-  var toLocaleLowerCaseFunctionSimple = function() {
-    document.write("<b>toLocaleLowerCase() Metodu: </b>");
-    document.write("Değişken içerisindeki metnin tamamını tarayıcı lokasyonuna göre küçük harfe dönüştürerek ekrana yazdırır. <br />");
-    var name="ÜMIT KAYA";
-    var result=name.toLocaleLowerCase();
-    document.write(name+": "+result);
-    };
-    var subFunctionSimple = function() {
-      document.write("<b>sub() Metodu: </b>");
-      document.write("Değişken içerisindeki metni alt simge yaparak ekrana yazdırır. <br />");
-      var value1 ="H";
-      var value2 ="2";
-      var result =value2.sub();
-      var value3 ="O";
-      document.write(value1+result+value3);
-    };
-    var supFunctionSimple = function() {
-      document.write("<b>sup() Metodu: </b>");
-      document.write("Değişken içerisindeki metni üst simge yaparak ekrana yazdırır. <br />");
-      var text1   =   "cm";
-      var text2   =   "2";
-      var textsup =   text2.sup();
-      document.write(text1+textsup);
-    };
+};
+var toLocaleLowerCaseFunctionSimple = function() {
+  document.write("<b>toLocaleLowerCase() Metodu: </b>");
+  document.write("Değişken içerisindeki metnin tamamını tarayıcı lokasyonuna göre küçük harfe dönüştürerek ekrana yazdırır. <br />");
+  var name="ÜMIT KAYA";
+  var result=name.toLocaleLowerCase();
+  document.write(name+": "+result);
+};
+var subFunctionSimple = function() {
+  document.write("<b>sub() Metodu: </b>");
+  document.write("Değişken içerisindeki metni alt simge yaparak ekrana yazdırır. <br />");
+  var value1 ="H";
+  var value2 ="2";
+  var result =value2.sub();
+  var value3 ="O";
+  document.write(value1+result+value3);
+};
+var supFunctionSimple = function() {
+  document.write("<b>sup() Metodu: </b>");
+  document.write("Değişken içerisindeki metni üst simge yaparak ekrana yazdırır. <br />");
+  var text1   =   "cm";
+  var text2   =   "2";
+  var textsup =   text2.sup();
+  document.write(text1+textsup);
+};
+var bigFunctionSimple = function() {
+  document.write("<b>big() Metodu: </b>");
+  document.write("Değişken içerisindeki metni büyük fontlu olarak ekrana yazdırır. <br />");
+  var bigtext         =   "Javascript";
+  var bigtextvalue    =   bigtext.big();
+  document.write(bigtext+" "+bigtextvalue);
+};
 export{
   lenghtFunctionSimple,
   evalFunctionSimple,
@@ -373,5 +380,6 @@ export{
   toLocaleUpperCaseFunctionSimple,
   toLocaleLowerCaseFunctionSimple,
   subFunctionSimple,
-  supFunctionSimple
+  supFunctionSimple,
+  bigFunctionSimple
   };
