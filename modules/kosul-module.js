@@ -16,7 +16,26 @@ var ifFunctionSimple = function () {
     document.write("Hata");
   }
 };
-
+var switchCaseFunctionSimple = function () {
+  var text = "Ümit ";
+  var count = text.length;
+  switch (count) {
+    case 1:
+      document.write("Metnin karakter Sayisi:" + count);
+      break;
+    case 2:
+      document.write("Metnin karakter Sayisi:" + count);
+      break;
+    case 3:
+      document.write("Metnin karakter Sayisi:" + count);
+      break;
+    case 4:
+      document.write("Metnin karakter Sayisi:" + count);
+      break;
+    default:
+      document.write("Metnin karakter Sayisi 4'ten fazladır");
+  }
+};
 export {
-  ifFunctionSimple
+  ifFunctionSimple, switchCaseFunctionSimple
 };
