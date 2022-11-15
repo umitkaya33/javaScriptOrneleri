@@ -40,6 +40,20 @@ var ternaryFunctionSimple = function () {
   var control = (4 < 5) ? "Doğru" : "Yanlış";
   document.write(control);
 };
+var errorFunctionSimple = function () {
+  try {
+    var name = "Ümit";
+    document.write(name + "</br>")
+    document.write(surname);
+  }
+  catch(err){
+    document.write("Hata Oluştu <br>");
+    document.write(err);
+  }
+};
 export {
-  ifFunctionSimple, switchCaseFunctionSimple, ternaryFunctionSimple
+  ifFunctionSimple,
+  switchCaseFunctionSimple,
+  ternaryFunctionSimple,
+  errorFunctionSimple
 };
