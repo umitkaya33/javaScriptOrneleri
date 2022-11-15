@@ -31,6 +31,11 @@ var icIceWhileDongusuOrnegi = function () {
     count2 = 1;
   }
 };
+var forFunctionSimple = function () {
+  for (var number = 10; number >= 0; number--) {
+    document.write(number + "<br>");
+  }
+};
 
 var icIceForDongusuOrnegi = function () {
 
@@ -61,6 +66,7 @@ export {
   whileFunctionSimple,
   dowhileFunctionSimple,
   icIceWhileDongusuOrnegi,
+  forFunctionSimple,
   icIceForDongusuOrnegi,
   forInDongusuOrnegi
 };
