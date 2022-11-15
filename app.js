@@ -7,7 +7,7 @@ const btnDegiskenLenght = document.getElementById('btnDegiskenLenght');
 const btnKosulModuleIF= document.getElementById('btnKosulModuleIF');
 
  btnDongulerWhile.addEventListener('click',()=>{
-    dongulerModule.icIceWhileDongusuOrnegi();
+    dongulerModule.dowhileFunctionSimple();
  });
 
 btnDegiskenLenght.addEventListener('click',()=>{

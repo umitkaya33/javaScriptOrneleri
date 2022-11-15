@@ -46,7 +46,7 @@ var errorFunctionSimple = function () {
     document.write(name + "</br>")
     document.write(surname);
   }
-  catch(err){
+  catch (err) {
     document.write("Hata Oluştu <br>");
     document.write(err);
   }
