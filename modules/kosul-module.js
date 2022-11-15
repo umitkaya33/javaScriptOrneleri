@@ -36,6 +36,10 @@ var switchCaseFunctionSimple = function () {
       document.write("Metnin karakter Sayisi 4'ten fazladır");
   }
 };
+var ternaryFunctionSimple = function () {
+  var control = (4 < 5) ? "Doğru" : "Yanlış";
+  document.write(control);
+};
 export {
-  ifFunctionSimple, switchCaseFunctionSimple
+  ifFunctionSimple, switchCaseFunctionSimple, ternaryFunctionSimple
 };

@@ -16,7 +16,7 @@ btnDegiskenLenght.addEventListener('click',()=>{
 
  
  btnKosulModuleIF.addEventListener('click',()=>{
-    kosulModule.switchCaseFunctionSimple();
+    kosulModule.ternaryFunctionSimple();
 });
 
 //  window.onload = function(){
