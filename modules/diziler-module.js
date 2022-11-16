@@ -163,6 +163,17 @@ var findFunctionSimple = function () {
     var newpersons = persons.find(test);
     document.write("Aranan karakter:" + newpersons);
 };
+//! findIndex() Kendisine parametre olarak verilen fonksiyonu dizideki her elemana tek tek olmak üzerinde çalıştırır ve dizi içerisine parametrik olarak arar ilk eşleşmeyi sağlayan index değerini geriye döndürür..
+var findIndexFunctionSimple = function () {
+    function test(elemanlar, sira, referans) {
+        return elemanlar == "Ahmet";
+    }
+    var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif", "Orkun"];
+    var newpersons = persons.findIndex(test);
+    document.write(persons+"<br>")
+    document.write("Aranan karakter:" + newpersons+".numarada");
+};
+
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -186,5 +197,6 @@ export {
     valueOfFunctionSimple,
     indexOfFunctionSimple,
     lastIndexOfFunctionSimple,
-    findFunctionSimple
+    findFunctionSimple,
+    findIndexFunctionSimple
 }; 
