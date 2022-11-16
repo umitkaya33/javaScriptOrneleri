@@ -102,15 +102,22 @@ var sliceFunctionSimple = function () {
 var copyWithinFunctionSimple = function () {
     var fruits = ["Elma", "Armut", "Kiraz", "Gri", "Mavi", "Yeşil", "Karpuz", "Kavun", "Mandalina", "Portakal"];
     document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
-    fruits.copyWithin(4,2,5);
+    fruits.copyWithin(4, 2, 5);
     document.write("Son Hali:" + fruits + "<br>");
 };
 //! fill() dizinin elemanlarını değiştirir..
 var fillFunctionSimple = function () {
     var fruits = ["Elma", "Armut", "Kiraz", "Gri", "Mavi", "Yeşil", "Karpuz", "Kavun", "Mandalina", "Portakal"];
     document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
-    fruits.fill("<b>ümit</b>",4,7);
+    fruits.fill("<b>ümit</b>", 4, 7);
     document.write("Son Hali:" + fruits + "<br>");
+};
+//! concat() üzerinde çalışılan diziye parametrik olarak verilen elemanları dahil ederek yeni bir dizi oluşturur..
+var concatFunctionSimple = function () {
+    let mans = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
+    let womans = ["Ayse", "Fatma", "Hayriye", "Zeynep", "Sude"];
+    var persons = mans.concat(womans);
+    document.write(persons);
 };
 
 
@@ -130,5 +137,6 @@ export {
     spliceFunctionSimple,
     sliceFunctionSimple,
     copyWithinFunctionSimple,
-    fillFunctionSimple
+    fillFunctionSimple,
+    concatFunctionSimple
 }; 
