@@ -115,8 +115,8 @@ var fillFunctionSimple = function () {
 //! concat() üzerinde çalışılan diziye parametrik olarak verilen elemanları dahil ederek yeni bir dizi oluşturur..
 var concatFunctionSimple = function () {
     let mans = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
-    let womans = ["Ayse", "Fatma", "Hayriye", "Zeynep", "Sude"];
-    var persons = mans.concat(womans);
+    let womans = ["Ayse", "Fatma", "Hayriye", "Zeynep", "Göknur"];
+    var persons = mans[1].concat("♥"+womans[4]);
     document.write(persons);
 };
 
