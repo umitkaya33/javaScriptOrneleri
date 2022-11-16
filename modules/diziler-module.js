@@ -24,9 +24,17 @@ var arrayExample3 = function () {
     country = ["Mersin", "Gaziantep", "Antalya"];
     document.write(olds[2] + " " + persons[2] + " " + country[0]);
 };
+var forFunctionSimple = function () {
+    var textexample="Javascript Eğitim Seti";
+    var print;
+    for (print in textexample){
+        document.write(textexample[print]+" ");
+    }
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
     arrayExample2,
-    arrayExample3
+    arrayExample3,
+    forFunctionSimple
 }; 
