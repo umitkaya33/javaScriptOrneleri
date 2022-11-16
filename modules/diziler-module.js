@@ -46,12 +46,14 @@ var lengthFunctionSimple = function () {
     var process = persons.length;
     document.write("Dizinin karanker sayısı:" + process);
 };
+//! "delete değişkenadı[];" dizinin verilen parametre doğrultusunda elemanını siler..
 var deleteFunctionSimple = function () {
     var colors = ["Kırmızı", "Mavi", "Yeşil", ["Siyah", "Beyaz", "Lila"], "Turuncu", "Sarı"];
     document.write("Orjinali:" + colors + "<br>");
     delete colors[3][1];
     document.write("Sonrası:" + colors);
 };
+//! pop() dizinin son elemanını siler..
 var popFunctionSimple = function () {
     var persons = ["Ümit", "Göknur", "Orkun", "Yalçın"];
     document.write("Dizinin Orjinal Hali:" + persons + "<br>");
@@ -59,12 +61,20 @@ var popFunctionSimple = function () {
     document.write("Dizinin Silineni:" + process + "<br>");
     document.write("Dizinin Son Hali:" + persons + "<br>");
 };
+//! shift() dizinin ilk elemanını siler..
 var shiftFunctionSimple = function () {
     var persons = ["Ümit", "Göknur", "Orkun", "Yalçın"];
     document.write("Dizinin Orjinal Hali:" + persons + "<br>");
     var process = persons.shift();
     document.write("Dizinin Silineni:" + process + "<br>");
     document.write("Dizinin Son Hali:" + persons + "<br>");
+};
+//! push() diziye sonradan eleman ekler..
+var pushFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    var process = fruits.push("Karpuz", "Kavun", "Portakal");
+    document.write("Dizinin Son Hali:" + fruits + "<br>");
 };
 
 export {
@@ -77,5 +87,6 @@ export {
     lengthFunctionSimple,
     deleteFunctionSimple,
     popFunctionSimple,
-    shiftFunctionSimple
+    shiftFunctionSimple,
+    pushFunctionSimple
 }; 
