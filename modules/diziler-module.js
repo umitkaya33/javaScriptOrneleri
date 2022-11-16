@@ -119,7 +119,12 @@ var concatFunctionSimple = function () {
     var persons = mans[1].concat("♥"+womans[4]);
     document.write(persons);
 };
-
+//! join() Dizileri string veri türüne çevirir..
+var joinFunctionSimple = function () {
+    var colorsname = ["Siyah", "Kırmızı", "Mavi", "Yeşil", "Turuncu"];
+    var process = colorsname.join("---");
+    document.write(process);
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -138,5 +143,6 @@ export {
     sliceFunctionSimple,
     copyWithinFunctionSimple,
     fillFunctionSimple,
-    concatFunctionSimple
+    concatFunctionSimple,
+    joinFunctionSimple
 }; 
