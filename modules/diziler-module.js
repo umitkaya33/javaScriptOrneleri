@@ -183,7 +183,16 @@ var reduceFunctionSimple = function () {
     document.write(numbers+"<br>")
     document.write("Tüm sayıların toplamı:" + shownumbers);
 };
-
+//! reduceRight() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde sağdan sola tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
+var reduceRightFunctionSimple = function () {
+    function test(deger, eleman, sira,referans) {
+        return deger+eleman;
+    }
+    var texts = ["a","b","c","d","e","f"];
+    var showtexts = texts.reduceRight(test);
+    document.write(texts+"<br>")
+    document.write(showtexts);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -209,5 +218,6 @@ export {
     lastIndexOfFunctionSimple,
     findFunctionSimple,
     findIndexFunctionSimple,
-    reduceFunctionSimple
+    reduceFunctionSimple,
+    reduceRightFunctionSimple
 }; 
