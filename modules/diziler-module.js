@@ -17,9 +17,16 @@ var arrayExample2 = function () {
         olds = new Array(15, 25, 35, 20);
     document.write(persons[2] + " " + colors[3] + " " + olds[3]);
 };
-
+var arrayExample3 = function () {
+    var persons, olds, country;
+    persons = ["Orkun", "Göknur", "Ümit"];
+    olds = [30, 35, 25];
+    country = ["Mersin", "Gaziantep", "Antalya"];
+    document.write(olds[2] + " " + persons[2] + " " + country[0]);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
-    arrayExample2
+    arrayExample2,
+    arrayExample3
 }; 
