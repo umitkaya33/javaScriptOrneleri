@@ -98,6 +98,13 @@ var sliceFunctionSimple = function () {
     var process = fruits.slice(2, 5);
     document.write("Kopyalanan:" + process + "<br>");
 };
+//! copyWithin() dizileri kopyalarak dizinin elemanlarını değiştirir..
+var copyWithinFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz", "Gri", "Mavi", "Yeşil", "Karpuz", "Kavun", "Mandalina", "Portakal"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    fruits.copyWithin(4,2,5);
+    document.write("Son Hali:" + fruits + "<br>");
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -113,5 +120,6 @@ export {
     pushFunctionSimple,
     unshiftFunctionSimple,
     spliceFunctionSimple,
-    sliceFunctionSimple
+    sliceFunctionSimple,
+    copyWithinFunctionSimple
 }; 
