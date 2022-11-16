@@ -83,6 +83,14 @@ var unshiftFunctionSimple = function () {
     var process = fruits.unshift("Karpuz", "Kavun", "Portakal");
     document.write("Dizinin Son Hali:" + fruits + "<br>");
 };
+//! splice() diziye elemanlar  ekler veya siler..
+var spliceFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz","Karpuz", "Kavun", "Portakal","Mandalina","Portakal"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    var process = fruits.splice(2,3,"Gri","Mavi","Yeşil");
+    document.write("Silinenler:"+process+"<br>");
+    document.write("Dizinin Son Hali:" + fruits + "<br>");
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -96,5 +104,6 @@ export {
     popFunctionSimple,
     shiftFunctionSimple,
     pushFunctionSimple,
-    unshiftFunctionSimple
+    unshiftFunctionSimple,
+    spliceFunctionSimple
 }; 
