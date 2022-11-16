@@ -116,7 +116,7 @@ var fillFunctionSimple = function () {
 var concatFunctionSimple = function () {
     let mans = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
     let womans = ["Ayse", "Fatma", "Hayriye", "Zeynep", "Göknur"];
-    var persons = mans[1].concat("♥"+womans[4]);
+    var persons = mans[1].concat("♥" + womans[4]);
     document.write(persons);
 };
 //! join() Dizileri string veri türüne çevirir..
@@ -128,11 +128,19 @@ var joinFunctionSimple = function () {
 //! toString() Dizideki tüm elemanları içeren string türünde düz bir metin oluşturur..
 var toStringFunctionSimple = function () {
     var colorsname = ["Siyah", "Kırmızı", "Mavi", "Yeşil", "Turuncu"];
-    var control= typeof colorsname;
+    var control = typeof colorsname;
     var process = colorsname.toString();
-    var control2= typeof process;
+    var control2 = typeof process;
 
-    document.write(process+"<b>Veri Türü:</b>"+control+"<br>"+process+"<b>Veri Türü:</b>"+control2);
+    document.write(process + "<b>Veri Türü:</b>" + control + "<br>" + process + "<b>Veri Türü:</b>" + control2);
+};
+//! valueOf() Dizideki tüm elemanları tam anlamıyla aktarımını sağlar ve yeni bir dizi oluşturur..
+var valueOfFunctionSimple = function () {
+    var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
+    var newpersons = persons.valueOf();
+    document.write(newpersons+"<br>");
+    persons.fill("Ümit");
+    document.write(newpersons);
 };
 
 export {
@@ -154,5 +162,6 @@ export {
     fillFunctionSimple,
     concatFunctionSimple,
     joinFunctionSimple,
-    toStringFunctionSimple
+    toStringFunctionSimple,
+    valueOfFunctionSimple
 }; 
