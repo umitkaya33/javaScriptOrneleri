@@ -125,6 +125,15 @@ var joinFunctionSimple = function () {
     var process = colorsname.join("---");
     document.write(process);
 };
+//! toString() Dizideki tüm elemanları içeren string türünde düz bir metin oluşturur..
+var toStringFunctionSimple = function () {
+    var colorsname = ["Siyah", "Kırmızı", "Mavi", "Yeşil", "Turuncu"];
+    var control= typeof colorsname;
+    var process = colorsname.toString();
+    var control2= typeof process;
+
+    document.write(process+"<b>Veri Türü:</b>"+control+"<br>"+process+"<b>Veri Türü:</b>"+control2);
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -144,5 +153,6 @@ export {
     copyWithinFunctionSimple,
     fillFunctionSimple,
     concatFunctionSimple,
-    joinFunctionSimple
+    joinFunctionSimple,
+    toStringFunctionSimple
 }; 
