@@ -5,7 +5,14 @@ var arraydefinitonFunctionSimple = function () {
     document.write(persons[1] + "<br>");
     document.write(persons[0] + "<br>");
 };
+var arrayExample1 = function () {
+    var fruits = new Array("Elma", "Armut", "Kiraz", "Kavun", "Karpuz");
+    var show = fruits;
+    document.write(fruits + "<br>")
+    document.write(show[4]);
+};
 
 export {
-    arraydefinitonFunctionSimple
+    arraydefinitonFunctionSimple,
+    arrayExample1
 }; 
