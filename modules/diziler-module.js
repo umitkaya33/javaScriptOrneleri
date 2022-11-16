@@ -58,7 +58,15 @@ var popFunctionSimple = function () {
     var process = persons.pop();
     document.write("Dizinin Silineni:" + process + "<br>");
     document.write("Dizinin Son Hali:" + persons + "<br>");
-}
+};
+var shiftFunctionSimple = function () {
+    var persons = ["Ümit", "Göknur", "Orkun", "Yalçın"];
+    document.write("Dizinin Orjinal Hali:" + persons + "<br>");
+    var process = persons.shift();
+    document.write("Dizinin Silineni:" + process + "<br>");
+    document.write("Dizinin Son Hali:" + persons + "<br>");
+};
+
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -68,5 +76,6 @@ export {
     forInFunctionSimple,
     lengthFunctionSimple,
     deleteFunctionSimple,
-    popFunctionSimple
+    popFunctionSimple,
+    shiftFunctionSimple
 }; 
