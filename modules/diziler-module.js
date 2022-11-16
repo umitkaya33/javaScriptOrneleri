@@ -44,7 +44,13 @@ var forInFunctionSimple = function () {
 var lengthFunctionSimple = function () {
     var persons = ["Orkun", "Ümit", "Göknur"];
     var process = persons.length;
-    document.write("Dizinin karanker sayısı:"+process);
+    document.write("Dizinin karanker sayısı:" + process);
+};
+var deleteFunctionSimple = function () {
+    var colors = ["Kırmızı", "Mavi", "Yeşil",["Siyah","Beyaz","Lila"],"Turuncu", "Sarı"];
+    document.write("Orjinali:" + colors + "<br>");
+    delete colors[3][1];
+    document.write("Sonrası:" + colors);
 };
 export {
     arraydefinitonFunctionSimple,
@@ -53,5 +59,6 @@ export {
     arrayExample3,
     forFunctionSimple,
     forInFunctionSimple,
-    lengthFunctionSimple
+    lengthFunctionSimple,
+    deleteFunctionSimple
 }; 
