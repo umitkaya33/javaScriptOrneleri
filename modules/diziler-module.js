@@ -148,6 +148,12 @@ var indexOfFunctionSimple = function () {
     var newpersons = persons.indexOf("Orkun");
     document.write(newpersons + "<br>");
 };
+//! lastIndexOf() Dizi içerisinde parametrik olarak verilen değeri arar ve son eşleşmeyi sağlayan index değerini ekrana yazdırır ..
+var lastIndexOfFunctionSimple = function () {
+    var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif", "Orkun"];
+    var newpersons = persons.lastIndexOf("Orkun");
+    document.write("Aranan karakter:" + newpersons + " Numarada");
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -170,5 +176,6 @@ export {
     joinFunctionSimple,
     toStringFunctionSimple,
     valueOfFunctionSimple,
-    indexOfFunctionSimple
+    indexOfFunctionSimple,
+    lastIndexOfFunctionSimple
 }; 
