@@ -24,7 +24,7 @@ btnKosulModuleIF.addEventListener('click', () => {
 });
 
 btnDiziler.addEventListener('click', () => {
-   dizilerModule.diziFunctionSimple();
+   dizilerModule.arraydefinitonFunctionSimple();
 });
 
 
