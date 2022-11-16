@@ -105,6 +105,14 @@ var copyWithinFunctionSimple = function () {
     fruits.copyWithin(4,2,5);
     document.write("Son Hali:" + fruits + "<br>");
 };
+//! fill() dizinin elemanlarını değiştirir..
+var fillFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz", "Gri", "Mavi", "Yeşil", "Karpuz", "Kavun", "Mandalina", "Portakal"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    fruits.fill("<b>ümit</b>",4,7);
+    document.write("Son Hali:" + fruits + "<br>");
+};
+
 
 export {
     arraydefinitonFunctionSimple,
@@ -121,5 +129,6 @@ export {
     unshiftFunctionSimple,
     spliceFunctionSimple,
     sliceFunctionSimple,
-    copyWithinFunctionSimple
+    copyWithinFunctionSimple,
+    fillFunctionSimple
 }; 
