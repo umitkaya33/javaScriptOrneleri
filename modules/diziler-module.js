@@ -154,7 +154,15 @@ var lastIndexOfFunctionSimple = function () {
     var newpersons = persons.lastIndexOf("Orkun");
     document.write("Aranan karakter:" + newpersons + " Numarada");
 };
-
+//! find() Dizi içerisinde parametrik olarak verilen değeri arar ve ilk eşleşmeyi sağlayan index değerini ekrana yazdırır ..
+var findFunctionSimple = function () {
+    function test(elemanlar, sira, referans) {
+        return sira == 4;
+    }
+    var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif", "Orkun"];
+    var newpersons = persons.find(test);
+    document.write("Aranan karakter:" + newpersons);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -177,5 +185,6 @@ export {
     toStringFunctionSimple,
     valueOfFunctionSimple,
     indexOfFunctionSimple,
-    lastIndexOfFunctionSimple
+    lastIndexOfFunctionSimple,
+    findFunctionSimple
 }; 
