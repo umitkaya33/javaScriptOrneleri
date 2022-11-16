@@ -41,11 +41,17 @@ var forInFunctionSimple = function () {
             document.write(colorsname[printcolor] + " ");
         }
 };
+var lengthFunctionSimple = function () {
+    var persons = ["Orkun", "Ümit", "Göknur"];
+    var process = persons.length;
+    document.write("Dizinin karanker sayısı:"+process);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
     arrayExample2,
     arrayExample3,
     forFunctionSimple,
-    forInFunctionSimple
+    forInFunctionSimple,
+    lengthFunctionSimple
 }; 
