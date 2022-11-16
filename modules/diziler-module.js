@@ -47,11 +47,18 @@ var lengthFunctionSimple = function () {
     document.write("Dizinin karanker sayısı:" + process);
 };
 var deleteFunctionSimple = function () {
-    var colors = ["Kırmızı", "Mavi", "Yeşil",["Siyah","Beyaz","Lila"],"Turuncu", "Sarı"];
+    var colors = ["Kırmızı", "Mavi", "Yeşil", ["Siyah", "Beyaz", "Lila"], "Turuncu", "Sarı"];
     document.write("Orjinali:" + colors + "<br>");
     delete colors[3][1];
     document.write("Sonrası:" + colors);
 };
+var popFunctionSimple = function () {
+    var persons = ["Ümit", "Göknur", "Orkun", "Yalçın"];
+    document.write("Dizinin Orjinal Hali:" + persons + "<br>");
+    var process = persons.pop();
+    document.write("Dizinin Silineni:" + process + "<br>");
+    document.write("Dizinin Son Hali:" + persons + "<br>");
+}
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -60,5 +67,6 @@ export {
     forFunctionSimple,
     forInFunctionSimple,
     lengthFunctionSimple,
-    deleteFunctionSimple
+    deleteFunctionSimple,
+    popFunctionSimple
 }; 
