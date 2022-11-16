@@ -170,27 +170,34 @@ var findIndexFunctionSimple = function () {
     }
     var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif", "Orkun"];
     var newpersons = persons.findIndex(test);
-    document.write(persons+"<br>")
-    document.write("Aranan karakter:" + newpersons+".numarada");
+    document.write(persons + "<br>")
+    document.write("Aranan karakter:" + newpersons + ".numarada");
 };
 //! reduce() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde soldan sağa tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
 var reduceFunctionSimple = function () {
-    function test(deger, eleman, sira,referans) {
-        return deger+eleman;
+    function test(deger, eleman, sira, referans) {
+        return deger + eleman;
     }
-    var numbers = [1,2,3,4,5,6,7,8,9,10];
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     var shownumbers = numbers.reduce(test);
-    document.write(numbers+"<br>")
+    document.write(numbers + "<br>")
     document.write("Tüm sayıların toplamı:" + shownumbers);
 };
 //! reduceRight() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde sağdan sola tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
 var reduceRightFunctionSimple = function () {
-    function test(deger, eleman, sira,referans) {
-        return deger+eleman;
+    function test(deger, eleman, sira, referans) {
+        return deger + eleman;
     }
-    var texts = ["a","b","c","d","e","f"];
+    var texts = ["a", "b", "c", "d", "e", "f"];
     var showtexts = texts.reduceRight(test);
-    document.write(texts+"<br>")
+    document.write(texts + "<br>")
+    document.write(showtexts);
+};
+//! reverse() Dizi içerisindeki sıralamayı tersine çevirerek yeni bir dizi oluşturur..
+var reverseFunctionSimple = function () {
+    var texts = ["a", "b", "c", "d", "e", "f"];
+    document.write(texts + "<br>")
+    var showtexts = texts.reverse();
     document.write(showtexts);
 };
 export {
@@ -219,5 +226,6 @@ export {
     findFunctionSimple,
     findIndexFunctionSimple,
     reduceFunctionSimple,
-    reduceRightFunctionSimple
+    reduceRightFunctionSimple,
+    reverseFunctionSimple
 }; 
