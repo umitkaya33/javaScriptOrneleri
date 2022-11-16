@@ -138,9 +138,15 @@ var toStringFunctionSimple = function () {
 var valueOfFunctionSimple = function () {
     var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
     var newpersons = persons.valueOf();
-    document.write(newpersons+"<br>");
+    document.write(newpersons + "<br>");
     persons.fill("Ümit");
     document.write(newpersons);
+};
+//! indexOf() Dizi içerisinde parametrik olarak verilen değeri arar ve ilk eşleşmeyi sağlayan index değerini ekrana yazdırır ..
+var indexOfFunctionSimple = function () {
+    var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif"];
+    var newpersons = persons.indexOf("Orkun");
+    document.write(newpersons + "<br>");
 };
 
 export {
@@ -163,5 +169,6 @@ export {
     concatFunctionSimple,
     joinFunctionSimple,
     toStringFunctionSimple,
-    valueOfFunctionSimple
+    valueOfFunctionSimple,
+    indexOfFunctionSimple
 }; 
