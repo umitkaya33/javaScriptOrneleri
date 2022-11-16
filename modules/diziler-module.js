@@ -85,11 +85,18 @@ var unshiftFunctionSimple = function () {
 };
 //! splice() diziye elemanlar  ekler veya siler..
 var spliceFunctionSimple = function () {
-    var fruits = ["Elma", "Armut", "Kiraz","Karpuz", "Kavun", "Portakal","Mandalina","Portakal"];
+    var fruits = ["Elma", "Armut", "Kiraz", "Karpuz", "Kavun", "Portakal", "Mandalina", "Portakal"];
     document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
-    var process = fruits.splice(2,3,"Gri","Mavi","Yeşil");
-    document.write("Silinenler:"+process+"<br>");
+    var process = fruits.splice(2, 3, "Gri", "Mavi", "Yeşil");
+    document.write("Silinenler:" + process + "<br>");
     document.write("Dizinin Son Hali:" + fruits + "<br>");
+};
+//! slice() dizileri kopyalarak yeni bir dizi oluşturur..
+var sliceFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz", "Gri", "Mavi", "Yeşil", "Karpuz", "Kavun", "Mandalina", "Portakal"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    var process = fruits.slice(2, 5);
+    document.write("Kopyalanan:" + process + "<br>");
 };
 
 export {
@@ -105,5 +112,6 @@ export {
     shiftFunctionSimple,
     pushFunctionSimple,
     unshiftFunctionSimple,
-    spliceFunctionSimple
+    spliceFunctionSimple,
+    sliceFunctionSimple
 }; 
