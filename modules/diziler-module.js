@@ -173,6 +173,16 @@ var findIndexFunctionSimple = function () {
     document.write(persons+"<br>")
     document.write("Aranan karakter:" + newpersons+".numarada");
 };
+//! reduce() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde soldan sağa tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
+var reduceFunctionSimple = function () {
+    function test(deger, eleman, sira,referans) {
+        return deger+eleman;
+    }
+    var numbers = [1,2,3,4,5,6,7,8,9,10];
+    var shownumbers = numbers.reduce(test);
+    document.write(numbers+"<br>")
+    document.write("Tüm sayıların toplamı:" + shownumbers);
+};
 
 export {
     arraydefinitonFunctionSimple,
@@ -198,5 +208,6 @@ export {
     indexOfFunctionSimple,
     lastIndexOfFunctionSimple,
     findFunctionSimple,
-    findIndexFunctionSimple
+    findIndexFunctionSimple,
+    reduceFunctionSimple
 }; 
