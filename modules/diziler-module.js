@@ -25,16 +25,27 @@ var arrayExample3 = function () {
     document.write(olds[2] + " " + persons[2] + " " + country[0]);
 };
 var forFunctionSimple = function () {
-    var textexample="Javascript Eğitim Seti";
+    var textexample = "Javascript Eğitim Seti";
     var print;
-    for (print in textexample){
-        document.write(textexample[print]+" ");
+    for (print in textexample) {
+        document.write(textexample[print] + " ");
     }
+};
+var forInFunctionSimple = function () {
+    var colorsname = ["Siyah", "Kırmızı", "Mavi", "Yeşil", "Turuncu"];
+    var printcolor;
+    for (printcolor in colorsname)
+        if (printcolor == 0 || printcolor == 2) {
+            document.write("<b>" + (colorsname[printcolor]) + "</b>" + " ");
+        } else {
+            document.write(colorsname[printcolor] + " ");
+        }
 };
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
     arrayExample2,
     arrayExample3,
-    forFunctionSimple
+    forFunctionSimple,
+    forInFunctionSimple
 }; 
