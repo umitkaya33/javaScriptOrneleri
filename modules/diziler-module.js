@@ -170,7 +170,7 @@ var findIndexFunctionSimple = function () {
     }
     var persons = ["Ümit", "Orkun", "Ahmet", "Hakan", "Arif", "Orkun"];
     var newpersons = persons.findIndex(test);
-    document.write(persons + "<br>")
+    document.write(persons + "<br>");
     document.write("Aranan karakter:" + newpersons + ".numarada");
 };
 //! reduce() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde soldan sağa tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
@@ -180,7 +180,7 @@ var reduceFunctionSimple = function () {
     }
     var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     var shownumbers = numbers.reduce(test);
-    document.write(numbers + "<br>")
+    document.write(numbers + "<br>");
     document.write("Tüm sayıların toplamı:" + shownumbers);
 };
 //! reduceRight() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde sağdan sola tek tek olmak üzere çalıştırır ve tek bir değer oluşturarak ekrana yazdırır..
@@ -190,15 +190,40 @@ var reduceRightFunctionSimple = function () {
     }
     var texts = ["a", "b", "c", "d", "e", "f"];
     var showtexts = texts.reduceRight(test);
-    document.write(texts + "<br>")
+    document.write(texts + "<br>");
     document.write(showtexts);
 };
 //! reverse() Dizi içerisindeki sıralamayı tersine çevirerek yeni bir dizi oluşturur..
 var reverseFunctionSimple = function () {
     var texts = ["a", "b", "c", "d", "e", "f"];
-    document.write(texts + "<br>")
+    document.write(texts + "<br>");
     var showtexts = texts.reverse();
     document.write(showtexts);
+};
+//! sort() Dizi içeriğini(unicode olarak) sıralar..
+var sortFunctionSimple = function () {
+    var persons = ["Ümit", "Orkun", "Hakan", "Arif", "Ahmet", "Göknur", "Buse", "Hatice", "Elif", "Didem", "Zeynep", "Çiğdem", "Buket", "Banu", "Tugce", "Oguz", "Şinasi", "Ömer", "Şenay", "Çağla", "Çilem", "Ilgaz", "Özkan", "Ülker"];
+    document.write("<b>Kullanıcılar</b>" + "<br>" + persons + "<br>");
+    persons.sort();
+    document.write("<b>Unicode Olarak Sıralaması</b>" + "<br>" + persons + "<br>");
+
+    //! sort() Türkçe karakterler dahil sıralama..
+    function arrangement(first, end) {
+        var alphabet = "AaBbCcÇçDdEeFfGgĞğHhIıİiJjKkLlMmNnOoÖöPpQqRrSsŞşTtUuÜüVvWwXxYyZz";
+        if (first.length === 0 || end.length === 0) {
+            return first.length - end.length;
+        } else {
+            var first1 = alphabet.indexOf(first[0]);
+            var end2 = alphabet.indexOf(end[0]);
+            if (first1 !== end2) {
+                return first1 - end2;
+            } else {
+                return arrangement(first.slice(1), end.slice(1));
+            }
+        }
+    };
+    persons.sort(arrangement);
+    document.write("<b>Türkçe Karakter Dahil Olarak Sıralaması</b>" + "<br>" + persons + "<br>");
 };
 export {
     arraydefinitonFunctionSimple,
@@ -227,5 +252,6 @@ export {
     findIndexFunctionSimple,
     reduceFunctionSimple,
     reduceRightFunctionSimple,
-    reverseFunctionSimple
+    reverseFunctionSimple,
+    sortFunctionSimple
 }; 
