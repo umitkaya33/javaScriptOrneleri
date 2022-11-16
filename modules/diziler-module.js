@@ -69,11 +69,18 @@ var shiftFunctionSimple = function () {
     document.write("Dizinin Silineni:" + process + "<br>");
     document.write("Dizinin Son Hali:" + persons + "<br>");
 };
-//! push() diziye sonradan eleman ekler..
+//! push() dizinin sonuna elemanlar ekler..
 var pushFunctionSimple = function () {
     var fruits = ["Elma", "Armut", "Kiraz"];
     document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
     var process = fruits.push("Karpuz", "Kavun", "Portakal");
+    document.write("Dizinin Son Hali:" + fruits + "<br>");
+};
+//! unshift() dizinin başına elemanlar ekler..
+var unshiftFunctionSimple = function () {
+    var fruits = ["Elma", "Armut", "Kiraz"];
+    document.write("Dizinin Orjinal Hali:" + fruits + "<br>");
+    var process = fruits.unshift("Karpuz", "Kavun", "Portakal");
     document.write("Dizinin Son Hali:" + fruits + "<br>");
 };
 
@@ -88,5 +95,6 @@ export {
     deleteFunctionSimple,
     popFunctionSimple,
     shiftFunctionSimple,
-    pushFunctionSimple
+    pushFunctionSimple,
+    unshiftFunctionSimple
 }; 
