@@ -279,6 +279,21 @@ var mapFunctionSimple = function () {
     var newnumbers = numbers.map(test);
     document.write(newnumbers);
 };
+//! average() Number veri türündeki içerikli dizinin her elemanı üzerinde tek tek olmak üzere çalışır ve tüm elemanların ortalamasını bularak bulduğu değeri ekrana yazdırır..
+var avarageFunctionSimple = function () {
+    Array.prototype.avarage = function () {
+        var process = 0;
+        for (var beginning = 0; beginning < this.length; beginning++) {
+            process += this[beginning];
+        }
+        var sonuc = process / this.length;
+        return sonuc;
+    }
+    var numbers = [27, 44, 33, 54, 23, 56, 75, 11, 25];
+    document.write(numbers + "<br>");
+    var middle = numbers.avarage();
+    document.write("Sayıların Ortalaması:" + middle);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -312,5 +327,6 @@ export {
     someFunctionSimple,
     everyFunctionSimple,
     filterFunctionSimple,
-    mapFunctionSimple
+    mapFunctionSimple,
+    avarageFunctionSimple
 }; 
