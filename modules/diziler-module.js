@@ -225,6 +225,16 @@ var sortFunctionSimple = function () {
     persons.sort(arrangement);
     document.write("<b>Türkçe Karakter Dahil Olarak Sıralaması</b>" + "<br>" + persons + "<br>");
 };
+//! forEach() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerinde tek tek olmak üzere çalıştırır..
+var forEachFunctionSimple = function () {
+    function test(element, order, referance) {
+        result += element;
+    }
+    var result = 0;
+    var numbers = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30];
+    numbers.forEach(test);
+    document.write(numbers + "<br>" + result);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -253,5 +263,6 @@ export {
     reduceFunctionSimple,
     reduceRightFunctionSimple,
     reverseFunctionSimple,
-    sortFunctionSimple
+    sortFunctionSimple,
+    forEachFunctionSimple
 }; 
