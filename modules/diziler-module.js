@@ -242,7 +242,7 @@ var someFunctionSimple = function () {
         return element % 5 === 0;
     }
     var result = 0;
-    var numbers = [2,3,5,7,34,21,45,22];
+    var numbers = [2, 3, 5, 7, 34, 21, 45, 22];
     numbers.some(test);
     document.write(numbers + "<br>" + result);
 };
@@ -253,9 +253,19 @@ var everyFunctionSimple = function () {
         return element % 5 === 0;
     }
     var result = 0;
-    var numbers = [20,10,50,343,247,27,97];
+    var numbers = [20, 10, 50, 343, 247, 27, 97];
     numbers.every(test);
     document.write(numbers + "<br>" + result);
+};
+//! filter() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine çalıştırır. Fonksiyonun geriye true değerini döndüren tüm elemanlırını kopyalayarak yeni bir dizi oluşturur. Oluşturduğu diziyi ekrana yazdırır..
+var filterFunctionSimple = function () {
+    function test(element, order, referance) {
+        return element % 2 !== 0;
+    }
+    var numbers = [2,1,3,7,9,6,8,20,29,31, 10, 50, 343, 247,30, 27, 97];
+    var oddnumbers = numbers.filter(test)
+    numbers.filter(test);
+    document.write("Tek Sayı Olanlar:"+oddnumbers + "<br>" +"Tüm Elemanlar:"+ numbers);
 };
 export {
     arraydefinitonFunctionSimple,
@@ -288,5 +298,6 @@ export {
     sortFunctionSimple,
     forEachFunctionSimple,
     someFunctionSimple,
-    everyFunctionSimple
+    everyFunctionSimple,
+    filterFunctionSimple
 }; 
