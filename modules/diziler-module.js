@@ -294,6 +294,24 @@ var avarageFunctionSimple = function () {
     var middle = numbers.avarage();
     document.write("Sayıların Ortalaması:" + middle);
 };
+//! shuffle() Dizinin her elemanları üzerinde çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturarak oluşturduğu değeri ekrana yazdırır..
+var shuffleFunctionSimple = function () {
+    Array.prototype.shuffle = function () {
+
+        var elements = this.length;
+        while (--elements > 0) {
+            var randomnumbers = Math.floor(Math.random() * (elements + 1));
+            var temporary = this[randomnumbers];
+            this[randomnumbers] = this[elements];
+            this[elements] = temporary;
+            return this;
+        }
+    }
+    var contents = ["A", "B", "C", "D", "E"];
+    document.write(contents + "<br>");
+    var mix = contents.shuffle();
+    document.write(mix);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -328,5 +346,6 @@ export {
     everyFunctionSimple,
     filterFunctionSimple,
     mapFunctionSimple,
-    avarageFunctionSimple
+    avarageFunctionSimple,
+    shuffleFunctionSimple
 }; 
