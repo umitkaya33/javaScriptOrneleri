@@ -19,8 +19,16 @@ var cikartFunctionSimple = function () {
     var process = value1 - value2;
     document.write(process);
 };
+//! Atamalı çıkartma işlemi
+var atamalicikartFunctionSimple = function () {
+    var value1 = 11;
+    var value2 = 15;
+    value1 -= value2;
+    document.write(value1);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
-    cikartFunctionSimple
+    cikartFunctionSimple,
+    atamalicikartFunctionSimple
 };
