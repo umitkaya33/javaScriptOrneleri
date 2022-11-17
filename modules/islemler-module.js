@@ -26,9 +26,17 @@ var atamalicikartFunctionSimple = function () {
     value1 -= value2;
     document.write(value1);
 };
+//! Çarpma işlemi
+var carpFunctionSimple = function () {
+    var value1 = 53;
+    var value2 = 66;
+    var process = value1 * value2;
+    document.write(process);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
     cikartFunctionSimple,
-    atamalicikartFunctionSimple
+    atamalicikartFunctionSimple,
+    carpFunctionSimple
 };
