@@ -54,6 +54,13 @@ var atamalibolFunctionSimple = function () {
     value1 /= value2;
     document.write(value1);
 };
+//! Mod Alma işlemi
+var modFunctionSimple = function () {
+    var value1 = 43;
+    var value2 = 11;
+    var process = value1 % value2;
+    document.write(value1 + " Sayısının " + value2 + "'ile bölümünden Kalan:" + process);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -62,5 +69,6 @@ export {
     carpFunctionSimple,
     atamalicarpFunctionSimple,
     bolFunctionSimple,
-    atamalibolFunctionSimple
+    atamalibolFunctionSimple,
+    modFunctionSimple
 };
