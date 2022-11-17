@@ -33,10 +33,18 @@ var carpFunctionSimple = function () {
     var process = value1 * value2;
     document.write(process);
 };
+//! Atamalı çarpma işlemi
+var atamalicarpFunctionSimple = function () {
+    var value1 = 11;
+    var value2 = 345;
+    value1 *= value2;
+    document.write(value1);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
     cikartFunctionSimple,
     atamalicikartFunctionSimple,
-    carpFunctionSimple
+    carpFunctionSimple,
+    atamalicarpFunctionSimple
 };
