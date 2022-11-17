@@ -235,6 +235,17 @@ var forEachFunctionSimple = function () {
     numbers.forEach(test);
     document.write(numbers + "<br>" + result);
 };
+//! some() Kendisine parametre olarak verilen fonksiyonu true değeri döndürene kadar dizi elemanları üzerinde sıra ile gezinilmesini sağlar..
+var someFunctionSimple = function () {
+    function test(element, order, referance) {
+        result = element;
+        return element % 5 === 0;
+    }
+    var result = 0;
+    var numbers = [2,4,3,7,15,23,7,];
+    numbers.some(test);
+    document.write(numbers + "<br>" + result);
+};
 export {
     arraydefinitonFunctionSimple,
     arrayExample1,
@@ -264,5 +275,6 @@ export {
     reduceRightFunctionSimple,
     reverseFunctionSimple,
     sortFunctionSimple,
-    forEachFunctionSimple
+    forEachFunctionSimple,
+    someFunctionSimple
 }; 
