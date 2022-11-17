@@ -61,6 +61,13 @@ var modFunctionSimple = function () {
     var process = value1 % value2;
     document.write(value1 + " Sayısının " + value2 + "'ile bölümünden Kalan:" + process);
 };
+//! Atamalı mood Alma işlemi
+var atamalimodFunctionSimple = function () {
+    var value1 = 43;
+    var value2 = 5;
+    value1 %= value2;
+    document.write(value1);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -70,5 +77,6 @@ export {
     atamalicarpFunctionSimple,
     bolFunctionSimple,
     atamalibolFunctionSimple,
-    modFunctionSimple
+    modFunctionSimple,
+    atamalimodFunctionSimple
 };
