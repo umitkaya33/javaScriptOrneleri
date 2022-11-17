@@ -68,6 +68,13 @@ var atamalimodFunctionSimple = function () {
     value1 %= value2;
     document.write(value1);
 };
+//! Üs Alma işlemi
+var usFunctionSimple = function () {
+    var value1 = 5;
+    var value2 = 4;
+    var process = value1 ** value2;
+    document.write(value1 + " üzeri " + value2 + "=" + process);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -78,5 +85,6 @@ export {
     bolFunctionSimple,
     atamalibolFunctionSimple,
     modFunctionSimple,
-    atamalimodFunctionSimple
+    atamalimodFunctionSimple,
+    usFunctionSimple
 };
