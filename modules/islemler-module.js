@@ -40,11 +40,19 @@ var atamalicarpFunctionSimple = function () {
     value1 *= value2;
     document.write(value1);
 };
+//! Bölme işlemi
+var bolFunctionSimple = function () {
+    var value1 = 564;
+    var value2 = 66;
+    var process = value1 / value2;
+    document.write(process);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
     cikartFunctionSimple,
     atamalicikartFunctionSimple,
     carpFunctionSimple,
-    atamalicarpFunctionSimple
+    atamalicarpFunctionSimple,
+    bolFunctionSimple
 };
