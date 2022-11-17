@@ -61,7 +61,7 @@ var modFunctionSimple = function () {
     var process = value1 % value2;
     document.write(value1 + " Sayısının " + value2 + "'ile bölümünden Kalan:" + process);
 };
-//! Atamalı mood Alma işlemi
+//! Atamalı mod Alma işlemi
 var atamalimodFunctionSimple = function () {
     var value1 = 43;
     var value2 = 5;
@@ -75,6 +75,14 @@ var usFunctionSimple = function () {
     var process = value1 ** value2;
     document.write(value1 + " üzeri " + value2 + "=" + process);
 };
+//! Atamalı üs Alma işlemi
+var atamaliusFunctionSimple = function () {
+    var value1 = 2;
+    var value2 = 6;
+    document.write(value1 + " üzeri " + value2 + "=")
+    value1 **= value2;
+    document.write(value1);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -86,5 +94,6 @@ export {
     atamalibolFunctionSimple,
     modFunctionSimple,
     atamalimodFunctionSimple,
-    usFunctionSimple
+    usFunctionSimple,
+    atamaliusFunctionSimple
 };
