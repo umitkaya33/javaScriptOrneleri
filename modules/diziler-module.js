@@ -242,8 +242,19 @@ var someFunctionSimple = function () {
         return element % 5 === 0;
     }
     var result = 0;
-    var numbers = [2,4,3,7,15,23,7,];
+    var numbers = [2,3,5,7,34,21,45,22];
     numbers.some(test);
+    document.write(numbers + "<br>" + result);
+};
+//! every() Kendisine parametre olarak verilen fonksiyonu false değeri döndürene kadar dizi elemanları üzerinde sıra ile gezinilmesini sağlar..
+var everyFunctionSimple = function () {
+    function test(element, order, referance) {
+        result = element;
+        return element % 5 === 0;
+    }
+    var result = 0;
+    var numbers = [20,10,50,343,247,27,97];
+    numbers.every(test);
     document.write(numbers + "<br>" + result);
 };
 export {
@@ -276,5 +287,6 @@ export {
     reverseFunctionSimple,
     sortFunctionSimple,
     forEachFunctionSimple,
-    someFunctionSimple
+    someFunctionSimple,
+    everyFunctionSimple
 }; 
