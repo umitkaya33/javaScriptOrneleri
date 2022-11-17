@@ -235,7 +235,8 @@ var forEachFunctionSimple = function () {
     numbers.forEach(test);
     document.write(numbers + "<br>" + result);
 };
-//! some() Kendisine parametre olarak verilen fonksiyonu true değeri döndürene kadar dizi elemanları üzerinde sıra ile gezinilmesini sağlar..
+//! some() Kendisine parametre olarak verilen fonksiyonu true değeri döndürene kadar dizi elemanları 
+//üzerinde sıra ile gezinilmesini sağlar..
 var someFunctionSimple = function () {
     function test(element, order, referance) {
         result = element;
@@ -262,10 +263,21 @@ var filterFunctionSimple = function () {
     function test(element, order, referance) {
         return element % 2 !== 0;
     }
-    var numbers = [2,1,3,7,9,6,8,20,29,31, 10, 50, 343, 247,30, 27, 97];
+    var numbers = [2, 1, 3, 7, 9, 6, 8, 20, 29, 31, 10, 50, 343, 247, 30, 27, 97];
     var oddnumbers = numbers.filter(test)
     numbers.filter(test);
-    document.write("Tek Sayı Olanlar:"+oddnumbers + "<br>" +"Tüm Elemanlar:"+ numbers);
+    document.write("Tek Sayı Olanlar:" + oddnumbers + "<br>" + "Tüm Elemanlar:" + numbers);
+};
+//! map() Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine çalıştırır.Fonksiyonun her elemanı için geriye döndürdüğü değerlerden yeni bir dizi oluşturur ve yeni dizinin değerini ekrana yazdırır..
+var mapFunctionSimple = function () {
+    function test(elements, order, referance) {
+        var process = elements * 3;
+        return process;
+    }
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    document.write(numbers + "<br>");
+    var newnumbers = numbers.map(test);
+    document.write(newnumbers);
 };
 export {
     arraydefinitonFunctionSimple,
@@ -299,5 +311,6 @@ export {
     forEachFunctionSimple,
     someFunctionSimple,
     everyFunctionSimple,
-    filterFunctionSimple
+    filterFunctionSimple,
+    mapFunctionSimple
 }; 
