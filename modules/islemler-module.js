@@ -47,6 +47,13 @@ var bolFunctionSimple = function () {
     var process = value1 / value2;
     document.write(process);
 };
+//! Atamalı bölme işlemi
+var atamalibolFunctionSimple = function () {
+    var value1 = 5411;
+    var value2 = 345;
+    value1 /= value2;
+    document.write(value1);
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -54,5 +61,6 @@ export {
     atamalicikartFunctionSimple,
     carpFunctionSimple,
     atamalicarpFunctionSimple,
-    bolFunctionSimple
+    bolFunctionSimple,
+    atamalibolFunctionSimple
 };
