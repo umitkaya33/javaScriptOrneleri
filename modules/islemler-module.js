@@ -87,7 +87,14 @@ var atamaliusFunctionSimple = function () {
 var arttirFunctionSimple = function () {
     var figure = 10;
     document.write(figure + "<br>")
-    figure ++;
+    figure++;
+    document.write(figure)
+};
+//! Azaltma işlemi
+var azaltFunctionSimple = function () {
+    var figure = 25;
+    document.write(figure + "<br>")
+    figure--;
     document.write(figure)
 };
 export {
@@ -103,5 +110,6 @@ export {
     atamalimodFunctionSimple,
     usFunctionSimple,
     atamaliusFunctionSimple,
-    arttirFunctionSimple
+    arttirFunctionSimple,
+    azaltFunctionSimple
 };
