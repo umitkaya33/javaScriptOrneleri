@@ -83,6 +83,13 @@ var atamaliusFunctionSimple = function () {
     value1 **= value2;
     document.write(value1);
 };
+//! Arttırma işlemi
+var arttirFunctionSimple = function () {
+    var figure = 10;
+    document.write(figure + "<br>")
+    figure ++;
+    document.write(figure)
+};
 export {
     toplaFunctionSimple,
     atamalitoplaFunctionSimple,
@@ -95,5 +102,6 @@ export {
     modFunctionSimple,
     atamalimodFunctionSimple,
     usFunctionSimple,
-    atamaliusFunctionSimple
+    atamaliusFunctionSimple,
+    arttirFunctionSimple
 };
