@@ -156,6 +156,22 @@ var parseFloatFunctionSimple = function () {
     var price1 = parseFloat(lira),
         price2 = parseFloat(dolarkuru);
     document.write(price1 / price2 + "$");
+};
+//! toString() | Değiken içeriğini düz bir metne dönüştürür...
+var toStringFunctionSimple = function () {
+    var test1 = 5,
+        test2 = 3.14,
+        test1Data = typeof test1,
+        test2Data = typeof test2;
+    document.write(test1 + test1Data + "<br>");
+    document.write(test2 + test2Data + "<br>");
+
+    var convert1 = test1.toString(),
+        convert2 = test2.toString(),
+        convert1Data = typeof convert1,
+        convert2Data = typeof convert2;
+    document.write(convert1 + convert1Data + "<br>");
+    document.write(convert2 + convert2Data + "<br>");
 
 };
 export {
@@ -180,5 +196,6 @@ export {
     toPrecisionFunctionSimple,
     toExponentialFunctionSimple,
     parseIntFunctionSimple,
-    parseFloatFunctionSimple
+    parseFloatFunctionSimple,
+    toStringFunctionSimple
 };
