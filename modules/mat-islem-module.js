@@ -55,6 +55,21 @@ var sqrt1_2FunctionSimple = function () {
 var sqrt2FunctionSimple = function () {
     document.write(Math.SQRT2);
 };
+//! isNaN() | Kendisine parametrik olarak verilen değişken içeriğinin NaN değerinde olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var isnanFunctionSimple = function () {
+    var value1 = "A",
+        value2 = 5,
+        value3 = 3.45,
+        value4 = NaN;
+    var process1 = Number.isNaN(value1),
+        process2 = Number.isNaN(value2),
+        process3 = Number.isNaN(value3),
+        process4 = Number.isNaN(value4);
+    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuc:" + process2 + "<br>");
+    document.write("Değer:" + value3 + " Sonuc:" + process3 + "<br>");
+    document.write("Değer:" + value4 + " Sonuc:" + process4 + "<br>");
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -68,5 +83,6 @@ export {
     log10eFunctionSimple,
     piFunctionSimple,
     sqrt1_2FunctionSimple,
-    sqrt2FunctionSimple
+    sqrt2FunctionSimple,
+    isnanFunctionSimple
 };
