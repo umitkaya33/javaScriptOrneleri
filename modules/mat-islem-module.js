@@ -55,7 +55,7 @@ var sqrt1_2FunctionSimple = function () {
 var sqrt2FunctionSimple = function () {
     document.write(Math.SQRT2);
 };
-//! isNaN() | Kendisine parametrik olarak verilen değişken içeriğinin NaN değerinde olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+//! isNaN() | Kendisine parametre olarak verilen değişken içeriğinin NaN değerinde olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
 var isnanFunctionSimple = function () {
     var value1 = "A",
         value2 = 5,
@@ -65,12 +65,12 @@ var isnanFunctionSimple = function () {
         process2 = Number.isNaN(value2),
         process3 = Number.isNaN(value3),
         process4 = Number.isNaN(value4);
-    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
-    document.write("Değer:" + value2 + " Sonuc:" + process2 + "<br>");
-    document.write("Değer:" + value3 + " Sonuc:" + process3 + "<br>");
-    document.write("Değer:" + value4 + " Sonuc:" + process4);
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2 + "<br>");
+    document.write("Değer:" + value3 + " Sonuç:" + process3 + "<br>");
+    document.write("Değer:" + value4 + " Sonuç:" + process4);
 };
-//! isFinite() | Kendisine parametrik olarak verilen değişken içeriğinin en büyük pozitif sayı ile en küçük negatif sayı aralığında olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+//! isFinite() | Kendisine parametre olarak verilen değişken içeriğinin en büyük pozitif sayı ile en küçük negatif sayı aralığında olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
 var isFiniteFunctionSimple = function () {
     var value1 = 100,
         value2 = Number.MAX_VALUE * 2;
@@ -78,10 +78,10 @@ var isFiniteFunctionSimple = function () {
     var process1 = Number.isFinite(value1),
         process2 = Number.isFinite(value2);
 
-    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
-    document.write("Değer:" + value2 + " Sonuc:" + process2);
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
 };
-//! isInteger() | Kendisine parametrik olarak verilen değişken içeriğinin tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+//! isInteger() | Kendisine parametre olarak verilen değişken içeriğinin tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
 var isIntegerFunctionSimple = function () {
     var value1 = 100,
         value2 = "A";
@@ -89,16 +89,27 @@ var isIntegerFunctionSimple = function () {
     var process1 = Number.isInteger(value1),
         process2 = Number.isInteger(value2);
 
-    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
-    document.write("Değer:" + value2 + " Sonuc:" + process2);
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
 };
-//! isSafeInteger() | Kendisine parametrik olarak verilen değişken içeriğinin güvenli bir tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+//! isSafeInteger() | Kendisine parametre olarak verilen değişken içeriğinin güvenli bir tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
 var isSafeIntegerFunctionSimple = function () {
     var value1 = 45 / 3,
         value2 = 45 / 2;
 
     var process1 = Number.isSafeInteger(value1),
         process2 = Number.isSafeInteger(value2);
+
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
+};
+//! toFixed() | Kendisine parametre olarak verilen değişken içeriğindeki sayının ondalık hanesine kaç basamak olacağını belirleyerek yeni bir içerik oluşturur...
+var toFixedIntegerFunctionSimple = function () {
+    var value1 = 3.589,
+        value2 = 3.589;
+
+    var process1 = value1.toFixed(2),
+        process2 = value2.toFixed(1);
 
     document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuç:" + process2);
@@ -120,5 +131,6 @@ export {
     isnanFunctionSimple,
     isFiniteFunctionSimple,
     isIntegerFunctionSimple,
-    isSafeIntegerFunctionSimple
+    isSafeIntegerFunctionSimple,
+    toFixedIntegerFunctionSimple
 };
