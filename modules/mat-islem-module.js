@@ -136,6 +136,18 @@ var toExponentialFunctionSimple = function () {
     document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuç:" + process2);
 };
+//! parseInt() | Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini tam sayı haline dönüştürerek yeni bir içerik oluşturur...
+var parseIntFunctionSimple = function () {
+    var data1 = "34 Lira",
+        data2 = "52 Lira";
+
+    var price1 = parseInt(data1),
+        price2 = parseInt(data2),
+        total = price1 + price2;
+    document.write("1.Ürün:" + data1 + "<br>");
+    document.write("2.Ürün:" + data2 + "<br>");
+    document.write("Toplam:" + total + " Lira");
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -156,5 +168,6 @@ export {
     isSafeIntegerFunctionSimple,
     toFixedFunctionSimple,
     toPrecisionFunctionSimple,
-    toExponentialFunctionSimple
+    toExponentialFunctionSimple,
+    parseIntFunctionSimple
 };
