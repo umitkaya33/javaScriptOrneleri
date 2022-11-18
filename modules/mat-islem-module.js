@@ -51,6 +51,10 @@ var piFunctionSimple = function () {
 var sqrt1_2FunctionSimple = function () {
     document.write(Math.SQRT1_2);
 };
+//! SQRT2 | 2 Sayısının karekök değerini gösterir...
+var sqrt2FunctionSimple = function () {
+    document.write(Math.SQRT2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -63,5 +67,6 @@ export {
     log2eFunctionSimple,
     log10eFunctionSimple,
     piFunctionSimple,
-    sqrt1_2FunctionSimple
+    sqrt1_2FunctionSimple,
+    sqrt2FunctionSimple
 };
