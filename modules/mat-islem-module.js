@@ -125,6 +125,17 @@ var toPrecisionFunctionSimple = function () {
     document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuç:" + process2);
 };
+//! toExponential() | Kendisine parametre olarak verilen değişken içeriğindeki sayının ondalık hanesinde kaç basamak olacağını belirleyerek kalan değeri üstel hale getirerek yeni bir içerik oluşturur...
+var toExponentialFunctionSimple = function () {
+    var value1 = 5.499,
+        value2 = 5.54599;
+
+    var process1 = value1.toExponential(2),
+        process2 = value2.toExponential(3);
+
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -144,5 +155,6 @@ export {
     isIntegerFunctionSimple,
     isSafeIntegerFunctionSimple,
     toFixedFunctionSimple,
-    toPrecisionFunctionSimple
+    toPrecisionFunctionSimple,
+    toExponentialFunctionSimple
 };
