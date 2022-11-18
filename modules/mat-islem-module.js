@@ -43,6 +43,10 @@ var log2eFunctionSimple = function () {
 var log10eFunctionSimple = function () {
     document.write(Math.LOG10E);
 };
+//! PI | Pi sayısını gösterir...
+var piFunctionSimple = function () {
+    document.write(Math.PI);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -53,5 +57,6 @@ export {
     ln2FunctionSimple,
     ln10FunctionSimple,
     log2eFunctionSimple,
-    log10eFunctionSimple
+    log10eFunctionSimple,
+    piFunctionSimple
 };
