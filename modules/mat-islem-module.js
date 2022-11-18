@@ -104,12 +104,23 @@ var isSafeIntegerFunctionSimple = function () {
     document.write("Değer:" + value2 + " Sonuç:" + process2);
 };
 //! toFixed() | Kendisine parametre olarak verilen değişken içeriğindeki sayının ondalık hanesine kaç basamak olacağını belirleyerek yeni bir içerik oluşturur...
-var toFixedIntegerFunctionSimple = function () {
+var toFixedFunctionSimple = function () {
     var value1 = 3.589,
         value2 = 3.589;
 
     var process1 = value1.toFixed(2),
         process2 = value2.toFixed(1);
+
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
+};
+//! toPrecision() | Kendisine parametre olarak verilen değişken içeriğindeki sayının kaç basamak olacağını belirleyerek yeni bir içerik oluşturur...
+var toPrecisionFunctionSimple = function () {
+    var value1 = 33.499,
+        value2 = 33.499;
+
+    var process1 = value1.toPrecision(3),
+        process2 = value2.toPrecision(6);
 
     document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuç:" + process2);
@@ -132,5 +143,6 @@ export {
     isFiniteFunctionSimple,
     isIntegerFunctionSimple,
     isSafeIntegerFunctionSimple,
-    toFixedIntegerFunctionSimple
+    toFixedFunctionSimple,
+    toPrecisionFunctionSimple
 };
