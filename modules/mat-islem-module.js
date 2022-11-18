@@ -18,9 +18,14 @@ var negativeInfinityFunctionSimple = function () {
     var smallestNumber = Number.NEGATIVE_INFINITY;
     document.write(smallestNumber);
 };
+//! NaN | Değerin sayı olmaması durumu...
+var nanFunctionSimple = function () {
+    document.write("a" * "b" + 9);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
     pozitiveInfinityFunctionSimple,
-    negativeInfinityFunctionSimple
+    negativeInfinityFunctionSimple,
+    nanFunctionSimple
 };
