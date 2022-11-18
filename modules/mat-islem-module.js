@@ -148,6 +148,16 @@ var parseIntFunctionSimple = function () {
     document.write("2.Ürün:" + data2 + "<br>");
     document.write("Toplam:" + total + " Lira");
 };
+//! parseFloat() | Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini ondalıklı sayılar haline dönüştürerek yeni bir içerik oluşturur...
+var parseFloatFunctionSimple = function () {
+    var lira = "1862 Türk Lirası",
+        dolarkuru = "18.62";
+    document.write(`${lira} = `);
+    var price1 = parseFloat(lira),
+        price2 = parseFloat(dolarkuru);
+    document.write(price1 / price2 + "$");
+
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -169,5 +179,6 @@ export {
     toFixedFunctionSimple,
     toPrecisionFunctionSimple,
     toExponentialFunctionSimple,
-    parseIntFunctionSimple
+    parseIntFunctionSimple,
+    parseFloatFunctionSimple
 };
