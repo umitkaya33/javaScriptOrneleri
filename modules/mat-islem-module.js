@@ -47,6 +47,10 @@ var log10eFunctionSimple = function () {
 var piFunctionSimple = function () {
     document.write(Math.PI);
 };
+//! SQRT1_2 | 1/2 Sayısının karekök değerini gösterir...
+var sqrt1_2FunctionSimple = function () {
+    document.write(Math.SQRT1_2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -58,5 +62,6 @@ export {
     ln10FunctionSimple,
     log2eFunctionSimple,
     log10eFunctionSimple,
-    piFunctionSimple
+    piFunctionSimple,
+    sqrt1_2FunctionSimple
 };
