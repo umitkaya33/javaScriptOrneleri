@@ -13,8 +13,14 @@ var pozitiveInfinityFunctionSimple = function () {
     var largestNumber = Number.POSITIVE_INFINITY;
     document.write(largestNumber);
 };
+//! NEGATIVE_INFINITY | Atanabilecek en küçük negatif sayı değerinden küçük sayılarda sonsuzluk değeri...
+var negativeInfinityFunctionSimple = function () {
+    var smallestNumber = Number.NEGATIVE_INFINITY;
+    document.write(smallestNumber);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
-    pozitiveInfinityFunctionSimple
+    pozitiveInfinityFunctionSimple,
+    negativeInfinityFunctionSimple
 };
