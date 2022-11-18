@@ -22,10 +22,16 @@ var negativeInfinityFunctionSimple = function () {
 var nanFunctionSimple = function () {
     document.write("a" * "b" + 9);
 };
+//! E | Evler sayı değerini gösterir...
+var eFunctionSimple = function () {
+    var test = Math.E;
+    document.write(test);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
     pozitiveInfinityFunctionSimple,
     negativeInfinityFunctionSimple,
-    nanFunctionSimple
+    nanFunctionSimple,
+    eFunctionSimple
 };
