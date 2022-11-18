@@ -8,7 +8,13 @@ var minValueFunctionSimple = function () {
     var smallestNumber = Number.MIN_VALUE;
     document.write(smallestNumber);
 };
+//! POZITIVE_INFINITY | Atanabilecek en büyük pozitif sayı değerinden büyük sayılarda sonsuzluk değeri...
+var pozitiveInfinityFunctionSimple = function () {
+    var largestNumber = Number.POSITIVE_INFINITY;
+    document.write(largestNumber);
+};
 export {
     maxValueFunctionSimple,
-    minValueFunctionSimple
+    minValueFunctionSimple,
+    pozitiveInfinityFunctionSimple
 };
