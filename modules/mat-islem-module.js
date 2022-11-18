@@ -27,11 +27,17 @@ var eFunctionSimple = function () {
     var test = Math.E;
     document.write(test);
 };
+//! LN2 | 2 Sayısının doğal logaritma değerini gösterir...
+var ln2FunctionSimple = function () {
+    document.write(Math.LN2);
+};
+
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
     pozitiveInfinityFunctionSimple,
     negativeInfinityFunctionSimple,
     nanFunctionSimple,
-    eFunctionSimple
+    eFunctionSimple,
+    ln2FunctionSimple,
 };
