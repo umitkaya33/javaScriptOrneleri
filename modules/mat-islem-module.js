@@ -68,10 +68,10 @@ var isnanFunctionSimple = function () {
     document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuc:" + process2 + "<br>");
     document.write("Değer:" + value3 + " Sonuc:" + process3 + "<br>");
-    document.write("Değer:" + value4 + " Sonuc:" + process4 + "<br>");
+    document.write("Değer:" + value4 + " Sonuc:" + process4);
 };
 //! isFinite() | Kendisine parametrik olarak verilen değişken içeriğinin en büyük pozitif sayı ile en küçük negatif sayı aralığında olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
-var isfiniteFunctionSimple = function () {
+var isFiniteFunctionSimple = function () {
     var value1 = 100,
         value2 = Number.MAX_VALUE * 2;
 
@@ -79,8 +79,18 @@ var isfiniteFunctionSimple = function () {
         process2 = Number.isFinite(value2);
 
     document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
-    document.write("Değer:" + value2 + " Sonuc:" + process2 + "<br>");
+    document.write("Değer:" + value2 + " Sonuc:" + process2);
+};
+//! isInteger() | Kendisine parametrik olarak verilen değişken içeriğinin tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var isIntegerFunctionSimple = function () {
+    var value1 = 100,
+        value2 = "A";
 
+    var process1 = Number.isInteger(value1),
+        process2 = Number.isInteger(value2);
+
+    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuc:" + process2);
 };
 export {
     maxValueFunctionSimple,
@@ -97,5 +107,6 @@ export {
     sqrt1_2FunctionSimple,
     sqrt2FunctionSimple,
     isnanFunctionSimple,
-    isfiniteFunctionSimple
+    isFiniteFunctionSimple,
+    isIntegerFunctionSimple
 };
