@@ -70,6 +70,18 @@ var isnanFunctionSimple = function () {
     document.write("Değer:" + value3 + " Sonuc:" + process3 + "<br>");
     document.write("Değer:" + value4 + " Sonuc:" + process4 + "<br>");
 };
+//! isFinite() | Kendisine parametrik olarak verilen değişken içeriğinin en büyük pozitif sayı ile en küçük negatif sayı aralığında olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var isfiniteFunctionSimple = function () {
+    var value1 = 100,
+        value2 = Number.MAX_VALUE * 2;
+
+    var process1 = Number.isFinite(value1),
+        process2 = Number.isFinite(value2);
+
+    document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuc:" + process2 + "<br>");
+
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -84,5 +96,6 @@ export {
     piFunctionSimple,
     sqrt1_2FunctionSimple,
     sqrt2FunctionSimple,
-    isnanFunctionSimple
+    isnanFunctionSimple,
+    isfiniteFunctionSimple
 };
