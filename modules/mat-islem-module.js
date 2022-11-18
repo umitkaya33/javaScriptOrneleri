@@ -92,6 +92,17 @@ var isIntegerFunctionSimple = function () {
     document.write("Değer:" + value1 + " Sonuc:" + process1 + "<br>");
     document.write("Değer:" + value2 + " Sonuc:" + process2);
 };
+//! isSafeInteger() | Kendisine parametrik olarak verilen değişken içeriğinin güvenli bir tam sayı olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var isSafeIntegerFunctionSimple = function () {
+    var value1 = 45 / 3,
+        value2 = 45 / 2;
+
+    var process1 = Number.isSafeInteger(value1),
+        process2 = Number.isSafeInteger(value2);
+
+    document.write("Değer:" + value1 + " Sonuç:" + process1 + "<br>");
+    document.write("Değer:" + value2 + " Sonuç:" + process2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -108,5 +119,6 @@ export {
     sqrt2FunctionSimple,
     isnanFunctionSimple,
     isFiniteFunctionSimple,
-    isIntegerFunctionSimple
+    isIntegerFunctionSimple,
+    isSafeIntegerFunctionSimple
 };
