@@ -35,6 +35,10 @@ var ln2FunctionSimple = function () {
 var ln10FunctionSimple = function () {
     document.write(Math.LN10);
 };
+//! LOG2E | Evler sayısının 2 tabanına göre logaritmik değerini gösterir...
+var log2eFunctionSimple = function () {
+    document.write(Math.LOG2E);
+};
 
 export {
     maxValueFunctionSimple,
@@ -44,5 +48,6 @@ export {
     nanFunctionSimple,
     eFunctionSimple,
     ln2FunctionSimple,
-    ln10FunctionSimple
+    ln10FunctionSimple,
+    log2eFunctionSimple
 };
