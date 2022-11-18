@@ -31,6 +31,10 @@ var eFunctionSimple = function () {
 var ln2FunctionSimple = function () {
     document.write(Math.LN2);
 };
+//! LN10 | 10 Sayısının doğal logaritma değerini gösterir...
+var ln10FunctionSimple = function () {
+    document.write(Math.LN10);
+};
 
 export {
     maxValueFunctionSimple,
@@ -40,4 +44,5 @@ export {
     nanFunctionSimple,
     eFunctionSimple,
     ln2FunctionSimple,
+    ln10FunctionSimple
 };
