@@ -331,6 +331,15 @@ var signFunctionSimple = function () {
     document.write(four + " = " + process4);
 
 };
+//! min() | Kendisine parametre olarak verilen sayı değerlerinin en küçüğünü bulur...
+var minFunctionSimple = function () {
+    var one = 54333,
+        two = -23353,
+        three = 0,
+        four = -7913;
+    var calculate = Math.min(one, two, three, four);
+    document.write(one + " " + two + " " + three + " " + four + " Sayılarının en küçüğü " + calculate);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -363,5 +372,6 @@ export {
     roundFunctionSimple,
     truncFunctionSimple,
     randomFunctionSimple,
-    signFunctionSimple
+    signFunctionSimple,
+    minFunctionSimple
 };
