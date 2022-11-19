@@ -383,6 +383,15 @@ var cbrtFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! sin() | Kendisine parametre olarak verilen herhangi bir sayı değerininin sinus değerini bulur...
+var sinFunctionSimple = function () {
+    var one = 27,
+        two = 23;
+    var calculate1 = Math.sin(one),
+        calculate2 = Math.sin(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -421,5 +430,6 @@ export {
     powFunctionSimple,
     absFunctionSimple,
     sqrtFunctionSimple,
-    cbrtFunctionSimple
+    cbrtFunctionSimple,
+    sinFunctionSimple
 };
