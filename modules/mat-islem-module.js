@@ -304,7 +304,15 @@ var truncFunctionSimple = function () {
         process2 = Math.trunc(two);
 
     document.write(one + " = " + process1 + "<br>");
-    document.write(two + " = " + process2 + "<br>");
+    document.write(two + " = " + process2);
+};
+//! random() | 0 ile 1 arasında rastgele sayı üretir...
+var randomFunctionSimple = function () {
+    var process1 = Math.random(),
+        process2 = Math.random();
+
+    document.write(process1 + "<br>");
+    document.write(process2);
 };
 export {
     maxValueFunctionSimple,
@@ -336,5 +344,6 @@ export {
     ceilFunctionSimple,
     floorFunctionSimple,
     roundFunctionSimple,
-    truncFunctionSimple
+    truncFunctionSimple,
+    randomFunctionSimple
 };
