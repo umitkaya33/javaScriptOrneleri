@@ -173,7 +173,7 @@ var toStringFunctionSimple = function () {
     document.write(convert1 + convert1Data + "<br>");
     document.write(convert2 + convert2Data + "<br>");
 };
-//! String() | Değiken içeriğini mutlak olarak string veri türüne dönüştürür...
+//! String() | Değişken içeriğini mutlak olarak string veri türüne dönüştürür...
 var stringFunctionSimple = function () {
     var one = 10,
         two = 3.14,
@@ -212,7 +212,7 @@ var stringFunctionSimple = function () {
     document.write("Veri Türü: " + fiveConvertData + " Değer: " + fiveConvert + "<br>");
     document.write("Veri Türü: " + sixConvertData + " Değer: " + sixConvert);
 };
-//! Number() | Değiken içeriğini mutlak olarak number veri türüne dönüştürür...
+//! Number() | Değişken içeriğini mutlak olarak number veri türüne dönüştürür...
 var numberFunctionSimple = function () {
     var one = true,
         two = false,
@@ -242,6 +242,25 @@ var numberFunctionSimple = function () {
     document.write("Veri Türü: " + twoConvertData + " Değer: " + twoConvert + "<br>");
     document.write("Veri Türü: " + threeConvertData + " Değer: " + threeConvert + "<br>");
     document.write("Veri Türü: " + fourConvertData + " Değer: " + fourConvert);
+};
+//! valueOf() | Değişken içeriğini tam anlamıyla aktarımını sağlayarak yeni bir içerik oluşturur...
+var valueOfFunctionSimple = function () {
+    var one = 15,
+        two = "44.33";
+    var oneData = typeof one,
+        twoData = typeof two;
+
+    document.write("Değer: " + one + " Veri Türü: " + oneData + "<br>");
+    document.write("Değer: " + two + " Veri Türü: " + twoData + "<br>");
+
+    var oneConvert = one.valueOf(),
+        twoConvert = two.valueOf();
+
+    var oneConvertData = typeof oneConvert,
+        twoConvertData = typeof twoConvert;
+
+    document.write("Değer: " + oneConvert + " Veri Türü: " + oneConvertData + "<br>");
+    document.write("Değer: " + twoConvert + " Veri Türü: " + twoConvertData + "<br>");
 
 };
 export {
@@ -269,5 +288,6 @@ export {
     parseFloatFunctionSimple,
     toStringFunctionSimple,
     stringFunctionSimple,
-    numberFunctionSimple
+    numberFunctionSimple,
+    valueOfFunctionSimple
 };
