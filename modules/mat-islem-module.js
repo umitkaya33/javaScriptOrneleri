@@ -365,6 +365,15 @@ var absFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! sqrt() | Kendisine parametre olarak verilen herhangi bir sayı değerininin karekökünü bulur...
+var sqrtFunctionSimple = function () {
+    var one = 25,
+        two = 13*13;
+    var calculate1 = Math.sqrt(one),
+        calculate2 = Math.sqrt(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -401,5 +410,6 @@ export {
     minFunctionSimple,
     maxFunctionSimple,
     powFunctionSimple,
-    absFunctionSimple
+    absFunctionSimple,
+    sqrtFunctionSimple
 };
