@@ -314,6 +314,23 @@ var randomFunctionSimple = function () {
     document.write(process1 + "<br>");
     document.write(process2);
 };
+//! sign() | Kendisine parametre olarak verilen değerin işaretini bulur...
+var signFunctionSimple = function () {
+    var one = 54,
+        two = -23,
+        three = 0,
+        four = "44 Değeri";
+    var process1 = Math.sign(one),
+        process2 = Math.sign(two),
+        process3 = Math.sign(three),
+        process4 = Math.sign(four);
+
+    document.write(one + " = " + process1 + "<br>");
+    document.write(two + " = " + process2 + "<br>");
+    document.write(three + " = " + process3 + "<br>");
+    document.write(four + " = " + process4);
+
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -345,5 +362,6 @@ export {
     floorFunctionSimple,
     roundFunctionSimple,
     truncFunctionSimple,
-    randomFunctionSimple
+    randomFunctionSimple,
+    signFunctionSimple
 };
