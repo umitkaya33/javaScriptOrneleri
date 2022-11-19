@@ -353,9 +353,17 @@ var maxFunctionSimple = function () {
 var powFunctionSimple = function () {
     var one = 5,
         two = 4;
-
     var calculate = Math.pow(one, two);
     document.write(one + " üs " + two + " = " + calculate);
+};
+//! abs() | Kendisine parametre olarak verilen herhangi bir sayı değerini mutlak değerini bulur...
+var absFunctionSimple = function () {
+    var one = 155,
+        two = -144;
+    var calculate1 = Math.abs(one),
+        calculate2 = Math.abs(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
 };
 export {
     maxValueFunctionSimple,
@@ -392,5 +400,6 @@ export {
     signFunctionSimple,
     minFunctionSimple,
     maxFunctionSimple,
-    powFunctionSimple
+    powFunctionSimple,
+    absFunctionSimple
 };
