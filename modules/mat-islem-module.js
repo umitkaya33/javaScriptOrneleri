@@ -295,6 +295,17 @@ var roundFunctionSimple = function () {
     document.write(two + " = " + process2 + " Yukarı Yuvarlandı" + "<br>");
     document.write(three + " = " + process3 + " Yukarı Yuvarlandı");
 };
+//! trunc() | Kendisine parametre olarak verilen ondalıklı sayının ondalık kısmını kaldırarak tam sayı değerini oluşturur...
+var truncFunctionSimple = function () {
+    var one = 3.49,
+        two = 1.23456789987;
+
+    var process1 = Math.trunc(one),
+        process2 = Math.trunc(two);
+
+    document.write(one + " = " + process1 + "<br>");
+    document.write(two + " = " + process2 + "<br>");
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -324,5 +335,6 @@ export {
     valueOfFunctionSimple,
     ceilFunctionSimple,
     floorFunctionSimple,
-    roundFunctionSimple
+    roundFunctionSimple,
+    truncFunctionSimple
 };
