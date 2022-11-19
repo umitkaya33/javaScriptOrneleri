@@ -392,6 +392,15 @@ var sinFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! sinh() | Kendisine parametre olarak verilen herhangi bir sayı değerininin hiperbolik sinus değerini bulur...
+var sinhFunctionSimple = function () {
+    var one = 1,
+        two = 2;
+    var calculate1 = Math.sinh(one),
+        calculate2 = Math.sinh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -431,5 +440,6 @@ export {
     absFunctionSimple,
     sqrtFunctionSimple,
     cbrtFunctionSimple,
-    sinFunctionSimple
+    sinFunctionSimple,
+    sinhFunctionSimple
 };
