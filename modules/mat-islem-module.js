@@ -340,6 +340,15 @@ var minFunctionSimple = function () {
     var calculate = Math.min(one, two, three, four);
     document.write(one + " " + two + " " + three + " " + four + " Sayılarının en küçüğü " + calculate);
 };
+//! max() | Kendisine parametre olarak verilen sayı değerlerinin en büyüğünü bulur...
+var maxFunctionSimple = function () {
+    var one = 67787,
+        two = 67886,
+        three = 67889,
+        four = 67877;
+    var calculate = Math.max(one, two, three, four);
+    document.write(one + " " + two + " " + three + " " + four + " Sayılarının en büyüğü " + calculate);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -373,5 +382,6 @@ export {
     truncFunctionSimple,
     randomFunctionSimple,
     signFunctionSimple,
-    minFunctionSimple
+    minFunctionSimple,
+    maxFunctionSimple
 };
