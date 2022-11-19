@@ -261,7 +261,16 @@ var valueOfFunctionSimple = function () {
 
     document.write("Değer: " + oneConvert + " Veri Türü: " + oneConvertData + "<br>");
     document.write("Değer: " + twoConvert + " Veri Türü: " + twoConvertData + "<br>");
+};
+//! ceil() | Kendisine parametre olarak verilen ondalıklı sayıyı yukarı yuvarlar...
+var ceilFunctionSimple = function () {
+    var one = 3.12,
+        two = 56278.1234532;
+    var process1 = Math.ceil(one),
+        process2 = Math.ceil(two);
 
+    document.write(one + " = " + process1 + "<br>");
+    document.write(two + " = " + process2);
 };
 export {
     maxValueFunctionSimple,
@@ -289,5 +298,6 @@ export {
     toStringFunctionSimple,
     stringFunctionSimple,
     numberFunctionSimple,
-    valueOfFunctionSimple
+    valueOfFunctionSimple,
+    ceilFunctionSimple
 };
