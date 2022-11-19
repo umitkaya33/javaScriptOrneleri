@@ -282,6 +282,19 @@ var floorFunctionSimple = function () {
     document.write(one + " = " + process1 + "<br>");
     document.write(two + " = " + process2);
 };
+//! round() | Kendisine parametre olarak verilen ondalıklı sayıyı kendisine en yakın tam sayıyı kontrol ederek yukarı veya aşağı yuvarlar...
+var roundFunctionSimple = function () {
+    var one = 2.49,
+        two = 2.50,
+        three = 2.51;
+    var process1 = Math.round(one),
+        process2 = Math.round(two),
+        process3 = Math.round(three);
+
+    document.write(one + " = " + process1 + " Aşağı Yuvarlandı" + "<br>");
+    document.write(two + " = " + process2 + " Yukarı Yuvarlandı" + "<br>");
+    document.write(three + " = " + process3 + " Yukarı Yuvarlandı");
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -310,5 +323,6 @@ export {
     numberFunctionSimple,
     valueOfFunctionSimple,
     ceilFunctionSimple,
-    floorFunctionSimple
+    floorFunctionSimple,
+    roundFunctionSimple
 };
