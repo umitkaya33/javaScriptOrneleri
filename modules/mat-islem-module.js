@@ -172,7 +172,45 @@ var toStringFunctionSimple = function () {
         convert2Data = typeof convert2;
     document.write(convert1 + convert1Data + "<br>");
     document.write(convert2 + convert2Data + "<br>");
-
+};
+//! String() | Değiken içeriğini mutlak olarak string veri türüne dönüştürür...
+var stringFunctionSimple = function () {
+    var one = 10,
+        two = 3.14,
+        three = Boolean(0),
+        four = Boolean(1),
+        five = ["Javascript", "PHP"],
+        six = new Date();
+    var oneData = typeof one,
+        twoData = typeof two,
+        threeData = typeof three,
+        fourData = typeof four,
+        fiveData = typeof five,
+        sixData = typeof six;
+    document.write("Veri Türü: " + oneData + " Değer: " + one + "<br>");
+    document.write("Veri Türü: " + twoData + " Değer: " + two + "<br>");
+    document.write("Veri Türü: " + threeData + " Değer: " + three + "<br>");
+    document.write("Veri Türü: " + fourData + " Değer: " + four + "<br>");
+    document.write("Veri Türü: " + fiveData + " Değer: " + five + "<br>");
+    document.write("Veri Türü: " + sixData + " Değer: " + six + "<br><br>");
+    var oneConvert = String(one),
+        twoConvert = String(two),
+        threeConvert = String(three),
+        fourConvert = String(four),
+        fiveConvert = String(five),
+        sixConvert = String(six);
+    var oneConvertData = typeof oneConvert,
+        twoConvertData = typeof twoConvert,
+        threeConvertData = typeof threeConvert,
+        fourConvertData = typeof fourConvert,
+        fiveConvertData = typeof fiveConvert,
+        sixConvertData = typeof sixConvert;
+    document.write("Veri Türü: " + oneConvertData + " Değer: " + oneConvert + "<br>");
+    document.write("Veri Türü: " + twoConvertData + " Değer: " + twoConvert + "<br>");
+    document.write("Veri Türü: " + threeConvertData + " Değer: " + threeConvert + "<br>");
+    document.write("Veri Türü: " + fourConvertData + " Değer: " + fourConvert + "<br>");
+    document.write("Veri Türü: " + fiveConvertData + " Değer: " + fiveConvert + "<br>");
+    document.write("Veri Türü: " + sixConvertData + " Değer: " + sixConvert);
 };
 export {
     maxValueFunctionSimple,
@@ -197,5 +235,6 @@ export {
     toExponentialFunctionSimple,
     parseIntFunctionSimple,
     parseFloatFunctionSimple,
-    toStringFunctionSimple
+    toStringFunctionSimple,
+    stringFunctionSimple
 };
