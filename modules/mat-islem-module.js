@@ -349,6 +349,14 @@ var maxFunctionSimple = function () {
     var calculate = Math.max(one, two, three, four);
     document.write(one + " " + two + " " + three + " " + four + " Sayılarının en büyüğü " + calculate);
 };
+//! pow() | Kendisine parametre olarak verilen iki sayının üssünü bulur...
+var powFunctionSimple = function () {
+    var one = 5,
+        two = 4;
+
+    var calculate = Math.pow(one, two);
+    document.write(one + " üs " + two + " = " + calculate);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -383,5 +391,6 @@ export {
     randomFunctionSimple,
     signFunctionSimple,
     minFunctionSimple,
-    maxFunctionSimple
+    maxFunctionSimple,
+    powFunctionSimple
 };
