@@ -272,6 +272,16 @@ var ceilFunctionSimple = function () {
     document.write(one + " = " + process1 + "<br>");
     document.write(two + " = " + process2);
 };
+//! floor() | Kendisine parametre olarak verilen ondalıklı sayıyı aşağı yuvarlar...
+var floorFunctionSimple = function () {
+    var one = 4.13,
+        two = 56.1234532;
+    var process1 = Math.floor(one),
+        process2 = Math.floor(two);
+
+    document.write(one + " = " + process1 + "<br>");
+    document.write(two + " = " + process2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -299,5 +309,6 @@ export {
     stringFunctionSimple,
     numberFunctionSimple,
     valueOfFunctionSimple,
-    ceilFunctionSimple
+    ceilFunctionSimple,
+    floorFunctionSimple
 };
