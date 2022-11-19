@@ -374,6 +374,15 @@ var sqrtFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! cbrt() | Kendisine parametre olarak verilen herhangi bir sayı değerininin küpkökünü bulur...
+var cbrtFunctionSimple = function () {
+    var one = 27,
+        two = 7*7*7;
+    var calculate1 = Math.cbrt(one),
+        calculate2 = Math.cbrt(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -411,5 +420,6 @@ export {
     maxFunctionSimple,
     powFunctionSimple,
     absFunctionSimple,
-    sqrtFunctionSimple
+    sqrtFunctionSimple,
+    cbrtFunctionSimple
 };
