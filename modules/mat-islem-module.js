@@ -212,6 +212,38 @@ var stringFunctionSimple = function () {
     document.write("Veri Türü: " + fiveConvertData + " Değer: " + fiveConvert + "<br>");
     document.write("Veri Türü: " + sixConvertData + " Değer: " + sixConvert);
 };
+//! Number() | Değiken içeriğini mutlak olarak number veri türüne dönüştürür...
+var numberFunctionSimple = function () {
+    var one = true,
+        two = false,
+        three = new Date,
+        four = "25";
+    var oneData = typeof one,
+        twoData = typeof two,
+        threeData = typeof three,
+        fourData = typeof four;
+
+    document.write("Veri Türü: " + oneData + " Değer: " + one + "<br>");
+    document.write("Veri Türü: " + twoData + " Değer: " + two + "<br>");
+    document.write("Veri Türü: " + threeData + " Değer: " + three + "<br>");
+    document.write("Veri Türü: " + fourData + " Değer: " + four + "<br><br>");
+
+    var oneConvert = Number(one),
+        twoConvert = Number(two),
+        threeConvert = Number(three),
+        fourConvert = Number(four);
+
+    var oneConvertData = typeof oneConvert,
+        twoConvertData = typeof twoConvert,
+        threeConvertData = typeof threeConvert,
+        fourConvertData = typeof fourConvert;
+
+    document.write("Veri Türü: " + oneConvertData + " Değer: " + oneConvert + "<br>");
+    document.write("Veri Türü: " + twoConvertData + " Değer: " + twoConvert + "<br>");
+    document.write("Veri Türü: " + threeConvertData + " Değer: " + threeConvert + "<br>");
+    document.write("Veri Türü: " + fourConvertData + " Değer: " + fourConvert);
+
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -236,5 +268,6 @@ export {
     parseIntFunctionSimple,
     parseFloatFunctionSimple,
     toStringFunctionSimple,
-    stringFunctionSimple
+    stringFunctionSimple,
+    numberFunctionSimple
 };
