@@ -58,6 +58,18 @@ var testFunctionSimple = function () {
         control = expression.test(contents);
     document.write(result + " Eşleşme var mı ? : " + control);
 };
+//! input |  Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriğinin tüm değerini gösterir...
+var inputFunctionSimple = function () {
+    var contents = "Javascript JAVASCRIPT",
+        expression = /javax/mgi,
+        control = expression.test(contents);
+    if (control == true) {
+        var result = RegExp.input;
+        document.write(result);
+    } else {
+        document.write("Herhangi bir eşleşme bulunamadı!");
+    }
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -66,5 +78,6 @@ export {
     ignoreCaseFunctionSimple,
     mFunctionSimple,
     multilineFunctionSimple,
-    testFunctionSimple
+    testFunctionSimple,
+    inputFunctionSimple
 };
