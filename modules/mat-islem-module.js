@@ -504,6 +504,15 @@ var expFunctionSimple = function () {
     var calculate = Math.exp(one);
     document.write(one + " = " + calculate);
 };
+//! expm1() | Kendisine parametre olarak verilen sayı değerinin evler sayı üssünü bulup 1 eksiltir...
+var expm1FunctionSimple = function () {
+    var one = 10,
+        two = 10;
+    var calculate1 = Math.expm1(one),
+        calculate2 = Math.exp(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -556,5 +565,6 @@ export {
     atanFunctionSimple,
     atanhFunctionSimple,
     atan2FunctionSimple,
-    expFunctionSimple
+    expFunctionSimple,
+    expm1FunctionSimple
 };
