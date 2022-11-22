@@ -419,6 +419,15 @@ var asinhFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! cos() | Kendisine parametre olarak verilen herhangi bir sayı değerinin cosinüs değerini bulur...
+var cosFunctionSimple = function () {
+    var one = 12,
+        two = 14;
+    var calculate1 = Math.cos(one),
+        calculate2 = Math.cos(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -461,5 +470,6 @@ export {
     sinFunctionSimple,
     sinhFunctionSimple,
     asinFunctionSimple,
-    asinhFunctionSimple
+    asinhFunctionSimple,
+    cosFunctionSimple
 };
