@@ -4,6 +4,7 @@ import * as  kosulModule from "./modules/kosul-module.js";
 import * as  dizilerModule from "./modules/diziler-module.js";
 import * as islemlerModule from "./modules/islemler-module.js";
 import * as matModule from "./modules/mat-islem-module.js";
+import * as duzenModule from "./modules/duzenli-ifadeler-module.js";
 
 
 const btnDongulerWhile = document.getElementById('btnDongulerWhile');
@@ -12,6 +13,7 @@ const btnKosulModuleIF = document.getElementById('btnKosulModuleIF');
 const btnDiziler = document.getElementById('btnDiziler');
 const btnIslemler = document.getElementById('btnIslemler');
 const btnMat = document.getElementById('btnMat');
+const btnDuzen = document.getElementById('btnDuzen');
 
 
 btnDongulerWhile.addEventListener('click', () => {
@@ -37,6 +39,9 @@ btnIslemler.addEventListener('click', () => {
 
 btnMat.addEventListener('click', () => {
    matModule.testFunctionSimple();
+});
+btnDuzen.addEventListener('click', () => {
+   duzenModule.testFunctionSimple();
 });
 
 
