@@ -124,6 +124,18 @@ var replaceFunctionSimple = function () {
     document.write(contents + "<br>");
     document.write(change);
 };
+//! split() |  Kendisine parametre olarak verilen düzenli ifadeli değer doğrultusunda değişken içeriğini kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerlerin bölümleyerek yeri bir içerik oluşturur...
+var splitFunctionSimple = function () {
+    var contents = "Javascript Php Css Xml Html Phyton",
+        process = /\W/g,
+        result = contents.split(process);
+    document.write(result[0] + "<br>");
+    document.write(result[1] + "<br>");
+    document.write(result[2] + "<br>");
+    document.write(result[3] + "<br>");
+    document.write(result[4] + "<br>");
+    document.write(result[5]);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -140,5 +152,6 @@ export {
     lastMatchFunctionSimple,
     leftContextFunctionSimple,
     rightContextFunctionSimple,
-    replaceFunctionSimple
+    replaceFunctionSimple,
+    splitFunctionSimple
 };
