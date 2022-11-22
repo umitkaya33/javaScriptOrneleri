@@ -401,6 +401,15 @@ var sinhFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! asin() | Kendisine parametre olarak -1 ile +1 sayı değerleri arasındaki ark sinüs değerini radial cinsinden bulur...
+var asinFunctionSimple = function () {
+    var one = 0.5,
+        two = -0.9;
+    var calculate1 = Math.asin(one),
+        calculate2 = Math.asin(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -441,5 +450,6 @@ export {
     sqrtFunctionSimple,
     cbrtFunctionSimple,
     sinFunctionSimple,
-    sinhFunctionSimple
+    sinhFunctionSimple,
+    asinFunctionSimple
 };
