@@ -446,6 +446,15 @@ var acosFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! acosh() | Kendisine parametre olarak verilen -herhangi bir sayı değerinin hiperbolik ark cosinüs değerini bulur...
+var acoshFunctionSimple = function () {
+    var one = 2,
+        two = 3;
+    var calculate1 = Math.acosh(one),
+        calculate2 = Math.acosh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -491,5 +500,6 @@ export {
     asinhFunctionSimple,
     cosFunctionSimple,
     coshFunctionSimple,
-    acosFunctionSimple
+    acosFunctionSimple,
+    acoshFunctionSimple
 };
