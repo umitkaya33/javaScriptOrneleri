@@ -116,6 +116,14 @@ var rightContextFunctionSimple = function () {
     var result = RegExp.rightContext;
     document.write(result);
 };
+//! replace() |  Kendisine verilecek olan düzenli ifadeyle parametreler doğrultusunda değişken içeriğini kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değerlerin değişimini sağlayarak yeri bir içerik oluşturur...
+var replaceFunctionSimple = function () {
+    var contents = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir.",
+        process = /(Javascript|script)/gi,
+        change = contents.replace(process, "php");
+    document.write(contents + "<br>");
+    document.write(change);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -131,5 +139,6 @@ export {
     lastIndexFunctionSimple,
     lastMatchFunctionSimple,
     leftContextFunctionSimple,
-    rightContextFunctionSimple
+    rightContextFunctionSimple,
+    replaceFunctionSimple
 };
