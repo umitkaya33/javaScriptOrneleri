@@ -368,7 +368,7 @@ var absFunctionSimple = function () {
 //! sqrt() | Kendisine parametre olarak verilen herhangi bir sayı değerininin karekökünü bulur...
 var sqrtFunctionSimple = function () {
     var one = 25,
-        two = 13*13;
+        two = 13 * 13;
     var calculate1 = Math.sqrt(one),
         calculate2 = Math.sqrt(two);
     document.write(one + " = " + calculate1 + "<br>");
@@ -377,7 +377,7 @@ var sqrtFunctionSimple = function () {
 //! cbrt() | Kendisine parametre olarak verilen herhangi bir sayı değerininin küpkökünü bulur...
 var cbrtFunctionSimple = function () {
     var one = 27,
-        two = 7*7*7;
+        two = 7 * 7 * 7;
     var calculate1 = Math.cbrt(one),
         calculate2 = Math.cbrt(two);
     document.write(one + " = " + calculate1 + "<br>");
@@ -491,6 +491,14 @@ var atanhFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! atan2() | Kendisine parametre olarak verilen sayı değerinin ark tanjant değerini radial cinsinden bulur...
+var atan2FunctionSimple = function () {
+    var one = 12,
+        two = 25
+    var calculate = Math.atan2(one, two);
+    document.write(one + " ve " + two + " = " + calculate);
+
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -541,5 +549,6 @@ export {
     tanFunctionSimple,
     tanhFunctionSimple,
     atanFunctionSimple,
-    atanhFunctionSimple
+    atanhFunctionSimple,
+    atan2FunctionSimple
 };
