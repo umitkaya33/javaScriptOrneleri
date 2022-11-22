@@ -428,6 +428,15 @@ var cosFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! cosh() | Kendisine parametre olarak verilen herhangi bir sayı değerinin hiperbolik cosinüs değerini bulur...
+var coshFunctionSimple = function () {
+    var one = 1,
+        two = 2;
+    var calculate1 = Math.cosh(one),
+        calculate2 = Math.cosh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -471,5 +480,6 @@ export {
     sinhFunctionSimple,
     asinFunctionSimple,
     asinhFunctionSimple,
-    cosFunctionSimple
+    cosFunctionSimple,
+    coshFunctionSimple
 };
