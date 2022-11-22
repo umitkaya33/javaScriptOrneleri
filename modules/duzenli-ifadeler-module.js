@@ -12,7 +12,16 @@ var gFunctionSimple = function () {
         result = contents.match(expression);
     document.write(result);
 };
+//! global |  Düzenli ifade içerisinde g ayarının kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var globalFunctionSimple = function () {
+    var contents = "Ümit Ümit miydi?",
+        expression = /Ümit/g,
+        result = contents.match(expression),
+        control = expression.global;
+    document.write(result + "=" + control);
+};
 export {
     matchFunctionSimple,
-    gFunctionSimple
+    gFunctionSimple,
+    globalFunctionSimple
 };
