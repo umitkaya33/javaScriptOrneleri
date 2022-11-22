@@ -437,6 +437,15 @@ var coshFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! acos() | Kendisine parametre olarak verilen -1 ile +1 arasındaki sayı değerlerinin ark cosinüs değerini bulur...
+var acosFunctionSimple = function () {
+    var one = 0.99,
+        two = -0.5;
+    var calculate1 = Math.acos(one),
+        calculate2 = Math.acos(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -481,5 +490,6 @@ export {
     asinFunctionSimple,
     asinhFunctionSimple,
     cosFunctionSimple,
-    coshFunctionSimple
+    coshFunctionSimple,
+    acosFunctionSimple
 };
