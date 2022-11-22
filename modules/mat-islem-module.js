@@ -410,6 +410,15 @@ var asinFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! asinh() | Kendisine parametre olarak verilen herhangi bir sayı değerinin hiperbolik ark sinüs değerini bulur...
+var asinhFunctionSimple = function () {
+    var one = 1,
+        two = 14;
+    var calculate1 = Math.asinh(one),
+        calculate2 = Math.asinh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -451,5 +460,6 @@ export {
     cbrtFunctionSimple,
     sinFunctionSimple,
     sinhFunctionSimple,
-    asinFunctionSimple
+    asinFunctionSimple,
+    asinhFunctionSimple
 };
