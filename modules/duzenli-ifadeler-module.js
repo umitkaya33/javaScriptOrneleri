@@ -30,15 +30,23 @@ var iFunctionSimple = function () {
 //! ignoreCase |  Düzenli ifade içerisinde i ayarının kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
 var ignoreCaseFunctionSimple = function () {
     var contents = "Javascript JAVASCRIPT",
-    expression = /Javascript/gi,
-    result = contents.match(expression),
-    control = expression.ignoreCase;
-document.write(result + "=" + control);
+        expression = /Javascript/gi,
+        result = contents.match(expression),
+        control = expression.ignoreCase;
+    document.write(result + "=" + control);
+};
+//! m |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin birden fazla satırı varsa tüm satırların kontrol edilmesini sağlar...
+var mFunctionSimple = function () {
+    var contents = "\nJavascript\nJAVASCRIPT",
+        expression = /^Javascript/mgi,
+        result = contents.match(expression);
+    document.write(result);
 };
 export {
     matchFunctionSimple,
     gFunctionSimple,
     globalFunctionSimple,
     iFunctionSimple,
-    ignoreCaseFunctionSimple
+    ignoreCaseFunctionSimple,
+    mFunctionSimple
 };
