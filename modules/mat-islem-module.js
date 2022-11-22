@@ -464,6 +464,15 @@ var tanFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! tanh() | Kendisine parametre olarak verilen herhangi bir sayı değerinin hiperbolik tanjant değerini bulur...
+var tanhFunctionSimple = function () {
+    var one = 2,
+        two = 1;
+    var calculate1 = Math.tanh(one),
+        calculate2 = Math.tanh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -511,5 +520,6 @@ export {
     coshFunctionSimple,
     acosFunctionSimple,
     acoshFunctionSimple,
-    tanFunctionSimple
+    tanFunctionSimple,
+    tanhFunctionSimple
 };
