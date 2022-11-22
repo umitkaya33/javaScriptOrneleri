@@ -20,8 +20,16 @@ var globalFunctionSimple = function () {
         control = expression.global;
     document.write(result + "=" + control);
 };
+//! i |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin büyük-küçük harf ayrımı olmaksızın kontrol edilmesini sağlar...
+var iFunctionSimple = function () {
+    var contents = "Javascript JAVASCRIPT",
+        expression = /javascript/gi,
+        result = contents.match(expression);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
-    globalFunctionSimple
+    globalFunctionSimple,
+    iFunctionSimple
 };
