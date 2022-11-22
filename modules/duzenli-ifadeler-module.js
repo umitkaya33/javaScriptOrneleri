@@ -100,6 +100,14 @@ var lastMatchFunctionSimple = function () {
     var result = RegExp.lastMatch;
     document.write(result);
 };
+//! leftContext |  Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriğinin solunda kalan tüm değerleri gösterir...
+var leftContextFunctionSimple = function () {
+    var contents = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir.",
+        process = /script/gi;
+    process.test(contents);
+    var result = RegExp.leftContext;
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -113,5 +121,6 @@ export {
     sourceFunctionSimple,
     searchFunctionSimple,
     lastIndexFunctionSimple,
-    lastMatchFunctionSimple
+    lastMatchFunctionSimple,
+    leftContextFunctionSimple
 };
