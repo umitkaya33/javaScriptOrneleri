@@ -473,6 +473,15 @@ var tanhFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! atan() | Kendisine parametre olarak verilen herhangi bir sayı değerinin ark tanjant değerini bulur...
+var atanFunctionSimple = function () {
+    var one = 25,
+        two = 15;
+    var calculate1 = Math.atan(one),
+        calculate2 = Math.atan(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -521,5 +530,6 @@ export {
     acosFunctionSimple,
     acoshFunctionSimple,
     tanFunctionSimple,
-    tanhFunctionSimple
+    tanhFunctionSimple,
+    atanFunctionSimple
 };
