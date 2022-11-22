@@ -482,6 +482,15 @@ var atanFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! atanh() | Kendisine parametre olarak verilen -1 +1 arasındaki sayı değerinin hiperbolik tanjant değerini bulur...
+var atanhFunctionSimple = function () {
+    var one = 0.9,
+        two = -0.7;
+    var calculate1 = Math.atanh(one),
+        calculate2 = Math.atanh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -531,5 +540,6 @@ export {
     acoshFunctionSimple,
     tanFunctionSimple,
     tanhFunctionSimple,
-    atanFunctionSimple
+    atanFunctionSimple,
+    atanhFunctionSimple
 };
