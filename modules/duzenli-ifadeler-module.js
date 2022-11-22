@@ -76,6 +76,13 @@ var sourceFunctionSimple = function () {
         result = contents.source;
     document.write(result);
 };
+//! search() |  Kendisine parametre olarak verilen düzenli ifadeli değer doğrultusunda değişken içeriğini kontrol eder ve ilk eşleşmeyi sağlayan değişken içeriğinin index değerini gösterir...
+var searchFunctionSimple = function () {
+    var contents = "Ümit Kaya Javascript Eğitim Seti",
+        process = /Java/gmi,
+        result = contents.search(process);
+    document.write(contents + ":" + result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -86,5 +93,6 @@ export {
     multilineFunctionSimple,
     testFunctionSimple,
     inputFunctionSimple,
-    sourceFunctionSimple
+    sourceFunctionSimple,
+    searchFunctionSimple
 };
