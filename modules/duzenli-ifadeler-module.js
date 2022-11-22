@@ -83,6 +83,15 @@ var searchFunctionSimple = function () {
         result = contents.search(process);
     document.write(contents + ":" + result);
 };
+//! lastindex |  Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda ilk eşleşmeyi sağlayan değişken içeriğinin bir sonraki index değerini gösterir...
+var lastIndexFunctionSimple = function () {
+    var contents = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir.",
+        process = /script/gi;
+    while (process.test(contents) == true) {
+        var result = process.lastIndex;
+        document.write(result + "<br>");
+    }
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -94,5 +103,6 @@ export {
     testFunctionSimple,
     inputFunctionSimple,
     sourceFunctionSimple,
-    searchFunctionSimple
+    searchFunctionSimple,
+    lastIndexFunctionSimple
 };
