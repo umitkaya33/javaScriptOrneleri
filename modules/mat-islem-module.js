@@ -446,12 +446,21 @@ var acosFunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
-//! acosh() | Kendisine parametre olarak verilen -herhangi bir sayı değerinin hiperbolik ark cosinüs değerini bulur...
+//! acosh() | Kendisine parametre olarak verilen herhangi bir sayı değerinin hiperbolik ark cosinüs değerini bulur...
 var acoshFunctionSimple = function () {
     var one = 2,
         two = 3;
     var calculate1 = Math.acosh(one),
         calculate2 = Math.acosh(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
+//! tan() | Kendisine parametre olarak verilen herhangi bir sayı değerinin tanjant değerini bulur...
+var tanFunctionSimple = function () {
+    var one = 2,
+        two = 1;
+    var calculate1 = Math.tan(one),
+        calculate2 = Math.tan(two);
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
@@ -501,5 +510,6 @@ export {
     cosFunctionSimple,
     coshFunctionSimple,
     acosFunctionSimple,
-    acoshFunctionSimple
+    acoshFunctionSimple,
+    tanFunctionSimple
 };
