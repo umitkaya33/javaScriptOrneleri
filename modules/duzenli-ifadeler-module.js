@@ -50,6 +50,14 @@ var multilineFunctionSimple = function () {
         control = expression.multiline;
     document.write(result + " M Ayarı Kullanımı:" + control);
 };
+//! test() |  Kendisine parametre olarak verilen değişken içeriğinde düzenli ifade ile aranan değer eşleşmesinin olup olmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var testFunctionSimple = function () {
+    var contents = "Javascript JAVASCRIPT",
+        expression = new RegExp("java", "mgi"),
+        result = contents.match(expression),
+        control = expression.test(contents);
+    document.write(result + " Eşleşme var mı ? : " + control);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -57,5 +65,6 @@ export {
     iFunctionSimple,
     ignoreCaseFunctionSimple,
     mFunctionSimple,
-    multilineFunctionSimple
+    multilineFunctionSimple,
+    testFunctionSimple
 };
