@@ -497,7 +497,12 @@ var atan2FunctionSimple = function () {
         two = 25
     var calculate = Math.atan2(one, two);
     document.write(one + " ve " + two + " = " + calculate);
-
+};
+//! exp() | Kendisine parametre olarak verilen sayı değerinin evler sayı üssünü bulur...
+var expFunctionSimple = function () {
+    var one = 12;
+    var calculate = Math.exp(one);
+    document.write(one + " = " + calculate);
 };
 export {
     maxValueFunctionSimple,
@@ -550,5 +555,6 @@ export {
     tanhFunctionSimple,
     atanFunctionSimple,
     atanhFunctionSimple,
-    atan2FunctionSimple
+    atan2FunctionSimple,
+    expFunctionSimple
 };
