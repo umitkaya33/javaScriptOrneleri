@@ -42,11 +42,20 @@ var mFunctionSimple = function () {
         result = contents.match(expression);
     document.write(result);
 };
+//! multiline |  Düzenli ifade içerisinde m ayarının kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir...
+var multilineFunctionSimple = function () {
+    var contents = "Javascript JAVASCRIPT",
+        expression = new RegExp("test", "m"),
+        result = contents.match(expression),
+        control = expression.multiline;
+    document.write(result + " M Ayarı Kullanımı:" + control);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
     globalFunctionSimple,
     iFunctionSimple,
     ignoreCaseFunctionSimple,
-    mFunctionSimple
+    mFunctionSimple,
+    multilineFunctionSimple
 };
