@@ -513,6 +513,15 @@ var expm1FunctionSimple = function () {
     document.write(one + " = " + calculate1 + "<br>");
     document.write(two + " = " + calculate2);
 };
+//! log() | Kendisine parametre olarak verilen sayı değerinin doğal logaritmasını bulur...
+var logFunctionSimple = function () {
+    var one = 1,
+        two = 2;
+    var calculate1 = Math.log(one),
+        calculate2 = Math.log(two);
+    document.write(one + " = " + calculate1 + "<br>");
+    document.write(two + " = " + calculate2);
+};
 export {
     maxValueFunctionSimple,
     minValueFunctionSimple,
@@ -566,5 +575,6 @@ export {
     atanhFunctionSimple,
     atan2FunctionSimple,
     expFunctionSimple,
-    expm1FunctionSimple
+    expm1FunctionSimple,
+    logFunctionSimple
 };
