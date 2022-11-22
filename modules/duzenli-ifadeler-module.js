@@ -70,6 +70,12 @@ var inputFunctionSimple = function () {
         document.write("Herhangi bir eşleşme bulunamadı!");
     }
 };
+//! source |  Düzenli ifade içerisinde kullanılan desen değerini gösterir...
+var sourceFunctionSimple = function () {
+    var contents = /Javascript/,
+        result = contents.source;
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -79,5 +85,6 @@ export {
     mFunctionSimple,
     multilineFunctionSimple,
     testFunctionSimple,
-    inputFunctionSimple
+    inputFunctionSimple,
+    sourceFunctionSimple
 };
