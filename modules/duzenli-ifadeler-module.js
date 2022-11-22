@@ -92,6 +92,14 @@ var lastIndexFunctionSimple = function () {
         document.write(result + "<br>");
     }
 };
+//! lastMatch |  Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda son eşleşmeyi sağlayan değişken içeriğinin değerini gösterir...
+var lastMatchFunctionSimple = function () {
+    var contents = "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir.",
+        process = /script/gi;
+    process.test(contents);
+    var result = RegExp.lastMatch;
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -104,5 +112,6 @@ export {
     inputFunctionSimple,
     sourceFunctionSimple,
     searchFunctionSimple,
-    lastIndexFunctionSimple
+    lastIndexFunctionSimple,
+    lastMatchFunctionSimple
 };
