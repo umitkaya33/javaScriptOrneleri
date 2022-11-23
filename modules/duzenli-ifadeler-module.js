@@ -245,6 +245,13 @@ var example12FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! () |  Düzenli ifadelerde grup tanımlamak için kullanılır...
+var example13FunctionSimple = function () {
+    var contents = "Ümit Kaya Css ve Javascript eğitimleri",
+        process = /(css|javascript)/gi,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -277,5 +284,6 @@ export {
     example9FunctionSimple,
     example10FunctionSimple,
     example11FunctionSimple,
-    example12FunctionSimple
+    example12FunctionSimple,
+    example13FunctionSimple
 };
