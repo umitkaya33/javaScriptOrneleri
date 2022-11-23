@@ -182,6 +182,13 @@ var example3FunctionSimple = function () {
         result = contents.search(process);
     document.write(result);
 };
+//! \B |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğini düzenli ifadeye uygun olabilecek metin parçalarını karakter dizilimi içerisindeki kelimelerin içerisinde aramak için kullanılır...
+var example4FunctionSimple = function () {
+    var contents = "xxxJavascriptxxx xxxJAVASCRIPTxxx",
+        process = /\BJavascript/,
+        result = contents.search(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -205,5 +212,6 @@ export {
     compileFunctionSimple,
     example1FunctionSimple,
     example2FunctionSimple,
-    example3FunctionSimple
+    example3FunctionSimple,
+    example4FunctionSimple
 };
