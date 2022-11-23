@@ -350,6 +350,13 @@ var example27FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! \0 |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece null değeriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example28FunctionSimple = function () {
+    var contents = "Ümit Kaya \u0000 2022 Javascript Eğitim Seti",
+        process = /\0/g,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -397,5 +404,6 @@ export {
     example24FunctionSimple,
     example25FunctionSimple,
     example26FunctionSimple,
-    example27FunctionSimple 
+    example27FunctionSimple,
+    example28FunctionSimple
 };
