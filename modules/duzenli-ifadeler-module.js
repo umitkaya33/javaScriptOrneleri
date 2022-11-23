@@ -380,6 +380,14 @@ var example31FunctionSimple = function () {
     alert(contents);
     document.write(result);
 };
+//! \t |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece yatay sekme (TAB) karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example32FunctionSimple = function () {
+    var contents = "Ümit Kaya   Javascript Eğitim",
+        process = /\t/,
+        result = process.test(contents);
+    alert(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -431,5 +439,6 @@ export {
     example28FunctionSimple,
     example29FunctionSimple,
     example30FunctionSimple,
-    example31FunctionSimple
+    example31FunctionSimple,
+    example32FunctionSimple
 };
