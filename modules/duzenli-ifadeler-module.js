@@ -189,6 +189,13 @@ var example4FunctionSimple = function () {
         result = contents.search(process);
     document.write(result);
 };
+//! ?= |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter dizilimi içerisindeki belirtilen bir refarans değerinde düzenli ifade ile eşleşebilecek değerleri aramak için kullanılır...
+var example5FunctionSimple = function () {
+    var contents = "Javascript dünya üzerinde kullanılan en yaygın script dilidir",
+        process = /script(?= di)/,
+        result = contents.search(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -213,5 +220,6 @@ export {
     example1FunctionSimple,
     example2FunctionSimple,
     example3FunctionSimple,
-    example4FunctionSimple
+    example4FunctionSimple,
+    example5FunctionSimple
 };
