@@ -287,6 +287,13 @@ var example18FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! [^a-z] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterler aralığın dışındaki karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example19FunctionSimple = function () {
+    var contents = "Javascript Umit Kaya 2022",
+        process = new RegExp("[^a-b]","gi"),
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -325,5 +332,6 @@ export {
     example15FunctionSimple,
     example16FunctionSimple,
     example17FunctionSimple,
-    example18FunctionSimple
+    example18FunctionSimple,
+    example19FunctionSimple
 };
