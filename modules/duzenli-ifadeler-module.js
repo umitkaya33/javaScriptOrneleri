@@ -231,6 +231,13 @@ var example10FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! ? |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerlerin 0 veya 1 defa tekrarlanmış olması gerektiğini belirtmek için kullanılır...
+var example11FunctionSimple = function () {
+    var contents = "Javascriptin dosya uzantısı j J j js jss jsss jssss şekline tanımlanmaktadır.",
+        process = /js?/gi,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -261,5 +268,6 @@ export {
     example7FunctionSimple,
     example8FunctionSimple,
     example9FunctionSimple,
-    example10FunctionSimple
+    example10FunctionSimple,
+    example11FunctionSimple
 };
