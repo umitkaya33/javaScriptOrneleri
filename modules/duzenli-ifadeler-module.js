@@ -175,6 +175,13 @@ var example2FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! \b |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğini düzenli ifadeye uygun olabilecek metin parçalarını karakter dizilimi içerisindeki kelimelerin başında ya da sonunda aramak için kullanılır...
+var example3FunctionSimple = function () {
+    var contents = "xJavascriptx JAVASCRIPTx",
+        process = /\bJavascript/i,
+        result = contents.search(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -197,5 +204,6 @@ export {
     toStringFunctionSimple,
     compileFunctionSimple,
     example1FunctionSimple,
-    example2FunctionSimple
+    example2FunctionSimple,
+    example3FunctionSimple
 };
