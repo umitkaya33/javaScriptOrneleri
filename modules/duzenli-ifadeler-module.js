@@ -217,6 +217,13 @@ var example8FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! {x,y} |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerlerin en az x defa ya da en fazla y defa tekrarlanmış olması gerektiğini belirtmek için kullanılır...
+var example9FunctionSimple = function () {
+    var contents = "Javaaaaaaascript",
+        process = /a{2,4}/,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -245,5 +252,6 @@ export {
     example5FunctionSimple,
     example6FunctionSimple,
     example7FunctionSimple,
-    example8FunctionSimple
+    example8FunctionSimple,
+    example9FunctionSimple
 };
