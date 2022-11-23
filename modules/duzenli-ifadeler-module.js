@@ -168,6 +168,13 @@ var example1FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! $ |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter dizilimi sonu ile düzenli ifade arasında eşleşme aramak için kullanılır...
+var example2FunctionSimple = function () {
+    var contents = "Javascript eğitim seti",
+        process = /seti$/,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -189,5 +196,6 @@ export {
     execFunctionSimple,
     toStringFunctionSimple,
     compileFunctionSimple,
-    example1FunctionSimple
+    example1FunctionSimple,
+    example2FunctionSimple
 };
