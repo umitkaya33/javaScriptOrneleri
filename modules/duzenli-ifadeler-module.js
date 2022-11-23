@@ -145,6 +145,12 @@ var execFunctionSimple = function () {
     var result2 = process.exec(contents); //? lastIndex[5]
     document.write(result2);
 };
+//! toString() |  Düzenli ifade içeriğini string veri türünde düz bir metne dönüştürür...
+var toStringFunctionSimple = function () {
+    var contents = /ümit/gi,
+        process = contents.toString();
+    document.write(process);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -163,5 +169,6 @@ export {
     rightContextFunctionSimple,
     replaceFunctionSimple,
     splitFunctionSimple,
-    execFunctionSimple
+    execFunctionSimple,
+    toStringFunctionSimple
 };
