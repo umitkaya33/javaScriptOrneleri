@@ -301,6 +301,13 @@ var example20FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! . |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin yeni satır hariç herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example21FunctionSimple = function () {
+    var contents = "Javascript javascript",
+        process = new RegExp("j.+t","gi"),
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -341,5 +348,6 @@ export {
     example17FunctionSimple,
     example18FunctionSimple,
     example19FunctionSimple,
-    example20FunctionSimple
+    example20FunctionSimple,
+    example21FunctionSimple
 };
