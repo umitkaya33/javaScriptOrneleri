@@ -357,6 +357,13 @@ var example28FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! \f |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece form besleme karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example29FunctionSimple = function () {
+    var contents = "ABC \u000C ABC",
+        process = /\f/g,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -405,5 +412,6 @@ export {
     example25FunctionSimple,
     example26FunctionSimple,
     example27FunctionSimple,
-    example28FunctionSimple
+    example28FunctionSimple,
+    example29FunctionSimple
 };
