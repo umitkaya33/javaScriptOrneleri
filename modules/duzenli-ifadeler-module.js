@@ -136,6 +136,15 @@ var splitFunctionSimple = function () {
     document.write(result[4] + "<br>");
     document.write(result[5]);
 };
+//! exec() |  Kendisine parametre olarak verilen değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerinden yeni bir dizi oluşturularak oluşturduğu dizi değerini gösterir...
+var execFunctionSimple = function () {
+    var contents = "ümit Ümit", //? lastIndex[0]
+        process = /ümit/gi,
+        result = process.exec(contents);
+    document.write(result + "<br>");
+    var result2 = process.exec(contents); //? lastIndex[5]
+    document.write(result2);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -153,5 +162,6 @@ export {
     leftContextFunctionSimple,
     rightContextFunctionSimple,
     replaceFunctionSimple,
-    splitFunctionSimple
+    splitFunctionSimple,
+    execFunctionSimple
 };
