@@ -329,6 +329,13 @@ var example24FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! \D |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin rakam karakteri dışındaki herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example25FunctionSimple = function () {
+    var contents = "Ümit Kaya 2022",
+        process = /\D/g,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -373,5 +380,6 @@ export {
     example21FunctionSimple,
     example22FunctionSimple,
     example23FunctionSimple,
-    example24FunctionSimple
+    example24FunctionSimple,
+    example25FunctionSimple
 };
