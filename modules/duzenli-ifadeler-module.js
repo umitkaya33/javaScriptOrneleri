@@ -151,6 +151,16 @@ var toStringFunctionSimple = function () {
         process = contents.toString();
     document.write(process);
 };
+//! compile() |  Önceden oluşturulmuş düzenli ifade içerisindeki deseni değiştirilmesini sağlar...
+var compileFunctionSimple = function () {
+    var contents = "javascript php css html",
+        process = /javascript/gi,
+        result = contents.match(process);
+    document.write(result + "<br>");
+    process.compile("PHP", "gi");
+    var result2 = contents.match(process);
+    document.write(result2);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -170,5 +180,6 @@ export {
     replaceFunctionSimple,
     splitFunctionSimple,
     execFunctionSimple,
-    toStringFunctionSimple
+    toStringFunctionSimple,
+    compileFunctionSimple
 };
