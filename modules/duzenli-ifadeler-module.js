@@ -315,6 +315,13 @@ var example22FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! \W |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin harf rakam veya _ karakterleri dışındaki herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example23FunctionSimple = function () {
+    var contents = "*_*u*_*m*_*i*_*t*_*",
+        process = /\W/g,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -357,5 +364,6 @@ export {
     example19FunctionSimple,
     example20FunctionSimple,
     example21FunctionSimple,
-    example22FunctionSimple
+    example22FunctionSimple,
+    example23FunctionSimple
 };
