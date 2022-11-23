@@ -266,6 +266,13 @@ var example15FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! [abc] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterlerden herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example16FunctionSimple = function () {
+    var contents = "Ümit Kaya Javascript eğitim",
+        process = new RegExp("[Je]","g"),
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -301,5 +308,6 @@ export {
     example12FunctionSimple,
     example13FunctionSimple,
     example14FunctionSimple,
-    example15FunctionSimple
+    example15FunctionSimple,
+    example16FunctionSimple
 };
