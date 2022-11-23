@@ -372,6 +372,14 @@ var example30FunctionSimple = function () {
     alert(contents);
     document.write(result);
 };
+//! \r |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece paragraf sonu karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example31FunctionSimple = function () {
+    var contents = "Ümit Kaya \rJavascript Eğitim",
+        process = /\r/g,
+        result = process.test(contents);
+    alert(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -422,5 +430,6 @@ export {
     example27FunctionSimple,
     example28FunctionSimple,
     example29FunctionSimple,
-    example30FunctionSimple
+    example30FunctionSimple,
+    example31FunctionSimple
 };
