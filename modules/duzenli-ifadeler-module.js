@@ -294,6 +294,13 @@ var example19FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! (x|y) |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen x ya da y karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example20FunctionSimple = function () {
+    var contents = "1922 2022",
+        process = new RegExp("(19|20)22","g"),
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -333,5 +340,6 @@ export {
     example16FunctionSimple,
     example17FunctionSimple,
     example18FunctionSimple,
-    example19FunctionSimple
+    example19FunctionSimple,
+    example20FunctionSimple
 };
