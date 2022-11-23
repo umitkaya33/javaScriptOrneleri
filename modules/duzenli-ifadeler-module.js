@@ -269,42 +269,42 @@ var example15FunctionSimple = function () {
 //! [abc] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterlerden herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example16FunctionSimple = function () {
     var contents = "Ümit Kaya Javascript eğitim",
-        process = new RegExp("[Je]","g"),
+        process = new RegExp("[Je]", "g"),
         result = contents.match(process);
     document.write(result);
 };
 //! [a-z] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterler aralığında herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example17FunctionSimple = function () {
     var contents = "Ümit Kaya 1991 Doüumludur.",
-        process = new RegExp("[0-9]","g"),
+        process = new RegExp("[0-9]", "g"),
         result = contents.match(process);
     document.write(result);
 };
 //! [^abc] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterler dışındaki karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example18FunctionSimple = function () {
     var contents = "Ümit Kaya Javascript.",
-        process = new RegExp("[^ÜKJ]","g"),
+        process = new RegExp("[^ÜKJ]", "g"),
         result = contents.match(process);
     document.write(result);
 };
 //! [^a-z] |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakterler aralığın dışındaki karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example19FunctionSimple = function () {
     var contents = "Javascript Umit Kaya 2022",
-        process = new RegExp("[^a-b]","gi"),
+        process = new RegExp("[^a-b]", "gi"),
         result = contents.match(process);
     document.write(result);
 };
 //! (x|y) |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen x ya da y karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example20FunctionSimple = function () {
     var contents = "1922 2022",
-        process = new RegExp("(19|20)22","g"),
+        process = new RegExp("(19|20)22", "g"),
         result = contents.match(process);
     document.write(result);
 };
 //! . |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin yeni satır hariç herhangi birisiyle eşleşmesi gerektiğini belirmek için kullanılır...
 var example21FunctionSimple = function () {
     var contents = "Javascript javascript",
-        process = new RegExp("j.+t","gi"),
+        process = new RegExp("j.+t", "gi"),
         result = contents.match(process);
     document.write(result);
 };
@@ -364,6 +364,14 @@ var example29FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! \n |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece yeni satır karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example30FunctionSimple = function () {
+    var contents = "abc\n123\nxyz",
+        process = /\n/g,
+        result = process.test(contents);
+    alert(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -413,5 +421,6 @@ export {
     example26FunctionSimple,
     example27FunctionSimple,
     example28FunctionSimple,
-    example29FunctionSimple
+    example29FunctionSimple,
+    example30FunctionSimple
 };
