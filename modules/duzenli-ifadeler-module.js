@@ -252,6 +252,13 @@ var example13FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! \ |  Düzenli ifadelerde ardından gelecek olan karakterin özel bir karakter olup olmadığını kontrol etmek için kullanılır...
+var example14FunctionSimple = function () {
+    var contents = "Javascript eğitim seti",
+        process = /\S/g,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -285,5 +292,6 @@ export {
     example10FunctionSimple,
     example11FunctionSimple,
     example12FunctionSimple,
-    example13FunctionSimple
+    example13FunctionSimple,
+    example14FunctionSimple
 };
