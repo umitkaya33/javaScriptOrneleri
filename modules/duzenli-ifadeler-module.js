@@ -259,6 +259,13 @@ var example14FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! (?:) |  Düzenli ifadelerde alt grup oluşturmak için kullanılır...
+var example15FunctionSimple = function () {
+    var contents = "Javascript",
+        process = /(?:sc)/g,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -293,5 +300,6 @@ export {
     example11FunctionSimple,
     example12FunctionSimple,
     example13FunctionSimple,
-    example14FunctionSimple
+    example14FunctionSimple,
+    example15FunctionSimple
 };
