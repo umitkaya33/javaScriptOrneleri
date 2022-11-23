@@ -203,6 +203,13 @@ var example6FunctionSimple = function () {
         result = contents.search(process);
     document.write(result);
 };
+//! {x} |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter dizilimi bulunan değerleri x defa tekrarlanmış olması gerektiğini belirtmek için kullanılır...
+var example7FunctionSimple = function () {
+    var contents = "Javaaascript Türkiye üzerinde kullanılan en yaygın script dilidir",
+        process = /a{2}/,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -229,5 +236,6 @@ export {
     example3FunctionSimple,
     example4FunctionSimple,
     example5FunctionSimple,
-    example6FunctionSimple
+    example6FunctionSimple,
+    example7FunctionSimple
 };
