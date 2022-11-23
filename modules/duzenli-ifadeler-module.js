@@ -336,6 +336,13 @@ var example25FunctionSimple = function () {
         result = contents.match(process);
     document.write(result);
 };
+//! \s |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece boşluk karakteri ile eşleşmesi gerektiğini belirmek için kullanılır...
+var example26FunctionSimple = function () {
+    var contents = "Ümit Kaya 2022 Javascript Eğitim Seti",
+        process = /\s/g,
+        result = contents.match(process);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -381,5 +388,6 @@ export {
     example22FunctionSimple,
     example23FunctionSimple,
     example24FunctionSimple,
-    example25FunctionSimple
+    example25FunctionSimple,
+    example26FunctionSimple
 };
