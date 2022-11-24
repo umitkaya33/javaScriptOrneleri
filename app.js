@@ -5,7 +5,7 @@ import * as  dizilerModule from "./modules/diziler-module.js";
 import * as islemlerModule from "./modules/islemler-module.js";
 import * as matModule from "./modules/mat-islem-module.js";
 import * as duzenModule from "./modules/duzenli-ifadeler-module.js";
-
+import * as tarihSaatModule from "./modules/tarih-saat-module.js";
 
 const btnDongulerWhile = document.getElementById('btnDongulerWhile');
 const btnDegiskenLenght = document.getElementById('btnDegiskenLenght');
@@ -14,7 +14,7 @@ const btnDiziler = document.getElementById('btnDiziler');
 const btnIslemler = document.getElementById('btnIslemler');
 const btnMat = document.getElementById('btnMat');
 const btnDuzen = document.getElementById('btnDuzen');
-
+const btnTarih = document.getElementById('btnTarih');
 
 btnDongulerWhile.addEventListener('click', () => {
    dongulerModule.dowhileFunctionSimple();
@@ -23,7 +23,6 @@ btnDongulerWhile.addEventListener('click', () => {
 btnDegiskenLenght.addEventListener('click', () => {
    degiskenModule.lenghtFunctionSimple();
 });
-
 
 btnKosulModuleIF.addEventListener('click', () => {
    kosulModule.ternaryFunctionSimple();
@@ -43,8 +42,6 @@ btnMat.addEventListener('click', () => {
 btnDuzen.addEventListener('click', () => {
    duzenModule.example34FunctionSimple();
 });
-
-
-//  window.onload = function(){
-//     dongulerModule.icIceWhileDongusuOrnegi();
-//  }
+btnTarih.addEventListener('click', () => {
+   tarihSaatModule.testFunctionSimple();
+});
