@@ -79,6 +79,12 @@ var getSecondsFunctionSimple = function () {
         viewSeconds = viewTime.getSeconds();
     document.write(viewSeconds);
 };
+//! getMilliseconds() | Kullanıldığı değişken içerisine milisaniye bilgisini 0 ile 999 arasında depolar.
+var getMillisecondsFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewMilliSeconds = viewTime.getMilliseconds();
+    document.write(viewMilliSeconds);
+};
 
 export {
     dateFunctionSimple,
@@ -88,5 +94,6 @@ export {
     getDayFunctionSimple,
     getHoursFunctionSimple,
     getMinutesFunctionSimple,
-    getSecondsFunctionSimple
+    getSecondsFunctionSimple,
+    getMillisecondsFunctionSimple
 };
