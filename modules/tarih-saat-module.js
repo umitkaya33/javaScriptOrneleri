@@ -217,6 +217,12 @@ var getTimeFunctionSimple = function () {
         stampTime = viewTime.getTime();
     document.write(viewTime + "<br>" + stampTime);
 };
+//! setTime() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine tarihin zaman damgası bilgisini depolar.. Zaman damgası başlangıç(01.01.1970)
+var setTimeFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setTime(-499999999999);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -249,5 +255,6 @@ export {
     setUTCMinutesFunctionSimple,
     setUTCSecondsFunctionSimple,
     setUTCMillisecondsFunctionSimple,
-    getTimeFunctionSimple
+    getTimeFunctionSimple,
+    setTimeFunctionSimple
 };
