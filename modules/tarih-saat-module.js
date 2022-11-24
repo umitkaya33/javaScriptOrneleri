@@ -43,8 +43,15 @@ var getMonthFunctionSimple = function () {
     }
     document.write(viewMonth);
 };
+//! getDate() | Kullanıldığı değişken içerisine gün bilgisini 1 ile 31 arasında rakamsal olarak depolar.
+var getDateFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewDay = viewTime.getDate();
+    document.write(viewDay);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
-    getMonthFunctionSimple
+    getMonthFunctionSimple,
+    getDateFunctionSimple
 };
