@@ -403,6 +403,13 @@ var example34FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! \hexadecimal |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin hexadecimal numeral system tabanında ASCII karşılığı olan karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example35FunctionSimple = function () {
+    var contents = "Javascript",
+        process = /\x76/,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -457,5 +464,6 @@ export {
     example31FunctionSimple,
     example32FunctionSimple,
     example33FunctionSimple,
-    example34FunctionSimple
+    example34FunctionSimple,
+    example35FunctionSimple
 };
