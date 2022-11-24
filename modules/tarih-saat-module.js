@@ -172,13 +172,13 @@ var setMillisecondsFunctionSimple = function () {
 //! setUTCFullYear() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine ait yıl bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
 var setUTCFullYearFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setUTCFullYear(2023,0,1);
+    viewTime.setUTCFullYear(2023, 0, 1);
     document.write(viewTime);
 };
 //! setUTCMonth() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine ait ay bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
 var setUTCMonthFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setUTCMonth(2,29);
+    viewTime.setUTCMonth(2, 29);
     document.write(viewTime);
 };
 //! setUTCDate() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine ait gün bilgisini depolar.. 
@@ -190,7 +190,13 @@ var setUTCDateFunctionSimple = function () {
 //! setUTCHours() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine saat bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
 var setUTCHoursFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setUTCHours(18,59,59);
+    viewTime.setUTCHours(18, 59, 59);
+    document.write(viewTime);
+};
+//! setUTCMinutes() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine dakika bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
+var setUTCMinutesFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setUTCMinutes(59, 59);
     document.write(viewTime);
 };
 export {
@@ -221,5 +227,6 @@ export {
     setUTCFullYearFunctionSimple,
     setUTCMonthFunctionSimple,
     setUTCDateFunctionSimple,
-    setUTCHoursFunctionSimple
+    setUTCHoursFunctionSimple,
+    setUTCMinutesFunctionSimple
 };
