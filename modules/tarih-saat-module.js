@@ -130,13 +130,13 @@ var getUTCMillisecondsFunctionSimple = function () {
 //! setFullYear() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin yıl bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setFullYearFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setFullYear(1991,2);
+    viewTime.setFullYear(1991, 2);
     document.write(viewTime);
 };
 //! setMonth() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin ay bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setMonthFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setMonth(1,2);
+    viewTime.setMonth(1, 2);
     document.write(viewTime);
 };
 //! setDate() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin gün bilgisini depolar..
@@ -148,25 +148,31 @@ var setDateFunctionSimple = function () {
 //! setHours() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin saat bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setHoursFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setHours(6,59,59);
+    viewTime.setHours(6, 59, 59);
     document.write(viewTime);
 };
 //! setMinutes() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin dakika bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setMinutesFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setMinutes(59,59);
+    viewTime.setMinutes(59, 59);
     document.write(viewTime);
 };
 //! setSeconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin saniye bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setSecondsFunctionSimple = function () {
     var viewTime = new Date();
-    viewTime.setSeconds(59,59);
+    viewTime.setSeconds(59, 59);
     document.write(viewTime);
 };
 //! setMilliseconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin milisaniye bilgisini depolar..
 var setMillisecondsFunctionSimple = function () {
     var viewTime = new Date();
     viewTime.setMilliseconds(999);
+    document.write(viewTime);
+};
+//! setUTCFullYear() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine ait yıl bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
+var setUTCFullYearFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setUTCFullYear(2023,0,1);
     document.write(viewTime);
 };
 export {
@@ -193,5 +199,6 @@ export {
     setHoursFunctionSimple,
     setMinutesFunctionSimple,
     setSecondsFunctionSimple,
-    setMillisecondsFunctionSimple
+    setMillisecondsFunctionSimple,
+    setUTCFullYearFunctionSimple
 };
