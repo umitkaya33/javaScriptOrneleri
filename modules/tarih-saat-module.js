@@ -199,6 +199,12 @@ var setUTCMinutesFunctionSimple = function () {
     viewTime.setUTCMinutes(59, 59);
     document.write(viewTime);
 };
+//! setUTCSeconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine saniye bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
+var setUTCSecondsFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setUTCSeconds(59, 999);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -228,5 +234,6 @@ export {
     setUTCMonthFunctionSimple,
     setUTCDateFunctionSimple,
     setUTCHoursFunctionSimple,
-    setUTCMinutesFunctionSimple
+    setUTCMinutesFunctionSimple,
+    setUTCSecondsFunctionSimple
 };
