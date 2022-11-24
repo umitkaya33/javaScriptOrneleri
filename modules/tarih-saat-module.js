@@ -163,6 +163,12 @@ var setSecondsFunctionSimple = function () {
     viewTime.setSeconds(59,59);
     document.write(viewTime);
 };
+//! setMilliseconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin milisaniye bilgisini depolar..
+var setMillisecondsFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setMilliseconds(999);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -186,5 +192,6 @@ export {
     setDateFunctionSimple,
     setHoursFunctionSimple,
     setMinutesFunctionSimple,
-    setSecondsFunctionSimple
+    setSecondsFunctionSimple,
+    setMillisecondsFunctionSimple
 };
