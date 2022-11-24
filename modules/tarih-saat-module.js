@@ -175,6 +175,12 @@ var setUTCFullYearFunctionSimple = function () {
     viewTime.setUTCFullYear(2023,0,1);
     document.write(viewTime);
 };
+//! setUTCMonth() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine ait ay bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
+var setUTCMonthFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setUTCMonth(2,29);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -200,5 +206,6 @@ export {
     setMinutesFunctionSimple,
     setSecondsFunctionSimple,
     setMillisecondsFunctionSimple,
-    setUTCFullYearFunctionSimple
+    setUTCFullYearFunctionSimple,
+    setUTCMonthFunctionSimple
 };
