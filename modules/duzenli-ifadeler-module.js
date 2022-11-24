@@ -396,6 +396,13 @@ var example33FunctionSimple = function () {
     alert(contents);
     document.write(result);
 };
+//! \octal |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin octal numeral system tabanında ASCII karşılığı olan karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example34FunctionSimple = function () {
+    var contents = "Javascript",
+        process = /\166/,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -449,5 +456,6 @@ export {
     example30FunctionSimple,
     example31FunctionSimple,
     example32FunctionSimple,
-    example33FunctionSimple
+    example33FunctionSimple,
+    example34FunctionSimple
 };
