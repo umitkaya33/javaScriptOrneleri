@@ -127,6 +127,12 @@ var getUTCMillisecondsFunctionSimple = function () {
         viewUTCMilliseconds = viewTime.getUTCMilliseconds();
     document.write(viewUTCMilliseconds);
 };
+//! setFullYear() | Kendisine parametre olarak belirtilmiş değişken içeriği doğrultusunda kullanıldığı değişken içeriğini depolar..( Çoklu ayarlama işlemi yapılabilir)
+var setFullYearFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setFullYear(1991,2);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -144,5 +150,6 @@ export {
     getUTCHoursFunctionSimple,
     getUTCMinutesFunctionSimple,
     getUTCSecondsFunctionSimple,
-    getUTCMillisecondsFunctionSimple
+    getUTCMillisecondsFunctionSimple,
+    setFullYearFunctionSimple
 };
