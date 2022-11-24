@@ -205,11 +205,17 @@ var setUTCSecondsFunctionSimple = function () {
     viewTime.setUTCSeconds(59, 999);
     document.write(viewTime);
 };
-//! setUTCMilliseconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine saniye bilgisini depolar.. 
+//! setUTCMilliseconds() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine milisaniye bilgisini depolar.. 
 var setUTCMillisecondsFunctionSimple = function () {
     var viewTime = new Date();
     viewTime.setUTCMilliseconds(999);
     document.write(viewTime);
+};
+//! getTime() | Kullanıldığı değişken içeriğine tarihin zaman damgası bilgisini depolar.. Zaman damgası başlangıç(01.01.1970)
+var getTimeFunctionSimple = function () {
+    var viewTime = new Date(),
+        stampTime = viewTime.getTime();
+    document.write(viewTime + "<br>" + stampTime);
 };
 export {
     dateFunctionSimple,
@@ -242,5 +248,6 @@ export {
     setUTCHoursFunctionSimple,
     setUTCMinutesFunctionSimple,
     setUTCSecondsFunctionSimple,
-    setUTCMillisecondsFunctionSimple
+    setUTCMillisecondsFunctionSimple,
+    getTimeFunctionSimple
 };
