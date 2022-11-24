@@ -67,6 +67,18 @@ var getMinutesFunctionSimple = function () {
         viewMinutes = viewTime.getMinutes();
     document.write(viewMinutes);
 };
+//! getMinutes() | Kullanıldığı değişken içerisine dakika bilgisini 0 ile 59 arasında depolar.
+var getMinutesFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewMinutes = viewTime.getMinutes();
+    document.write(viewMinutes);
+};
+//! getSeconds() | Kullanıldığı değişken içerisine saniye bilgisini 0 ile 59 arasında depolar.
+var getSecondsFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewSeconds = viewTime.getSeconds();
+    document.write(viewSeconds);
+};
 
 export {
     dateFunctionSimple,
@@ -75,5 +87,6 @@ export {
     getDateFunctionSimple,
     getDayFunctionSimple,
     getHoursFunctionSimple,
-    getMinutesFunctionSimple
+    getMinutesFunctionSimple,
+    getSecondsFunctionSimple
 };
