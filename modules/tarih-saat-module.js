@@ -49,9 +49,16 @@ var getDateFunctionSimple = function () {
         viewDay = viewTime.getDate();
     document.write(viewDay);
 };
+//! getDay() | Kullanıldığı değişken içerisine haftanın gün bilgisini 0 ile 6 arasında rakamsal olarak depolar. (Haftanın ilk günü pazar olarak değerlendirilir ve değeri 0'dır)
+var getDayFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewDay = viewTime.getDay();
+    document.write(viewDay);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
     getMonthFunctionSimple,
-    getDateFunctionSimple
+    getDateFunctionSimple,
+    getDayFunctionSimple
 };
