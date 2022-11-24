@@ -145,6 +145,12 @@ var setDateFunctionSimple = function () {
     viewTime.setDate(25);
     document.write(viewTime);
 };
+//! setHours() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin saat bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
+var setHoursFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setHours(6,59,59);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -165,5 +171,6 @@ export {
     getUTCMillisecondsFunctionSimple,
     setFullYearFunctionSimple,
     setMonthFunctionSimple,
-    setDateFunctionSimple
+    setDateFunctionSimple,
+    setHoursFunctionSimple
 };
