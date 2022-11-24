@@ -97,7 +97,12 @@ var getUTCMonthFunctionSimple = function () {
         viewUTCMonth = viewTime.getUTCMonth();
     document.write(viewUTCMonth);
 };
-
+//! getUTCDate() | Kullanıldığı değişken içerisine evrensel zaman dilimine ait gün bilgisini depolar.
+var getUTCDateFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewUTCDate = viewTime.getUTCDate();
+    document.write(viewUTCDate);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -109,5 +114,6 @@ export {
     getSecondsFunctionSimple,
     getMillisecondsFunctionSimple,
     getUTCFullYearFunctionSimple,
-    getUTCMonthFunctionSimple
+    getUTCMonthFunctionSimple,
+    getUTCDateFunctionSimple
 };
