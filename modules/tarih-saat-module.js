@@ -187,6 +187,12 @@ var setUTCDateFunctionSimple = function () {
     viewTime.setUTCDate(25);
     document.write(viewTime);
 };
+//! setUTCHours() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin evrensel zaman dilimine saat bilgisini depolar.. ( Çoklu ayarlama işlemi yapılabilir )
+var setUTCHoursFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setUTCHours(18,59,59);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -214,5 +220,6 @@ export {
     setMillisecondsFunctionSimple,
     setUTCFullYearFunctionSimple,
     setUTCMonthFunctionSimple,
-    setUTCDateFunctionSimple
+    setUTCDateFunctionSimple,
+    setUTCHoursFunctionSimple
 };
