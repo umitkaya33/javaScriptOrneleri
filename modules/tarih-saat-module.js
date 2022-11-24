@@ -127,10 +127,16 @@ var getUTCMillisecondsFunctionSimple = function () {
         viewUTCMilliseconds = viewTime.getUTCMilliseconds();
     document.write(viewUTCMilliseconds);
 };
-//! setFullYear() | Kendisine parametre olarak belirtilmiş değişken içeriği doğrultusunda kullanıldığı değişken içeriğini depolar..( Çoklu ayarlama işlemi yapılabilir)
+//! setFullYear() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin yıl bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
 var setFullYearFunctionSimple = function () {
     var viewTime = new Date();
     viewTime.setFullYear(1991,2);
+    document.write(viewTime);
+};
+//! setMonth() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin ay bilgisini depolar..( Çoklu ayarlama işlemi yapılabilir )
+var setMonthFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setMonth(1,2);
     document.write(viewTime);
 };
 export {
@@ -151,5 +157,6 @@ export {
     getUTCMinutesFunctionSimple,
     getUTCSecondsFunctionSimple,
     getUTCMillisecondsFunctionSimple,
-    setFullYearFunctionSimple
+    setFullYearFunctionSimple,
+    setMonthFunctionSimple
 };
