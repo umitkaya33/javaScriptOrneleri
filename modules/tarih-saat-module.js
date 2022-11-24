@@ -61,6 +61,12 @@ var getHoursFunctionSimple = function () {
         viewHours = viewTime.getHours();
     document.write(viewHours);
 };
+//! getMinutes() | Kullanıldığı değişken içerisine dakika bilgisini 0 ile 59 arasında depolar.
+var getMinutesFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewMinutes = viewTime.getMinutes();
+    document.write(viewMinutes);
+};
 
 export {
     dateFunctionSimple,
@@ -68,5 +74,6 @@ export {
     getMonthFunctionSimple,
     getDateFunctionSimple,
     getDayFunctionSimple,
-    getHoursFunctionSimple
+    getHoursFunctionSimple,
+    getMinutesFunctionSimple
 };
