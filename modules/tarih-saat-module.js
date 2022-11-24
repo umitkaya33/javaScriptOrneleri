@@ -139,6 +139,12 @@ var setMonthFunctionSimple = function () {
     viewTime.setMonth(1,2);
     document.write(viewTime);
 };
+//! setDate() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğinin gün bilgisini depolar..
+var setDateFunctionSimple = function () {
+    var viewTime = new Date();
+    viewTime.setDate(25);
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -158,5 +164,6 @@ export {
     getUTCSecondsFunctionSimple,
     getUTCMillisecondsFunctionSimple,
     setFullYearFunctionSimple,
-    setMonthFunctionSimple
+    setMonthFunctionSimple,
+    setDateFunctionSimple
 };
