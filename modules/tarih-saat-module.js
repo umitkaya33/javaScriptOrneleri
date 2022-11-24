@@ -6,6 +6,13 @@ var dateFunctionSimple = function () {
     document.write(partition + "<br>");
     document.write("YIL: " + partition[3]);
 };
+//! getFullYear() | Kullanıldığı değişken içerisine yıl bilgisini 4 haneli rakamsal olarak depolar.
+var getFullYearFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewYear = viewTime.getFullYear();
+    document.write(viewYear);
+};
 export {
-    dateFunctionSimple
+    dateFunctionSimple,
+    getFullYearFunctionSimple
 };
