@@ -41,7 +41,7 @@ btnMat.addEventListener('click', () => {
    matModule.testFunctionSimple();
 });
 btnDuzen.addEventListener('click', () => {
-   duzenModule.testFunctionSimple();
+   duzenModule.example33FunctionSimple();
 });
 
 

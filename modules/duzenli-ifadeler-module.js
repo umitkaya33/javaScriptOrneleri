@@ -388,6 +388,14 @@ var example32FunctionSimple = function () {
     alert(contents);
     document.write(result);
 };
+//! \v |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin sadece dikey sekme (VERTICAL TAB) karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example33FunctionSimple = function () {
+    var contents = "Ümit Kaya \u000B Javascript Eğitim",
+        process = /\v/,
+        result = process.test(contents);
+    alert(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -440,5 +448,6 @@ export {
     example29FunctionSimple,
     example30FunctionSimple,
     example31FunctionSimple,
-    example32FunctionSimple
+    example32FunctionSimple,
+    example33FunctionSimple
 };
