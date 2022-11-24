@@ -43,5 +43,5 @@ btnDuzen.addEventListener('click', () => {
    duzenModule.example34FunctionSimple();
 });
 btnTarih.addEventListener('click', () => {
-   tarihSaatModule.getMillisecondsFunctionSimple();
+   tarihSaatModule.getUTCFullYearFunctionSimple();
 });

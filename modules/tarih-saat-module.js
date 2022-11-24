@@ -85,6 +85,12 @@ var getMillisecondsFunctionSimple = function () {
         viewMilliSeconds = viewTime.getMilliseconds();
     document.write(viewMilliSeconds);
 };
+//! getUTCFullYear() | Kullanıldığı değişken içerisine evrensel zaman dilimine ait yıl bilgisini depolar.
+var getUTCFullYearFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewUTCYear = viewTime.getUTCFullYear();
+    document.write(viewUTCYear);
+};
 
 export {
     dateFunctionSimple,
@@ -95,5 +101,6 @@ export {
     getHoursFunctionSimple,
     getMinutesFunctionSimple,
     getSecondsFunctionSimple,
-    getMillisecondsFunctionSimple
+    getMillisecondsFunctionSimple,
+    getUTCFullYearFunctionSimple
 };
