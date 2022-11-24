@@ -55,10 +55,18 @@ var getDayFunctionSimple = function () {
         viewDay = viewTime.getDay();
     document.write(viewDay);
 };
+//! getHours() | Kullanıldığı değişken içerisine gün saat bilgisini 0 ile 23 arasında depolar.
+var getHoursFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewHours = viewTime.getHours();
+    document.write(viewHours);
+};
+
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
     getMonthFunctionSimple,
     getDateFunctionSimple,
-    getDayFunctionSimple
+    getDayFunctionSimple,
+    getHoursFunctionSimple
 };
