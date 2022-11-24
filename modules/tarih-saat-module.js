@@ -115,6 +115,12 @@ var getUTCMinutesFunctionSimple = function () {
         viewUTCMinutes = viewTime.getUTCMinutes();
     document.write(viewUTCMinutes);
 };
+//! getUTCSeconds() | Kullanıldığı değişken içerisine evrensel zaman dilimine ait saniye bilgisini depolar.
+var getUTCSecondsFunctionSimple = function () {
+    var viewTime = new Date(),
+        viewUTCSeconds = viewTime.getUTCSeconds();
+    document.write(viewUTCSeconds);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -130,5 +136,6 @@ export {
     getUTCDateFunctionSimple,
     getUTCDayFunctionSimple,
     getUTCHoursFunctionSimple,
-    getUTCMinutesFunctionSimple
+    getUTCMinutesFunctionSimple,
+    getUTCSecondsFunctionSimple
 };
