@@ -410,6 +410,13 @@ var example35FunctionSimple = function () {
         result = process.test(contents);
     document.write(result);
 };
+//! \unicode |  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin 16 bit unicode formatındaki karakteriyle eşleşmesi gerektiğini belirmek için kullanılır...
+var example36FunctionSimple = function () {
+    var contents = "Javascript",
+        process = /\u0000/,
+        result = process.test(contents);
+    document.write(result);
+};
 export {
     matchFunctionSimple,
     gFunctionSimple,
@@ -465,5 +472,6 @@ export {
     example32FunctionSimple,
     example33FunctionSimple,
     example34FunctionSimple,
-    example35FunctionSimple
+    example35FunctionSimple,
+    example36FunctionSimple
 };
