@@ -223,6 +223,11 @@ var setTimeFunctionSimple = function () {
     viewTime.setTime(-499999999999);
     document.write(viewTime);
 };
+//! now() | Kullanıldığı değişken içeriğine evrensel zaman dilimine ait tarihin zaman damgası bilgisini depolar.. Zaman damgası başlangıç(01.01.1970)
+var nowFunctionSimple = function () {
+    var viewTime = Date.now();
+    document.write(viewTime);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -256,5 +261,6 @@ export {
     setUTCSecondsFunctionSimple,
     setUTCMillisecondsFunctionSimple,
     getTimeFunctionSimple,
-    setTimeFunctionSimple
+    setTimeFunctionSimple,
+    nowFunctionSimple
 };
