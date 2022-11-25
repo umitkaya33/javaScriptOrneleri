@@ -228,8 +228,7 @@ var nowFunctionSimple = function () {
     var viewTime = Date.now();
     document.write(viewTime);
 };
-//! UTC() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait tarihin zaman damgası bilgisini depolar.. Zaman damgası başlangıç(01.01.1970) 
-//! Sıralaması : Yıl - Ay - Gün >>> Opsiyonel : Saat - Dakika - Saniye - Milisaniye
+//! UTC() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait tarihin zaman damgası bilgisini depolar.. Zaman damgası başlangıç(01.01.1970) Sıralaması : Yıl - Ay - Gün >>> Opsiyonel : Saat - Dakika - Saniye - Milisaniye
 var utcFunctionSimple = function () {
     var viewTime = Date.UTC(1991, 2, 2);
     document.write(viewTime);
