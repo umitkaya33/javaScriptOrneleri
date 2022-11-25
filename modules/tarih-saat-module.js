@@ -234,6 +234,12 @@ var utcFunctionSimple = function () {
     var viewTime = Date.UTC(1991, 2, 2);
     document.write(viewTime);
 };
+//! parse() | Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine tarihin zaman damgası başlangıcı ile arasındaki zaman farkı bilgisini depolar.. 01.01.1970 - girilen değer arasındaki fark
+var parseFunctionSimple = function () {
+    var difference = Date.parse("February 2, 1991");
+    document.write(difference);
+};
+
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -269,5 +275,6 @@ export {
     getTimeFunctionSimple,
     setTimeFunctionSimple,
     nowFunctionSimple,
-    utcFunctionSimple
+    utcFunctionSimple,
+    parseFunctionSimple
 };
