@@ -29,10 +29,16 @@ var objectsExample3 = function () {
   }
   var info = new objectsFunction();
   document.write("Kişi Adı:" + info.username + "<br>");
-  document.write("Kişi Soyadı:" + info.usersurname + "<br>");
+  document.write("Kişi Soyadı:" + info.usersurname);
 };
+//! nesnelerde özellik ve değer atamalarında tırnak işaretlerinin kullanımı...
+var objectsExample4 = function () {
+  let info = { 'username': "Ümit", "usersurname": 'Kaya' };
+  document.write(info.username + " " + info.usersurname);
+  };
 export {
   objectsExample1,
   objectsExample2,
-  objectsExample3
+  objectsExample3,
+  objectsExample4
 }
