@@ -263,11 +263,20 @@ var toLocaleStringFunctionSimple = function () {
     document.write(viewTime + "  " + dataTime + "<br>");
     document.write(convertTime + "  " + dataConvert);
 };
-//! toUCTString() | Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini evrensel zaman diliminde alarak düz bir metne çevirir...
-var toUCTStringFunctionSimple = function () {
+//! toUTCString() | Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini evrensel zaman diliminde alarak düz bir metne çevirir...
+var toUTCStringFunctionSimple = function () {
     var viewTime = new Date(),
         dataTime = typeof viewTime,
         convertTime = viewTime.toUTCString(),
+        dataConvert = typeof convertTime;
+    document.write(viewTime + "  " + dataTime + "<br>");
+    document.write(convertTime + "  " + dataConvert);
+};
+//! toISOString() | Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini ISO Standartları kullanılarak düz bir metne çevirir...
+var toISOStringFunctionSimple = function () {
+    var viewTime = new Date(),
+        dataTime = typeof viewTime,
+        convertTime = viewTime.toISOString(),
         dataConvert = typeof convertTime;
     document.write(viewTime + "  " + dataTime + "<br>");
     document.write(convertTime + "  " + dataConvert);
@@ -312,5 +321,6 @@ export {
     getTimezoneOffsetFunctionSimple,
     toStringFunctionSimple,
     toLocaleStringFunctionSimple,
-    toUCTStringFunctionSimple
+    toUTCStringFunctionSimple,
+    toISOStringFunctionSimple
 };
