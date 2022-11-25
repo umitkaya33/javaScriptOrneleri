@@ -281,6 +281,15 @@ var toISOStringFunctionSimple = function () {
     document.write(viewTime + "  " + dataTime + "<br>");
     document.write(convertTime + "  " + dataConvert);
 };
+//! toJSON() | Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini JSON Formatı kullanılarak düz bir metne çevirir...
+var toJSONFunctionSimple = function () {
+    var viewTime = new Date(),
+        dataTime = typeof viewTime,
+        convertTime = viewTime.toJSON(),
+        dataConvert = typeof convertTime;
+    document.write(viewTime + "  " + dataTime + "<br>");
+    document.write(convertTime + "  " + dataConvert);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -322,5 +331,6 @@ export {
     toStringFunctionSimple,
     toLocaleStringFunctionSimple,
     toUTCStringFunctionSimple,
-    toISOStringFunctionSimple
+    toISOStringFunctionSimple,
+    toJSONFunctionSimple
 };
