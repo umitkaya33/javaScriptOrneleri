@@ -326,6 +326,15 @@ var toLocaleTimeStringFunctionSimple = function () {
     document.write(viewTime + "  " + dataTime + "<br>");
     document.write(convertTime + "  " + dataConvert);
 };
+//! valueOf() | Üzerinde çalışılan değişken değerinin tam anlamıyla number veri türünde aktarımını sağlayarak yeni bir içerik oluşturur...
+var valueOfFunctionSimple = function () {
+    var viewTime = new Date(),
+        dataTime = typeof viewTime,
+        convertTime = viewTime.valueOf(),
+        dataConvert = typeof convertTime;
+    document.write(viewTime + "  " + dataTime + "<br>");
+    document.write(convertTime + "  " + dataConvert);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -372,5 +381,6 @@ export {
     toDateStringFunctionSimple,
     toLocaleDateStringFunctionSimple,
     toTimeStringFunctionSimple,
-    toLocaleTimeStringFunctionSimple
+    toLocaleTimeStringFunctionSimple,
+    valueOfFunctionSimple
 };
