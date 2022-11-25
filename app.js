@@ -6,6 +6,7 @@ import * as islemlerModule from "./modules/islemler-module.js";
 import * as matModule from "./modules/mat-islem-module.js";
 import * as duzenModule from "./modules/duzenli-ifadeler-module.js";
 import * as tarihSaatModule from "./modules/tarih-saat-module.js";
+import * as nesneModule from "./modules/nesneler-module.js"
 
 const btnDongulerWhile = document.getElementById('btnDongulerWhile');
 const btnDegiskenLenght = document.getElementById('btnDegiskenLenght');
@@ -15,6 +16,7 @@ const btnIslemler = document.getElementById('btnIslemler');
 const btnMat = document.getElementById('btnMat');
 const btnDuzen = document.getElementById('btnDuzen');
 const btnTarih = document.getElementById('btnTarih');
+const btnObjects = document.getElementById('btnObjects');
 
 btnDongulerWhile.addEventListener('click', () => {
    dongulerModule.dowhileFunctionSimple();
@@ -44,4 +46,7 @@ btnDuzen.addEventListener('click', () => {
 });
 btnTarih.addEventListener('click', () => {
    tarihSaatModule.valueOfFunctionSimple();
+});
+btnObjects.addEventListener('click',()=>{
+   nesneModule.objectsExample();
 });
