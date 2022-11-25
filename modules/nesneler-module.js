@@ -35,10 +35,18 @@ var objectsExample3 = function () {
 var objectsExample4 = function () {
   let info = { 'username': "Ümit", "usersurname": 'Kaya' };
   document.write(info.username + " " + info.usersurname);
-  };
+};
+//! tek bir ifadeyle birden fazla nesne tanımlama...
+var objectsExample5 = function () {
+  var userInfo = { username: "Ümit", usersurname: 'Kaya' },
+    userColor = { color1: "Black", color2: "Red" };
+  document.write(userInfo.username + " " + userInfo.usersurname + "<br>");
+  document.write(userColor.color1 + " ♥ " + userColor.color2);
+};
 export {
   objectsExample1,
   objectsExample2,
   objectsExample3,
-  objectsExample4
+  objectsExample4,
+  objectsExample5
 }
