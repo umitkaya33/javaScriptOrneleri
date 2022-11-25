@@ -69,6 +69,18 @@ function objectsExample9() {
   info.lessons = "PHP Eğitim Seti";
   document.write(info.username + " " + info.lessons);
 };
+//! nesne içerisinde fonksiyon tanımlama ve fonksiyonu çağırma...
+function objectsExample10() {
+  let info = {
+    username: "Ümit Kaya",
+    lessons: "Javascript Eğitim Seti",
+    result: function () {
+      document.write("Nesne içi fonksiyon" + "<br>");
+      document.write(this.username.fontcolor("red") + " " + this.lessons.bold());
+    }
+  };
+  info.result();
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -78,5 +90,6 @@ export {
   objectsExample6,
   objectsExample7,
   objectsExample8,
-  objectsExample9
+  objectsExample9,
+  objectsExample10
 }
