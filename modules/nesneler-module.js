@@ -21,7 +21,18 @@ var objectsExample2 = function () {
   document.write("Kişi Soyadı:" + writeSurname + "<br>");
   document.write("Kişi Doğum Tarihi:" + writeDateOfBirth);
 };
+//! fonksiyon şeklinde nesne tanımlama ve nesneyi çağırma...
+var objectsExample3 = function () {
+  function objectsFunction() {
+    this.username = "Ümit";
+    this.usersurname = "Kaya";
+  }
+  var info = new objectsFunction();
+  document.write("Kişi Adı:" + info.username + "<br>");
+  document.write("Kişi Soyadı:" + info.usersurname + "<br>");
+};
 export {
   objectsExample1,
-  objectsExample2
+  objectsExample2,
+  objectsExample3
 }
