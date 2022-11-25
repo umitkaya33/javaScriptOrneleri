@@ -7,7 +7,7 @@ function objectsExample1() {
   document.write("Kişi Adı:" + personName + "<br>");
   document.write("Kişi Soyadı:" + personSurname + "<br>");
   document.write("Kişi Doğum Tarihi:" + personDate);
-}
+};
 //! new operatörü kullanarak nesne tanımlama ve nesneyi çağırma...
 function objectsExample2() {
   var info = new Object();
@@ -20,7 +20,7 @@ function objectsExample2() {
   document.write("Kişi Adı:" + writeName + "<br>");
   document.write("Kişi Soyadı:" + writeSurname + "<br>");
   document.write("Kişi Doğum Tarihi:" + writeDateOfBirth);
-}
+};
 //! fonksiyon şeklinde nesne tanımlama ve nesneyi çağırma...
 function objectsExample3() {
   function objectsFunction() {
@@ -30,29 +30,37 @@ function objectsExample3() {
   var info = new objectsFunction();
   document.write("Kişi Adı:" + info.username + "<br>");
   document.write("Kişi Soyadı:" + info.usersurname);
-}
+};
 //! nesnelerde özellik ve değer atamalarında tırnak işaretlerinin kullanımı...
 function objectsExample4() {
   let info = { 'username': "Ümit", "usersurname": 'Kaya' };
   document.write(info.username + " " + info.usersurname);
-}
+};
 //! tek bir ifadeyle birden fazla nesne tanımlama...
 function objectsExample5() {
   var userInfo = { username: "Ümit", usersurname: 'Kaya' }, userColor = { color1: "Black", color2: "Red" };
   document.write(userInfo.username + " " + userInfo.usersurname + "<br>");
   document.write(userColor.color1 + " ♥ " + userColor.color2);
-}
+};
 //! bir nesneyi başka bir değişkene aktarma...
 function objectsExample6() {
   var userInfo = { username: "Ümit", usersurname: 'Kaya' };
   var transferInfo = userInfo;
   document.write(transferInfo.username + " " + transferInfo.usersurname + "<br>");
-}
+};
+//! nesneyi önceden tanımlayarak özellik ve değerleri sonradan belirlemek...
+function objectsExample7() {
+  var userInfo = {};
+  userInfo.username = "Ümit";
+  userInfo.usersurname = "Kaya";
+  document.write(userInfo.username + " " + userInfo.usersurname);
+};
 export {
   objectsExample1,
   objectsExample2,
   objectsExample3,
   objectsExample4,
   objectsExample5,
-  objectsExample6
+  objectsExample6,
+  objectsExample7
 }
