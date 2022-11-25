@@ -62,6 +62,13 @@ function objectsExample8() {
   let usersurnameView = info["surname"];
   document.write(usernameView + " " + usersurnameView);
 };
+//! nesne içerisindeki bir özelliğe ait değer verisinin değiştirilmesi...
+function objectsExample9() {
+  let info = { username: "Ümit Kaya", lessons: "Javascript Eğitim Seti" };
+  document.write(info.username + " " + info.lessons + "<br>");
+  info.lessons = "PHP Eğitim Seti";
+  document.write(info.username + " " + info.lessons);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -70,5 +77,6 @@ export {
   objectsExample5,
   objectsExample6,
   objectsExample7,
-  objectsExample8
+  objectsExample8,
+  objectsExample9
 }
