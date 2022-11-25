@@ -245,6 +245,15 @@ var getTimezoneOffsetFunctionSimple = function () {
         difference = viewTime.getTimezoneOffset();
     document.write(difference);
 };
+//! toString() | Kullanıldığı değişken içeriğine atanmış olan tarih ve zaman bilgilerini alarak düz bir metne çevirir...
+var toStringFunctionSimple = function () {
+    var viewTime = new Date(),
+        dataTime = typeof viewTime,
+        convertTime = viewTime.toString(),
+        dataConvert = typeof convertTime;
+    document.write(viewTime + "  " + dataTime + "<br>");
+    document.write(convertTime + "  " + dataConvert);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -282,5 +291,6 @@ export {
     nowFunctionSimple,
     utcFunctionSimple,
     parseFunctionSimple,
-    getTimezoneOffsetFunctionSimple
+    getTimezoneOffsetFunctionSimple,
+    toStringFunctionSimple
 };
