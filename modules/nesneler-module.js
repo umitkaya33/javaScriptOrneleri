@@ -81,6 +81,16 @@ function objectsExample10() {
   };
   info.result();
 };
+//! nesne içerisinde fonksiyon nesnenin özellik değerlerine fonksiyon içerisinden ulaşma...
+function objectsExample11() {
+  let info = {
+    username: "UMIT",
+    result: function () {
+      document.write(this.username.split("").reverse().join(""));
+    }
+  };
+  info.result();
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -91,5 +101,6 @@ export {
   objectsExample7,
   objectsExample8,
   objectsExample9,
-  objectsExample10
+  objectsExample10,
+  objectsExample11
 }
