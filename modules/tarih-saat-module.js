@@ -254,6 +254,15 @@ var toStringFunctionSimple = function () {
     document.write(viewTime + "  " + dataTime + "<br>");
     document.write(convertTime + "  " + dataConvert);
 };
+//! toLocaleString() | Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini tarayıcı lokasyonuna göre düz bir metne çevirir...
+var toLocaleStringFunctionSimple = function () {
+    var viewTime = new Date(),
+        dataTime = typeof viewTime,
+        convertTime = viewTime.toLocaleString(),
+        dataConvert = typeof convertTime;
+    document.write(viewTime + "  " + dataTime + "<br>");
+    document.write(convertTime + "  " + dataConvert);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -292,5 +301,6 @@ export {
     utcFunctionSimple,
     parseFunctionSimple,
     getTimezoneOffsetFunctionSimple,
-    toStringFunctionSimple
+    toStringFunctionSimple,
+    toLocaleStringFunctionSimple
 };
