@@ -91,6 +91,17 @@ function objectsExample11() {
   };
   info.result();
 };
+//! nesne içerisinde fonksiyon, fonksiyon içerisinde de özellik ve değer tanımlama ve çağırma...
+function objectsExample12() {
+  let info = {
+    username: "Ümit",
+    result: function () {
+      this.surname = "Kaya";
+    }
+  };
+  info.result();
+  document.write(info.username + " " + info.surname);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -102,5 +113,6 @@ export {
   objectsExample8,
   objectsExample9,
   objectsExample10,
-  objectsExample11
+  objectsExample11,
+  objectsExample12
 }
