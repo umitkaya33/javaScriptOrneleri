@@ -239,7 +239,12 @@ var parseFunctionSimple = function () {
     var difference = Date.parse("February 2, 1991");
     document.write(difference);
 };
-
+//! getTimezoneOffset() | Kullanıldığı değişken içeriğine yerel zaman ile 0(GMT) zaman arasındaki zaman fark bilgisini dakika olarak depolar..
+var getTimezoneOffsetFunctionSimple = function () {
+    var viewTime = new Date(),
+        difference = viewTime.getTimezoneOffset();
+    document.write(difference);
+};
 export {
     dateFunctionSimple,
     getFullYearFunctionSimple,
@@ -276,5 +281,6 @@ export {
     setTimeFunctionSimple,
     nowFunctionSimple,
     utcFunctionSimple,
-    parseFunctionSimple
+    parseFunctionSimple,
+    getTimezoneOffsetFunctionSimple
 };
