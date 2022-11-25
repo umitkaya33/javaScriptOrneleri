@@ -55,6 +55,13 @@ function objectsExample7() {
   userInfo.usersurname = "Kaya";
   document.write(userInfo.username + " " + userInfo.usersurname);
 };
+//! nesneleri dizi gibi görerek herhangi bir özelliğin değerine ulaşma...
+function objectsExample8() {
+  let info = { username: "ümit", surname: "kaya" };
+  let usernameView = info["username"];
+  let usersurnameView = info["surname"];
+  document.write(usernameView + " " + usersurnameView);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -62,5 +69,6 @@ export {
   objectsExample4,
   objectsExample5,
   objectsExample6,
-  objectsExample7
+  objectsExample7,
+  objectsExample8
 }
