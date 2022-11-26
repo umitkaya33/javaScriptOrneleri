@@ -114,6 +114,26 @@ function objectsExample13() {
   };
   document.write(infoNumbers.process());
 };
+//! nesnelerin kapsama alanları...
+function objectsExample14() {
+  let persons1 = {
+    username: "Ümit", surname: "Kaya",
+    personsview: function () {
+      let writepersons = this.username + " " + this.surname;
+      return writepersons
+    }
+  };
+  let persons2 = {
+    username: "Orkun", surname: "Kozan",
+    personsview: function () {
+      let writepersons = this.username + " " + this.surname;
+      return writepersons
+    }
+  };
+  document.write(persons1.personsview() + "<br>");
+  document.write(persons2.personsview());
+
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -127,5 +147,6 @@ export {
   objectsExample10,
   objectsExample11,
   objectsExample12,
-  objectsExample13
+  objectsExample13,
+  objectsExample14
 }
