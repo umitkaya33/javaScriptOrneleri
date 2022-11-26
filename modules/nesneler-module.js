@@ -102,6 +102,18 @@ function objectsExample12() {
   info.result();
   document.write(info.username + " " + info.surname);
 };
+//! nesne içerisindeki fonksiyonda return ifadesinin kullanımı...
+function objectsExample13() {
+  let infoNumbers = {
+    process: function () {
+      let number1 = 5;
+      let number2 = 15;
+      let total = number1 + number2;
+      return total;
+    }
+  };
+  document.write(infoNumbers.process());
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -114,5 +126,6 @@ export {
   objectsExample9,
   objectsExample10,
   objectsExample11,
-  objectsExample12
+  objectsExample12,
+  objectsExample13
 }
