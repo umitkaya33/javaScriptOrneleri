@@ -132,7 +132,22 @@ function objectsExample14() {
   };
   document.write(persons1.personsview() + "<br>");
   document.write(persons2.personsview());
-
+};
+//! Özellik ve değerleri tanımlanmış bir nesneye daha sonradan ek özellik ve değer tanımlama...
+function objectsExample15() {
+  var persons1 = {
+    username: " Ümit ",
+    surname: " Kaya "
+  };
+  var writeUsername = persons1.username;
+  var writeSurname = persons1.surname;
+  persons1.colorname = " Red ";
+  var writeColor = persons1.colorname;
+  document.write(writeUsername + writeSurname + writeColor + "<br>");
+  persons1.detail = function () {
+    document.write("Javascript Eğitimleri");
+  }
+  persons1.detail();
 };
 export {
   objectsExample1,
@@ -148,5 +163,6 @@ export {
   objectsExample11,
   objectsExample12,
   objectsExample13,
-  objectsExample14
+  objectsExample14,
+  objectsExample15
 }
