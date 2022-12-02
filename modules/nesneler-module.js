@@ -200,6 +200,24 @@ function objectsExample19() {
   var textWrite = writeUsername + " " + writeSurname;
   document.write(textWrite);
 };
+//! Fonksiyon şeklindeki nesne tanımlamalarında gönderilen parametrelerin sonradan değiştirilmesi...
+function objectsExample20() {
+  function persons(username, surname, old, city) {
+    this.usernameFeature = username;
+    this.surnameFeature = surname;
+    this.oldFeature = old;
+    this.cityFeature = city;
+    this.process = function (cityValue) {
+      this.cityFeature = cityValue;
+    }
+  }
+  var result = new persons("Ümit", "Kaya", "30", "Gaziantep");
+  result.process("Mersin");
+  document.write(result.usernameFeature + "<br>");
+  document.write(result.surnameFeature + "<br>");
+  document.write(result.oldFeature + "<br>");
+  document.write(result.cityFeature);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -219,5 +237,6 @@ export {
   objectsExample16,
   objectsExample17,
   objectsExample18,
-  objectsExample19
+  objectsExample19,
+  objectsExample20
 }
