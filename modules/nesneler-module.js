@@ -254,6 +254,30 @@ function largeObjectsExample() {
   document.write(info.detail.languages.languagesOne + "<br>");
   document.write(info.detail.languages.languagesTwo);
 };
+//! Nesnelerde delete metodu kullanımı...
+function deleteExample() {
+  var info = {
+    username: "Ümit",
+    surname: "Kaya",
+    detail: {
+      old: 30,
+      city: "Mersin",
+      languages: {
+        languagesOne: "PHP",
+        languagesTwo: "Javascript"
+      }
+    }
+  }
+  delete info.detail.languages.languagesOne
+  info.detail.languages.languagesOne = "Css";
+  document.write(info.username + "<br>");
+  document.write(info.surname + "<br>");
+  document.write(info.detail.old + "<br>");
+  document.write(info.detail.city + "<br>");
+  document.write(info.detail.languages.languagesOne + "<br>");
+  document.write(info.detail.languages.languagesTwo);
+
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -276,5 +300,6 @@ export {
   objectsExample19,
   objectsExample20,
   forInExample,
-  largeObjectsExample
+  largeObjectsExample,
+  deleteExample
 }
