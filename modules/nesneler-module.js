@@ -177,6 +177,17 @@ function objectsExample17() {
   var result = info.value("Ümit", "Kaya");
   document.write(result);
 };
+//! Fonksiyon şeklindeki nesne tanımlamalarında fonksiyona parametre tanımlama ve fonksiyonu çağırma...
+function objectsExample18() {
+  function persons(usernameValue, surnameValue) {
+    this.username = usernameValue;
+    this.surname = surnameValue;
+  }
+  var result = new persons("Ümit", "Kaya");
+  var incomingName = result.username;
+  var incomingSurname = result.surname;
+  document.write(incomingName + " " + incomingSurname);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -194,5 +205,6 @@ export {
   objectsExample14,
   objectsExample15,
   objectsExample16,
-  objectsExample17
+  objectsExample17,
+  objectsExample18
 }
