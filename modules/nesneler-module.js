@@ -304,7 +304,23 @@ function protoExample() {
   var writeUsername = process.username;
   var writeSurname = process.surname;
   var writeContent = process.content;
-  document.write(writeUsername + " " + writeSurname + " " + writeContent)
+  document.write(writeUsername + " " + writeSurname + " " + writeContent);
+};
+//! hasOwnProperty() | Bir nesnesin parametrik olarak girilen özelliğinin kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir.
+function hasOwnPropertyExample() {
+  var info = {
+    username: "Ümit",
+    surname: "Kaya",
+    old: 30
+  };
+  var usernameControl = info.hasOwnProperty("username");
+  document.write("username_features:" + usernameControl + "<br>");
+  var surnameControl = info.hasOwnProperty("username");
+  document.write("surname_features:" + surnameControl + "<br>");
+  var oldControl = info.hasOwnProperty("old");
+  document.write("surname_features:" + oldControl + "<br>");
+  var cityControl = info.hasOwnProperty("city");
+  document.write("city_features:" + cityControl);
 };
 export {
   objectsExample1,
@@ -331,5 +347,6 @@ export {
   largeObjectsExample,
   deleteExample,
   prototypeExample,
-  protoExample
+  protoExample,
+  hasOwnPropertyExample
 }
