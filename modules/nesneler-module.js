@@ -276,7 +276,19 @@ function deleteExample() {
   document.write(info.detail.city + "<br>");
   document.write(info.detail.languages.languagesOne + "<br>");
   document.write(info.detail.languages.languagesTwo);
-
+};
+//! Nesnelerde prototype özelliğinin kullanımı...
+function prototypeExample() {
+  function persons(username, surname, city) {
+    this.usernameFeatures = username;
+    this.surnameFeatures = surname;
+    this.cityFeatures = city;
+  }
+  persons.prototype.process = function () {
+    return this.usernameFeatures + " " + this.surnameFeatures + " " + this.cityFeatures;
+  }
+  var result = new persons("Ümit", "Kaya", "Mersin");
+  document.write(result.process());
 };
 export {
   objectsExample1,
@@ -301,5 +313,6 @@ export {
   objectsExample20,
   forInExample,
   largeObjectsExample,
-  deleteExample
+  deleteExample,
+  prototypeExample
 }
