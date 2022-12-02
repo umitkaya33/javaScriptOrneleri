@@ -290,6 +290,22 @@ function prototypeExample() {
   var result = new persons("Ümit", "Kaya", "Mersin");
   document.write(result.process());
 };
+//! Nesnelerde __proto__ özelliğinin kullanımı...
+function protoExample() {
+  function info() {
+    this.username = "Ümit";
+    this.surname = "Kaya";
+  }
+  info.prototype.process = function () {
+    this.content = "Merhaba";
+  }
+  var process = new info();
+  process.__proto__.process();
+  var writeUsername = process.username;
+  var writeSurname = process.surname;
+  var writeContent = process.content;
+  document.write(writeUsername + " " + writeSurname + " " + writeContent)
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -314,5 +330,6 @@ export {
   forInExample,
   largeObjectsExample,
   deleteExample,
-  prototypeExample
+  prototypeExample,
+  protoExample
 }
