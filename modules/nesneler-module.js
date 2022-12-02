@@ -363,7 +363,15 @@ function instanceOfExample() {
   var process2 = result1 instanceof demo2;
   document.write(process2);
 };
-
+//! constructor | Nesnenin yapıcı metodunu elde etmek için kullanılır ve yapıcı metodun değerini gösterir. Aynı zamanda kontrol işlemleri içinde kullanılabilir.
+function constructorExample() {
+  function info() {
+    username: "Ümit";
+  }
+  var result = new info();
+  var process = result.constructor
+  document.write(process);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -393,5 +401,6 @@ export {
   hasOwnPropertyExample,
   propertyIsEnumerableExample,
   isPrototypeOfExample,
-  instanceOfExample
+  instanceOfExample,
+  constructorExample
 }
