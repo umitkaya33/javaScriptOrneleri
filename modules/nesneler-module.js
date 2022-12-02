@@ -149,6 +149,20 @@ function objectsExample15() {
   }
   persons1.detail();
 };
+//! Nesne içerisindeki fonksiyona parametre tanımlama ve fonksiyonu çağırma...
+function objectsExample16() {
+  var info = {
+    persons: function (username, surname, old) {
+      var contentUsername = username;
+      var contentSurname = surname;
+      var contentOld = old;
+      var content = " Merhaba ben " + contentUsername + " " + contentSurname + " " + contentOld + " yaşındayım ";
+      return content;
+    }
+  };
+  var result = info.persons("Ümit", "Kaya", "30");
+  document.write(result);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -164,5 +178,6 @@ export {
   objectsExample12,
   objectsExample13,
   objectsExample14,
-  objectsExample15
+  objectsExample15,
+  objectsExample16
 }
