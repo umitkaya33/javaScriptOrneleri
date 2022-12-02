@@ -233,6 +233,27 @@ function forInExample() {
     document.write(content + ":" + personsValue + "<br>");
   }
 };
+//! İç İçe Çok boyutlu nesneler ile çalışma...
+function largeObjectsExample() {
+  var info = {
+    username: "Ümit",
+    surname: "Kaya",
+    detail: {
+      old: 30,
+      city: "Mersin",
+      languages: {
+        languagesOne: "PHP",
+        languagesTwo: "Javascript"
+      }
+    }
+  }
+  document.write(info.username + "<br>");
+  document.write(info.surname + "<br>");
+  document.write(info.detail.old + "<br>");
+  document.write(info.detail.city + "<br>");
+  document.write(info.detail.languages.languagesOne + "<br>");
+  document.write(info.detail.languages.languagesTwo);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -255,4 +276,5 @@ export {
   objectsExample19,
   objectsExample20,
   forInExample,
+  largeObjectsExample
 }
