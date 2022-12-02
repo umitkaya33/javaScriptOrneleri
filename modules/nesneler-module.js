@@ -163,6 +163,20 @@ function objectsExample16() {
   var result = info.persons("Ümit", "Kaya", "30");
   document.write(result);
 };
+//! Nesne içerisindeki fonksiyonda bulunan parametrelere varsayılan değer ataması yapma...
+function objectsExample17() {
+  var info = {
+    value: function (username, surname, series = "Javascript") {
+      var usernameValue = username;
+      var surnameValue = surname;
+      var seriesValue = series;
+      var showValue = usernameValue + " " + surnameValue + " " + seriesValue + " " + "Eğitim Seti";
+      return showValue;
+    }
+  }
+  var result = info.value("Ümit", "Kaya");
+  document.write(result);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -179,5 +193,6 @@ export {
   objectsExample13,
   objectsExample14,
   objectsExample15,
-  objectsExample16
+  objectsExample16,
+  objectsExample17
 }
