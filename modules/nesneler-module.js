@@ -372,6 +372,17 @@ function constructorExample() {
   var process = result.constructor
   document.write(process);
 };
+//! toString() | Nesnenin karakter dizisi olarak temsil edilen halinin değerini gösterir.
+function toStringExample() {
+  function process() {
+    this.username = "Ümit Kaya";
+  }
+  process.prototype.toString = function () {
+    document.write(this.username);
+  }
+  var info = new process();
+  var result = info.toString();
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -402,5 +413,6 @@ export {
   propertyIsEnumerableExample,
   isPrototypeOfExample,
   instanceOfExample,
-  constructorExample
+  constructorExample,
+  toStringExample
 }
