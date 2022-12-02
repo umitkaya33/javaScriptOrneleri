@@ -218,6 +218,21 @@ function objectsExample20() {
   document.write(result.oldFeature + "<br>");
   document.write(result.cityFeature);
 };
+//! Nesnelerde for in döngüsünün kullanımı...
+function forInExample() {
+  var persons = {
+    username: "Ümit",
+    surname: "Kaya",
+    old: 30,
+    city: "Mersin"
+  }
+  var result;
+  for (result in persons) {
+    var content = result;
+    var personsValue = persons[result];
+    document.write(content + ":" + personsValue + "<br>");
+  }
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -238,5 +253,6 @@ export {
   objectsExample17,
   objectsExample18,
   objectsExample19,
-  objectsExample20
+  objectsExample20,
+  forInExample,
 }
