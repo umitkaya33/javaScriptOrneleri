@@ -383,6 +383,12 @@ function toStringExample() {
   var info = new process();
   var result = info.toString();
 };
+//! toLocaleString() | Nesnenin tarayıcı lokasyonuna göre karakter dizisi olarak temsil edilen halinin değerini gösterir.
+function toLocaleStringExample() {
+  var price = 2578;
+  var result = price.toLocaleString("tr-TR", { style: "currency", currency: "TRY" });
+  document.write(result);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -414,5 +420,6 @@ export {
   isPrototypeOfExample,
   instanceOfExample,
   constructorExample,
-  toStringExample
+  toStringExample,
+  toLocaleStringExample
 }
