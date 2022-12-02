@@ -188,6 +188,18 @@ function objectsExample18() {
   var incomingSurname = result.surname;
   document.write(incomingName + " " + incomingSurname);
 };
+//! Fonksiyon şeklindeki nesne tanımlamalarında fonksiyonda bulunan parametrelere varsayılan değer ataması yapma...
+function objectsExample19() {
+  function persons(username = "Ümit", surname = "Kaya") {
+    this.usernameValue = username;
+    this.surnameValue = surname;
+  }
+  var result = new persons();
+  var writeUsername = result.usernameValue;
+  var writeSurname = result.surnameValue;
+  var textWrite = writeUsername + " " + writeSurname;
+  document.write(textWrite);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -206,5 +218,6 @@ export {
   objectsExample15,
   objectsExample16,
   objectsExample17,
-  objectsExample18
+  objectsExample18,
+  objectsExample19
 }
