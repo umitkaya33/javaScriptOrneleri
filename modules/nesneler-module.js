@@ -342,6 +342,16 @@ function propertyIsEnumerableExample() {
   var cityControl = info.propertyIsEnumerable("city");
   document.write(writeCity + ":" + cityControl);
 };
+//! isPrototypeOf() | Parametrik olarak girilen nesne prototip zincirinde bir constructor(yapıcı metod) bulunup bulunmadığını kontrol ederek Boolean veri türünde sonucu gösterir.
+function isPrototypeOfExample() {
+  function info() {
+
+  }
+  var process = new info();
+  var control = info.prototype.isPrototypeOf(process);
+  document.write(control)
+
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -369,5 +379,6 @@ export {
   prototypeExample,
   protoExample,
   hasOwnPropertyExample,
-  propertyIsEnumerableExample
+  propertyIsEnumerableExample,
+  isPrototypeOfExample
 }
