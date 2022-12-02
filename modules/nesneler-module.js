@@ -306,7 +306,7 @@ function protoExample() {
   var writeContent = process.content;
   document.write(writeUsername + " " + writeSurname + " " + writeContent);
 };
-//! hasOwnProperty() | Bir nesnesin parametrik olarak girilen özelliğinin kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir.
+//! hasOwnProperty() | Bir nesnenin parametrik olarak girilen özelliğinin kullanılıp kullanılmadığını kontrol ederek Boolean veri türünde sonucu gösterir.
 function hasOwnPropertyExample() {
   var info = {
     username: "Ümit",
@@ -321,6 +321,26 @@ function hasOwnPropertyExample() {
   document.write("surname_features:" + oldControl + "<br>");
   var cityControl = info.hasOwnProperty("city");
   document.write("city_features:" + cityControl);
+};
+//! propertyIsEnumerable | Bir nesnenin parametrik olarak girilen özelliğinin kullanılıp kullanılmadığını ve numaralandırılabilir olup olmadığını kontrol ederek Bollean veri türünde sonuuu gösterir.
+function propertyIsEnumerableExample() {
+  var info = {
+    username: "Ümit",
+    surname: "Kaya",
+    old: 30
+  };
+  var writeUsername = info.username;
+  var writeSurname = info.surname;
+  var writeOld = info.old;
+  var writeCity = info.city
+  var usernameControl = info.propertyIsEnumerable("username");
+  document.write(writeUsername + ":" + usernameControl + "<br>");
+  var surnameControl = info.propertyIsEnumerable("username");
+  document.write(writeSurname + ":" + surnameControl + "<br>");
+  var oldControl = info.propertyIsEnumerable("old");
+  document.write(writeOld + ":" + oldControl + "<br>");
+  var cityControl = info.propertyIsEnumerable("city");
+  document.write(writeCity + ":" + cityControl);
 };
 export {
   objectsExample1,
@@ -348,5 +368,6 @@ export {
   deleteExample,
   prototypeExample,
   protoExample,
-  hasOwnPropertyExample
+  hasOwnPropertyExample,
+  propertyIsEnumerableExample
 }
