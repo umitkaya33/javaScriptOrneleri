@@ -389,6 +389,18 @@ function toLocaleStringExample() {
   var result = price.toLocaleString("tr-TR", { style: "currency", currency: "TRY" });
   document.write(result);
 };
+//! valueOf() | Nesnenin temel değerini elde etmek için kullanılır.
+function valueOfExample() {
+  function process(numbers) {
+    this.showNumbers = numbers;
+  }
+  process.prototype.valueOf = function () {
+    return this.showNumbers;
+  }
+  var demo = new process(5*9);
+  var result = demo.valueOf();
+  document.write(result);
+};
 export {
   objectsExample1,
   objectsExample2,
@@ -421,5 +433,6 @@ export {
   instanceOfExample,
   constructorExample,
   toStringExample,
-  toLocaleStringExample
+  toLocaleStringExample,
+  valueOfExample
 }
