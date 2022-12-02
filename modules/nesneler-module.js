@@ -345,13 +345,25 @@ function propertyIsEnumerableExample() {
 //! isPrototypeOf() | Parametrik olarak girilen nesne prototip zincirinde bir constructor(yapıcı metod) bulunup bulunmadığını kontrol ederek Boolean veri türünde sonucu gösterir.
 function isPrototypeOfExample() {
   function info() {
-
   }
   var process = new info();
   var control = info.prototype.isPrototypeOf(process);
   document.write(control)
-
 };
+//! instanceof | Bir nesnenin constructor'nın doğruluğunu kontrol ederek Boolean veri türünde sonucu gösterir.
+function instanceOfExample() {
+  function demo1() {
+  }
+  function demo2() {
+  }
+  var result1 = new demo1();
+  var process1 = result1 instanceof demo1;
+  document.write(process1 + "<br>");
+  var result2 = new demo1();
+  var process2 = result1 instanceof demo2;
+  document.write(process2);
+};
+
 export {
   objectsExample1,
   objectsExample2,
@@ -380,5 +392,6 @@ export {
   protoExample,
   hasOwnPropertyExample,
   propertyIsEnumerableExample,
-  isPrototypeOfExample
+  isPrototypeOfExample,
+  instanceOfExample
 }
